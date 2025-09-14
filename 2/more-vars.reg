@@ -1,0 +1,204 @@
+Windows Registry Editor Version 5.00
+
+; User: Ariel
+[HKCU\Environment]
+"HOME"                             = "D:\\Desktop"
+"HOMEPATH"                         = "\\Users\\Ariel"
+"TEMP"                             = hex(2):44,00,3a,00,5c,00,54,00,65,00,6d,00,70,00,00,00
+"TMP"                              = hex(2):44,00,3a,00,5c,00,54,00,65,00,6d,00,70,00,00,00
+"USERPROFILE"                      = "D:\\Users\\Ariel"
+;    
+"PYLAUNCHER_ALLOW_INSTALL"         = "1"
+"VSCODE_APPDATA"                   = "S:\\Ariel"
+;
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+"ACSvcPort"                        = "0"
+"RlsSvcPort"                       = "0"
+"HOMEDRIVE"                        = "D:"
+"HOMEPATH"                         = "\\Users\\Ariel"
+"TEMP"                             = "D:\\Temp"
+"TMP"                              = "D:\\Temp"
+;         
+;         
+"BUN_INSTALL"                      = "T:\\Bun"
+"BUN_INSTALL_DIR"                  = "T:\\Bun"
+"BUN_CONFIG_FILE"                  = "T:\\Bun\\config.toml"
+"BUN_PLUGIN_DIR"                   = "T:\\Bun\\plugins"
+;         
+"CARGO_HOME"                       = "T:\\Rust\\cargo"
+"CARGO_TARGET_DIR"                 = "D:\\Temp\\cargo\\target"
+"RUSTUP_HOME"                      = "T:\\Rust\\rustup"
+;         
+"DENO_DIR"                         = "D:\\Temp\\Cache\\deno"
+"DENO_INSTALL"                     = "T:\\Deno"
+"DENO_INSTALL_ROOT"                = "T:\\Deno\\Bin"
+"DENO_NO_UPDATE_CHECK"             = "1"
+;         
+"JUPYTER_CONFIG_DIR"               = "T:\\jupyter"
+;     
+"LMSTUDIO_API_KEY"                 = "" 
+"LMSTUDIO_HOST"                    = "127.0.0.1"
+"LMSTUDIO_MODELS_PATH"             = "T:\\LLMs"
+"LMSTUDIO_PATH"                    = "T:\\LMStudio"
+"LMSTUDIO_PORT"                    = "1234"
+;    
+"MLNX_WINMFT"                      = "D:\\Program Files\\Mellanox\\WinMFT\\"
+;         
+"MSYS2_PATH_TYPE"                  = "inherit"
+;            
+"NPM_CONFIG_CACHE"                 = "T:\\Node\\cache"
+"NPM_CONFIG_USERCONFIG"            = "S:\\Ariel\\.npmrc"
+"PNPM_HOME"                        = "T:\\Node\\pnpm\\bin"
+"PNPM_STORE_PATH"                  = "T:\\Node\\pnpm-store"
+"YARN_CACHE_FOLDER"                = "D:\\Temp\\Cache\\yarn"
+;         
+"NUGET_HTTP_CACHE_PATH"            = "D:\\Temp\\Cache\\nuget\\http"
+"NUGET_PACKAGES"                   = "D:\\Temp\\Cache\\nuget\\packages"
+;         
+"OLLAMA_HOST"                      = "127.0.0.1"
+"OLLAMA_MODELS"                    = "T:\\LLMs"
+"OLLAMA_PORT"                      = "11434"
+;         
+"PIP_CACHE_DIR"                    = "T:\\WinPython313\\cache\\pip"
+"PYLAUNCHER_ALLOW_INSTALL"         = "1"
+"PYTHONHOME"                       = "T:\\WinPython313"
+"PYTHONIOENCODING"                 = "UTF-8"
+"PYTHONDONTWRITEBYTECODE"          = "1" 
+;
+"POETRY_CACHE_DIR"                 = "D:\\Temp\\Cache\\poetry"
+"POETRY_HOME"                      = "T:\\PyPaks"
+"POETRY_VIRTUALENVS_IN_PROJECT"    = "true"
+; "POETRY_VIRTUALENVS_PATH"        = "T:\\PyPaks\\venvs"
+;
+"UV_CACHE_DIR"                     = "T:\\WinPython313\\cache\\pip"
+"UV_LINK_MODE"                     = "copy"
+"UV_SYSTEM_PYTHON"                 = "T:\\WinPython313\\Python.exe"
+;                                  
+"PSModulePath"                     = "C:\\Program Files\\Windows PowerShell\\Modules"
+;
+"SQLITESTUDIO_CONFIG"		     = "T:\\SQLiteStudio\\config"
+"SQLITESTUDIO_PLUGINS"		     = "T:\\SQLiteStudio\\plugins"
+;                                  
+"VLLM_CONFIG"                      = "T:\\vLLM\\config.yaml"
+"VLLM_DATA_DIR"                    = "T:\\vLLM\\"
+;                                  
+"VSCODE_EXTENSIONS"                = "S:\\Extensions"
+"VSCODE_PORTABLE"                  = "S:"
+"VSCODE_SYSTEMDATA"                = "S:\\System"
+"VSCODE_TELEMETRY_OPTOUT"          = "1"
+"VSCODEIUM_TELEMETRY_OPTOUT"       = "1"
+;                                       
+"WINDSURF_PORTABLE"                = "T:\\Windsurf"
+;
+;
+; Headless browser/tooling caches
+"PIP_CACHE_DIR"                    = "D:\\Temp\\Cache\\pip"
+"PLAYWRIGHT_BROWSERS_PATH"         = "D:\\Temp\\Cache\\playwright"
+"POETRY_HOME"                      = "D:\\Temp\\Cache\\poetry\\home"
+"PUPPETEER_CACHE_DIR"              = "D:\\Temp\\Cache\\puppeteer"
+"UV_CACHE_DIR"                     = "D:\\Temp\\Cache\\pip"
+"YARN_CACHE_FOLDER"                = "D:\\Temp\\Cache\\yarn"
+;
+"XDG_CACHE_HOME"                   = "D:\\Temp\\Cache"
+;
+;
+"Path"= "D:\\Links;C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\program Files\\powerShell\\7;D:\\program Files\\powerShell\\Modules;C:\\Program Files\\dotnet;T:\\dotnet-tools\\tools;T:\\Bun\\bin;T:\\Deno;T:\\Node;T:\\Node\\node_modules\\npm\\bin;T:\\PyPaks\\Scripts;T:\\UV;T:\\WinPython313;T:\\WinPython313\\Scripts;C:\\Windows\\System32\\Wbem;T:\\Scoop\\apps\\python\\current;T:\\Scoop\\apps\\python\\current\\Scripts;T:\\Scoop\\shims"
+;
+;
+"PSModulePath"=hex(2):25,50,72,6F,67,72,61,6D,46,69,6C,65,73,25,5C,57,69,6E,64,6F,77,73,50,6F,77,65,72,53,68,65,6C,6C,5C,4D,6F,64,75,6C,65,73,3B,43,3A,5C,57,69,6E,64,6F,77,73,5C,53,79,73,74,65,6D,33,32,5C,57,69,6E,64,6F,77,73,50,6F,77,65,72,53,68,65,6C,6C,5C,76,31,2E,30,5C,4D,6F,64,75,6C,65,73,3B,44,3A,5C,50,72,6F,67,72,61,6D,20,46,69,6C,65,73,5C,50,6F,77,65,72,53,68,65,6C,6C,5C,4D,6F,64,75,6C,65,73,3B,44,3A,5C,50,72,6F,67,72,61,6D,20,46,69,6C,65,73,5C,50,6F,77,65,72,53,68,65,6C,6C,5C,37,5C,4D,6F,64,75,6C,65,73,3B,44,3A,5C,50,72,6F,67,72,61,6D,20,46,69,6C,65,73,5C,50,6F,77,65,72,53,68,65,6C,6C,5C,36,5C,4D,6F,64,75,6C,65,73,00
+;
+;
+"DOTNET_CLI_TELEMETRY_OPTOUT"      = "1"
+"DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT"    = "1"
+"DOTNET_SKIP_FIRST_TIME_EXPERIENCE"= "1"
+;
+"INTEL_DISABLE_TELEMETRY"          = "1"
+"INTEL_DSA_DISABLE_TELEMETRY"      = "1"
+"INTEL_GPU_TELEMETRY_DISABLE"      = "1"
+"INTEL_ONEAPI_DISABLE_TELEMETRY"   = "1"
+"INTEL_TELEMETRY_OPT_OUT"          = "1"
+;                                    
+"NEXT_TELEMETRY_DISABLED"          = "1"
+"NGX_ENABLE_PRIVACY"               = "1"
+;                                    
+"NV_CUDA_DISABLE_TELEMETRY"        = "1"
+"NV_TELEMETRY_DISABLED"            = "1"
+;                                    
+"DISABLE_OFFICE_TELEMETRY"         = "1"
+"OFFICE_TELEMETRY_OPTOUT"          = "1"
+;                                    
+"POETRY_VIRTUALENVS_IN_PROJECT"    = "1"
+"POWERSHELL_TELEMETRY_OPTOUT"      = "1"
+"PSMODULE_TELEMETRY_OPTOUT"        = "1"
+;
+"REALTEK_DISABLE_TELEMETRY"        = "1"
+;
+; General Windows
+"DISABLE_TELEMETRY_OPTOUT"		= "1"
+"DO_NOT_SEND_TELEMETRY"			= "1"
+"DO_NOT_TRACK"			          = "1"
+"EDGE_TELEMETRY_OPTOUT"			= "1"
+"FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT" = "1"
+"MICROSOFT_TELEMETRY_OPTOUT"		= "1"
+"MS_DISABLE_TELEMETRY"			= "1"
+"MS_TELEMETRY_OPTOUT"			= "1"
+"TELEMETRY_DISABLED"			= "1"
+"WIN32_DISABLE_TELEMETRY"		= "1"
+"WIN_TELEMETRY_OPTOUT"			= "1"
+"WINDOWS_TELEMETRY_OPTOUT"		= "1"
+"WINUSER_DISABLE_TELEMETRY"		= "1"
+;
+;
+;
+[HKLM\Software\DefaultUserEnvironment]
+"TEMP" = hex(2):44,00,3a,00,5c,00,54,00,65,00,6d,00,70,00,00,00
+"TMP"  = hex(2):44,00,3a,00,5c,00,54,00,65,00,6d,00,70,00,00,00
+;
+;
+;
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders]
+"AppData"       = hex(2):44,3a,5c,50,72,6f,67,72,61,6d,20,66,69,6c,65,73,5c,41,70,70,44,61,74,61,5c,52,6f,61,6d,69,6e,67,00
+"Local AppData" = hex(2):44,3a,5c,50,72,6f,67,72,61,6d,20,66,69,6c,65,73,5c,41,70,70,44,61,74,61,5c,4c,6f,63,61,6c,00
+;
+;
+;
+; -----------------------------------------
+; $globalSettings                  = "S:\\General"
+; $newHomeDrive                    = "D:" 
+; $newHomePath                     = "\\Users\\Ariel"         ; Note: Backslash is required for HOMEPATH 
+; $newPSModulePath                 = "D:\\Program Files\\Windows PowerShell\\Modules"
+; $newTempPath                     = "D:\\Temp"    
+; $nodePath                        = "H:\\dev\\tools\\node"
+; $npmCache                        = "H:\\dev\\tools\\node\\cache" 
+; $npmPrefix                       = "H:\\dev\\tools\\node"
+; ? $pythonGlobalConfig            = "$env:ProgramData\\pip\\pip.ini"
+; ? $pythonUserConfig              = "$env:APPDATA\\pip\\pip.ini"
+; $pythonPath                      = "$devRoot\\Python"
+; $systemPath                      = [Environment]::GetEnvironmentVariable("Path", "Machine")
+  $userPath                        = [Environment]::GetEnvironmentVariable("Path", "User")
+; $userSettings   ???
+
+; 3 --- Set Global Environment Variables ---  * not sure the value
+; ?? [Environment]::SetEnvironmentVariable("DEV_GLOBAL_SETTINGS", $globalSettings, "Machine")
+; ?? [Environment]::SetEnvironmentVariable("DEV_USER_SETTINGS", $userSettings, "User")
+;
+; [Environment]::SetEnvironmentVariable("HOMEDRIVE", $newHomeDrive, "Machine") 
+; [Environment]::SetEnvironmentVariable("HOMEDRIVE", $newHomeDrive, "User") 
+; [Environment]::SetEnvironmentVariable("HOMEPATH", $newHomePath, "Machine")
+; [Environment]::SetEnvironmentVariable("HOMEPATH", $newHomePath, "User") 
+;
+; [Environment]::SetEnvironmentVariable("NODE_PATH", $nodePath, "Machine")
+; [Environment]::SetEnvironmentVariable("NODE_PATH", $nodePath, "User")
+;
+; [Environment]::SetEnvironmentVariable("PSModulePath", $env:PSModulePath, "Machine")
+; [Environment]::SetEnvironmentVariable("PYTHONHOME", $pythonPath, "Machine")
+;
+; [Environment]::SetEnvironmentVariable("TEMP", $newTempPath, "Machine")     
+; [Environment]::SetEnvironmentVariable("TEMP", $newTempPath, "User")
+; [Environment]::SetEnvironmentVariable("TMP", $newTempPath, "Machine")     
+; [Environment]::SetEnvironmentVariable("TMP", $newTempPath, "User")
+;
+; ?  [Environment]::SetEnvironmentVariable("Path", "$systemPath;$nodePath", "Machine")
+; ?  [Environment]::SetEnvironmentVariable("Path", "$userPath;$nodePath", "User")
+;
