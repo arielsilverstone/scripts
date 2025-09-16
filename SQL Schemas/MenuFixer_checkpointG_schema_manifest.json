@@ -1,0 +1,116 @@
+{
+  "checkpoint": "G",
+  "extends": [
+    "files",
+    "line_map",
+    "reg_lines",
+    "xml_lines",
+    "tasks"
+  ],
+  "new_tables": {
+    "collections": {
+      "columns": {
+        "collection_id": "TEXT PK",
+        "label": "TEXT NOT NULL"
+      },
+      "purpose": "Label logical file groups (e.g., 'registry-project')."
+    },
+    "file_collections": {
+      "columns": {
+        "collection_id": "TEXT",
+        "file": "TEXT"
+      },
+      "primary_key": [
+        "collection_id",
+        "file"
+      ],
+      "purpose": "Many-to-many mapping of files into collections."
+    },
+    "dupes": {
+      "columns": {
+        "file": "TEXT PK",
+        "original": "TEXT",
+        "sha256": "TEXT"
+      },
+      "purpose": "Track duplicate files by content hash and canonical original."
+    },
+    "reg_norm": {
+      "columns": {
+        "file": "TEXT",
+        "line": "INTEGER",
+        "hive": "TEXT",
+        "key": "TEXT",
+        "name": "TEXT",
+        "type": "TEXT",
+        "value": "TEXT",
+        "norm_hash": "TEXT"
+      },
+      "primary_key": [
+        "file",
+        "line"
+      ],
+      "purpose": "Best-effort normalized key/value extraction from .reg lines; norm_hash dedupes logical entries."
+    },
+    "reg_deletes": {
+      "columns": {
+        "file": "TEXT",
+        "line": "INTEGER",
+        "hive": "TEXT",
+        "key": "TEXT"
+      },
+      "primary_key": [
+        "file",
+        "line"
+      ],
+      "purpose": "Registry key deletions (lines beginning with '[-')."
+    },
+    "reg_comments": {
+      "columns": {
+        "file": "TEXT",
+        "line": "INTEGER",
+        "text": "TEXT"
+      },
+      "primary_key": [
+        "file",
+        "line"
+      ],
+      "purpose": "Comments or informational lines from .reg files."
+    }
+  },
+  "indexes": [
+    {
+      "name": "idx_reg_norm_normhash",
+      "table": "reg_norm",
+      "columns": [
+        "norm_hash"
+      ]
+    },
+    {
+      "name": "idx_reg_norm_hive_key",
+      "table": "reg_norm",
+      "columns": [
+        "hive",
+        "key"
+      ]
+    },
+    {
+      "name": "idx_reg_deletes_hivekey",
+      "table": "reg_deletes",
+      "columns": [
+        "hive",
+        "key"
+      ]
+    },
+    {
+      "name": "idx_file_collections",
+      "table": "file_collections",
+      "columns": [
+        "file"
+      ]
+    }
+  ],
+  "views": {
+    "v_reg_unique": "One row per unique norm_hash from reg_norm."
+  },
+  "apply": "sqlite3 MenuFixer_mapping.sqlite < MenuFixer_checkpointG_schema_extension.sql"
+}
