@@ -1,0 +1,11 @@
+Paste this command to Powershell
+
+Weather:
+Get-AppxPackage -all *Client.WebExperience* | Remove-AppxPackage -AllUsers
+
+Teams:
+Get-AppxPackage -all *Teams* | Remove-AppxPackage -AllUsers
+
+
+To cleanup leftovers after update please use from GS standalone update.
+To remove edge browser use ghost toolbox > removedge
