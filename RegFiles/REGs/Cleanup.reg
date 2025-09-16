@@ -1,0 +1,119 @@
+Windows Registry Editor Version 5.00
+;
+;
+; Date function
+[HKCU\Changes]
+"CleanupFileChanged"=-
+"CleanupFileChanged"="29JAN25"
+;
+;
+[HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\RunOnce]
+"{d990096d-6282-42c5-8d16-71272c5be274}"=-
+"{909DA2FA-374E-4D0A-BE27-9E7E12761DD2}"=-
+
+
+[-HKCU\System\GameConfigStore\Children]
+[-HKCU\System\GameConfigStore\Parents]
+
+[-HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\SuggestedApps]
+;
+; Don't show recently added apps in Start
+[-HKCU\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount\$$Windows.data.unifiedtile.startglobalproperties\Current]
+;
+; Remove SpeechUX from another registry location
+[-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Extended Properties\System.ControlPanel.Category]
+;
+; Prevent the Installation of Apps like Outlook for Windows during the OOBE phase:
+[-HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_OOBE\DevHomeUpdate]
+[-HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_OOBE\EdgeUpdate]
+[-HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_OOBE\OutlookUpdate]
+;
+; Remove Azure Arc Setup from Tray
+[-HKCU\Control Panel\NotifyIconSettings\12391959222534665583]
+; Remove Intel DSA
+[-HKU\S-1-5-21-3912854748-1947628653-3346818719-1000\Control Panel\NotifyIconSettings\47907198689039309]
+; Remove Tweaking
+[-HKU\S-1-5-21-3912854748-1947628653-3346818719-1000\Control Panel\NotifyIconSettings\5094882407936927971]
+; Remove Aquasuite
+[-HKU\S-1-5-21-3912854748-1947628653-3346818719-1000\Control Panel\NotifyIconSettings\9676152021255912203]
+;
+; Remove Proximity
+[-HKLM\Software\Microsoft\Windows\CurrentVersion\Proximity]
+;
+[-HKCR\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\find]
+
+;
+[-HKLM\Software\Policies\Microsoft\Windows nt\terminal services\RAUnsolicit]
+;
+; Delete = Make sure Thumbnails are shown
+[-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\IconsOnly\Policy\DisableThumbnails]
+;
+[-HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects]
+;
+[-HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NowPlayingSessionManager]
+;
+[-HKLM\Software\Microsoft\Windows\CurrentVersion\Group Policy Objects\{8F929B8F-C156-4A39-BA89-BC6F9EB60FDB}]
+[-HKLM\Software\Microsoft\Windows\CurrentVersion\Group Policy Objects\{961261AA-FF62-4D3A-8882-71FDCD7493BD}]
+
+;
+; Media Player **********
+[-HKLM\Software\Microsoft\Keyboard\Native Media Players\WMP]
+;
+[-HKLM\Software\Policies\Microsoft\Windows\netcache\nomakeavailableofflinelist]
+;
+; Delete TIP, persumed to be Tablet Input Service
+[-HKLM\System\Software\Microsoft\TIP\AggregateResults]
+;
+;
+; HKCR  **********
+;
+; Remove smartscreen from HKCR
+[-HKCR\!AppX9kvz3rdv8t7twanaezbwfcdgrbg3bck0]
+;
+[-HKLM\Software\Microsoft\AppServiceProtocols\ms-phone-api]
+[-HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Pen]
+;
+; Cleanup Shell
+[-HKCR\.library-ms\ShellNew]
+[-HKCR\Software\Classes\.bmp\ShellNew]
+[-HKCR\Software\Classes\.lnk\ShellNew]
+[-HKCR\Software\Classes\.zip\ShellNew]
+; Office
+[-HKCR\.accdb\Access.Application.16\ShellNew]
+[-HKCR\.pptx\PowerPoint.Show.12\ShellNew]
+[-HKCR\.pub\Publisher.Document.16\ShellNew]
+[-HKCR\.doc\Word.Document.12\ShellNew]
+[-HKCR\.docx\Word.Document.12\ShellNew]
+[-HKCR\.xlsx\Excel.Sheet.12\ShellNew]
+[-HKCR\.zip\CompressedFolder\ShellNew]
+; Libre Office
+[-HKCR\.odg\LibreOffice.DrawDocument.1\ShellNew]
+[-HKCR\.odp\LibreOffice.DrawDocument.1\ShellNew]
+[-HKCR\.ods\LibreOffice.DrawDocument.1\ShellNew]
+[-HKCR\.odt\LibreOffice.DrawDocument.1\ShellNew]
+;
+;
+[-HKCR\batfile\ShellEx\ContextMenuHandlers\Compatibility]
+[-HKCR\cmdfile\ShellEx\ContextMenuHandlers\Compatibility]
+[-HKCR\exefile\ShellEx\ContextMenuHandlers\Compatibility]
+;
+;
+
+[-HKLM\Windows.aVhdFileX]
+[-HKLM\batfile]
+
+[-HKCR\.bat\ShellNew]
+[-HKCR\.bmp\ShellNew]
+[-HKLM\cmdfile]
+[-HKCR\.contact\ShellNew]
+[-HKCR\.lnk\ShellNew]
+[-HKCR\.mdb\ShellNew]
+[-HKCR\.rtf\ShellNew]
+[-HKCR\.zip\ShellNew]
+;
+
+[-HKLM\MSEdgeHTM\Application]
+[-HKCU\MSEdgeHTM\Application]
+[-HKCR\MSEdgeMHT\Application]
+
+

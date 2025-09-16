@@ -1,0 +1,1798 @@
+Windows Registry Editor Version 5.00
+;
+;
+; Date function
+;
+[HKCU\Changes]
+"1MergedFileChanged"=-
+"1MergedFileChanged"="12FEB25"
+;
+;
+; *********************** Bluetooth
+;
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Bluetooth]
+"AdvancedDiscoveryMode"=dword:00000001
+"QuickPair"=dword:00000001
+;
+; *********************** Cloud Experiece Host & Store
+;
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudExperienceHost\WebcamPermission]
+"InboxWebcamAccessAllowlist"=-
+;
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\SystemMetaData]
+"CloudStorePlatformSupported"=dword:00000000
+; 
+; *********************** ContentDeliveryManager
+;
+Start-Job {
+
+	$registryKeys = @(
+		"ContentDeliveryAllowed"
+		"FeatureManagementEnabled"  
+		"OEMPreInstalledAppsEnabled"
+		"PreInstalledAppsEnabled"
+		"PreInstalledAppsEverEnabled" 
+		"PreInstalledAppsOverlayEnabled"
+		"RemediationRequired"
+		"RotatingLockScreenEnabled"
+		"RotatingLockScreenOverlayEnabled"  
+		"SilentInstalledAppsEnabled"   
+		"SlideshowEnabled"            
+		"SoftLandingEnabled"          
+		"SystemPaneSuggestionsEnabled" 
+		"SubscribedContent-280810Enabled"
+		"SubscribedContent-280811Enabled"
+		"SubscribedContent-88000161Enabled"
+		"SubscribedContent-88000162Enabled"		 )
+
+	$regPath = "HKLM\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+
+	$registryKeys | foreach {
+		Set-ItemProperty -Path $regPath -Name $_ -Value 0
+	}
+}
+
+
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\FeatureManagement\Policies]
+"TemporaryEnterpriseFeatureControlState_Mirrored"=dword:00000000
+;
+;
+; *********************** End of ContentDeliveryManager
+;
+; Download missing COM components from network
+[HKLM\Software\Policies\Microsoft\Windows\App Management]
+"COMClassStore"=dword:00000001
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\AppInstaller]
+"EnableAppInstaller"=dword:00000001
+"EnableExperimentalFeatures"=dword:00000000
+"EnableMicrosoftStoreSource"=dword:00000000
+"EnableWindowsPackageManagerCommandLineInterfaces"=dword:00000001
+"EnableWindowsPackageManagerConfiguration"=dword:00000001
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\Backup\Server]
+"OnlySystemBackup"=dword:00000000
+"NoBackupToDisk"=dword:00000000
+"NoBackupToNetwork"=dword:00000000
+"NoRunNowBackup"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\CredUI]
+; Enable password reveal button
+"DisablePasswordReveal"=dword:00000000
+;
+; Delivery Optimization settings - sets to 1 for LAN only, change to 0 for off
+[HKLM\Software\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000001
+[HKLM\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization]
+; Allow on local network, disallow Internet
+"SystemSettingsDownloadMode"=dword:00000001
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config]
+"DoDownloadMode"=dword:00000001
+[HKLM\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
+"DownloadMode"=dword:00000001
+;
+;
+; **************************** DiagTrack
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack]
+"ConnectivityNoNetworkTime"=dword:00000000
+"ConnectivityRestrictedNetworkTime"=dword:00000000
+"DiagTrackAuthorization"=dword:00000000
+"DiagTrackStatus"=dword:00000000
+"ShowedToastAtLevel"=dword:00000000
+"UploadEtlFileConsent"=dword:00000000
+"UploadPermissionReceived"=dword:00000000
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\EventTranscriptKey]
+"EnableEventTranscript"=dword:00000000
+"DiagTrackAuthorization"=dword:00000000
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\Features]
+"EventTagDropUserIds"=dword:00000000
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\OmittedIds]
+"w:B04E2543-63EB-D3C6-4722-FBFE64FA31C0"=dword:00000000
+"w:51BD64A6-CB3C-BE69-C3CF-6F201192D6F4"=dword:00000001
+"w:2CD5BDB8-5AAC-E974-9C40-74864CF5B277"=dword:00000002
+"w:24BB1808-7651-CEDC-68C9-ABAD2D870DE7"=dword:00000003
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\SettingsRequests\telemetry.ASM-WindowsDefault]
+"ETag"=""
+"ETagQueryParameters"=""
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\SettingsRequests\telemetry.P-Eco3PTelDefault]
+"ETag"=""
+"ETagQueryParameters"=""
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\SettingsRequests\utc.app]
+"ETag"=""
+"ETagQueryParameters"=""
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\TraceManager]
+"MiniTraceSlotContentPermitted"=dword:00000000
+"MiniTraceSlotEnabled"=dword:00000000
+;
+;
+; **************************** End DiagTrack
+; **************************** Game Section
+;
+; No game DVR
+[HKCU\System\GameConfigStore]
+"GameDVR_DXGIHonorFSEWindowsCompatible"=dword:00000001
+"GameDVR_EFSEFeatureFlags"=dword:00000000
+"GameDVR_Enabled"=dword:00000000
+"GameDVR_FSEBehavior"=dword:00000002
+"GameDVR_FSEBehaviorMode"=dword:00000002
+"GameDVR_HonorUserFSEBehaviorMode"=dword:00000001
+"Win32_AutoGameModeDefaultProfile"=-
+"Win32_GameModeRelatedProcesses"=-
+;
+[HKCU\Software\Microsoft\GameBar]
+"ShowStartupPanel"=dword:00000000
+[HKLM\Software\Microsoft\GameBar]
+"AllowAutoGameMode"=dword:00000000
+"AutoGameModeEnabled"=dword:00000000
+"ShowStartupPanel"=dword:00000000
+"ShowGameModeNotifications"=dword:00000000
+"UseNexusForGameBarEnabled"=dword:00000000
+;
+; No game DVR
+[HKCU\Software\Microsoft\Windows\CurrentVersion\GameDVR]
+"AppCaptureEnabled"=dword:00000000
+[HKLM\Software\Microsoft\PolicyManager\Default\ApplicationManagement\AllowGameDVR]
+"Value"=dword:00000000
+[HKLM\Software\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Games]
+"EnableXBGM"=dword:00000000
+"AllowAdvancedGamingServices"=dword:00000000
+;
+[HKLM\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter]
+"ActivationType"=dword:00000000
+;
+; **************************** End Game Section
+; ****************  Notifications
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK"=dword:00000000
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
+"NOC_GLOBAL_SETTING_TOASTS_ENABLED"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\MDM]
+"AutoEnrollMDM"=dword:00000000
+"DisableRegistration"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\PushToInstall]
+"DisablePushToInstall"=dword:00000001
+"DisableVoice"=dword:00000001
+;
+; Push Notifications
+[HKCU\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
+"DatabaseMigrationCompleted"=dword:00000001
+"LockScreenToastEnabled"=dword:00000000
+"NoTileApplicationNotification"=dword:00000001
+"ToastEnabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"DisallowNotificationMirroring"=dword:00000001
+"EnableExpandedToastNotifications"=dword:00000000
+; Block applications from the Windows push Notification service
+"LockScreenToastEnabled"=dword:00000000
+"NoCloudApplicationNotification"=dword:00000001
+"NoTileApplicationNotification"=dword:00000001
+"NoToastApplicationNotification"=dword:00000001
+"NoToastApplicationNotificationOnLockScreen"=dword:00000001
+"ToastEnabled"=dword:00000000
+;
+;
+; ***********************  End Notifications
+;
+[HKLM\Software\Policies\Microsoft\MicrosoftAccount]
+"DisableUserAuth"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\PassportForWork]
+"AllowAllUserAccessToSmartCardNode"=dword:00000000
+"DisablePostLogonProvisioning"=dword:00000000
+"DisableSmartCardNode"=dword:00000001
+"Enabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\Registration Wizard Control]
+"NoRegistration"=dword:00000001                      
+;
+; VERY EXPERIMENTAL - Set alernate location for Windows installation files
+[HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Setup]
+"SourcePath"="D:\\Windows Setup Files"
+;                                                   
+; Turn off Microsoft asking for your feedback a.k.a "Feedback frequency"
+[HKLM\Software\Microsoft\WindowsMitigation]
+"UserPreference"=dword:00000002
+;
+[HKLM\Software\Policies\Microsoft\AppV\Client\PackageManagement]
+"AutoCleanupEnabled"=dword:00000001
+[HKLM\Software\Policies\Microsoft\AppV\Client\PowerManagement]
+"SyncOnBatteriesEnabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\AppHVSI]
+"AllowAppHVSI_ProviderSet"=dword:00000000
+"AllowCameraMicrophoneRedirection"=dword:00000000
+"AllowPersistence"=dword:00000000
+"AllowVirtualGPU"=dword:00000000
+"AppHVSIPrintingSettings"=dword:00000000
+"AuditApplicationGuard"=dword:00000000
+"SaveFilesToHost"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Assistance\Client\1.0]
+"NoActiveHelp"=dword:00000001
+"NoExplicitFeedback"=dword:00000001
+"NoImplicitFeedback"=dword:00000001
+"NoOnlineAssist"=dword:00000001
+;
+; Solve problem of envelop size too large in Server Manager
+[HKLM\Software\Microsoft\Windows\CurrentVersion\WSMAN\Client]
+"maxEnvelopeSize"=dword:00002000
+"spn_prefix"="WSMAN"
+"trusted_hosts"="*"
+;
+;$registryKeys = @(
+    "CertificateRevocation"
+    "CallLegacyWCMPolicies" 
+    "DisableCachingOfSSLPages"
+    "EnableNegotiate"
+    "EnableSSL3Fallback"
+    "EnablePunyCode"
+    "MaxConnectionsPer1_0Server"
+    "MaxConnectionsPerServer"
+    "MigrateProxy"
+    "PageOrientation"
+    "PaperSize"  
+    "PreventIgnoreCertErrors"
+    "PrivacyAdvanced"
+    "PrintQuality"
+    "ProxyEnable"
+    "Security_HKLM_only"
+    "TcpAutotuning"
+    "WarnOnIntranet" 
+    "WarnOnZoneCrossing"
+)
+
+$regPaths = @(
+    "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings",
+    "HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings"
+)
+
+Start-Job -ScriptBlock {
+    param($registryKeys, $regPaths)
+    foreach ($path in $regPaths) {
+        foreach ($key in $registryKeys) {
+            Set-ItemProperty -Path $path -Name $key -Value 0
+        }
+    }
+} -ArgumentList $registryKeys, $regPaths
+
+;
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHTTP]       
+; Turn on TCP Auto Tuning
+"TcpAutotuning"=dword:00000001
+;
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\ProtocolDefaults]
+;   0        Local Machine Zone
+;   1        Local Intranet Zone
+;   2        Trusted sites Zone
+;   3        Internet Zone
+;   4        Restricted Sites Zone
+@=""
+"http"=dword:00000003
+"https"=dword:00000003
+"ftp"=dword:00000003
+"file"=dword:00000000
+"@ivt"=dword:00000001
+"shell"=dword:00000000
+"knownfolder"=dword:00000000
+
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones]
+@=""
+"SelfHealCount"=dword:00000001
+;
+;
+[HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Settings]
+"AllowRemoteRPC"=dword:00000001
+"AllSigningEqual"=dword:00000001
+"DisableBalloonTips"=dword:00000001
+"DisableSendGenericDriverNotFoundToWER"=dword:00000001
+"DisableSendRequestAdditionalSoftwareToWER"=dword:00000001
+"DisableSystemRestore"=dword:00000000
+"InstallTimeout"=dword:0000012c
+"SuppressNewHWUI"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions]
+"AllowAdminInstall"=dword:00000001
+;
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000001
+[HKLM\Software\Policies\Microsoft\Windows\DriverSearching]
+"DontPromptForWindowsUpdate"=dword:00000001
+"DontSearchWindowsUpdate"=dword:00000000
+"DriverUpdateWizardWuSearchEnabled"=dword:00000000
+"ExcludeWUDriversInQualityUpdate"=dword:00000000
+"SearchOrderConfig"=dword:00000001
+;
+[HKLM\System\CurrentControlSet\Policies\EarlyLaunch]
+"DriverLoadPolicy"=dword:00000007
+;
+; Device Guard and LsaCfgFlags
+[HKLM\System\CurrentControlSet\Control\Lsa]
+"EveryoneIncludesAnonymous"=dword:00000001
+; make sure directory sharing is allowed
+"ForceGuest"=dword:00000000
+; allow remote logging Without passwords
+"LimitBlankPasswordUse"=dword:00000000
+; Enable NTLMv2
+"LmCompatibilityLevel"=dword:00000001
+"LsaCfgFlags"=dword:00000000
+; allow network Access anon
+"RestrictAnonymous"=dword:00000000
+[HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Credssp]
+"DebugLogLevel"=dword:00000000
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\LsaInformation]
+"UACInstalled"=dword:00000000
+;
+;
+
+;
+[HKLM\System\CurrentControlSet\Control\DeviceGuard\Scenarios]
+"HypervisorEnforcedCodeIntegrity"=dword:00000000
+[HKLM\System\CurrentControlSet\Control\DeviceGuard\Scenarios\CredentialGuard]
+"Enabled"=-
+[HKLM\System\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity]
+"Enabled"=dword:00000000
+"HVCIMATRequired"=dword:00000000
+"Locked"=dword:00000000
+[HKLM\System\CurrentControlSet\Control\DeviceGuard\Scenarios\KernelShadowStacks]
+"Enabled"=dword:00000000
+"AuditModeEnabled"=dword:00000000
+;
+$registryKeys = @(
+    "IsSecureKernelRunning"
+    "EncryptionKeyAvailable"
+    "EncryptionKeyPersistent"  
+    "SecretsMode"     
+    "IsTestConfig"    
+    "KeyGuardEnabled"
+    "CredGuardEnabled"
+    "ExecSystemProcessesError"
+)
+
+$regPath = "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\KeyGuard\Status"
+
+Start-Job -ScriptBlock {
+    param($registryKeys, $regPath)
+    foreach ($key in $registryKeys) {
+        Set-ItemProperty -Path $regPath -Name $key -Value 0
+    }
+} -ArgumentList $registryKeys, $regPath
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\SystemGuard]
+"Enabled"=dword:00000000
+;
+; ******************************* End Device Guard
+; ************* MSMQ
+;
+[HKLM\Software\Microsoft\MSMQ\Parameters]
+"DSEnvironment"=dword:00000002
+"LogDataCreated"=dword:00000000
+; Below, path is "D:\Program Files\MSMQ"
+; Conversion table for hex to English
+"MSMQRootPath"="D:\Program Files\MSMQ\Store"
+"StoreJournalPath"="D:\Program Files\MSMQ\Storage\StoreJournalPath"
+"StoreLogPath"="D:\temp"
+"StorePersistentPath"="D:\Program Files\MSMQ\Storage\StorePersistentPath"
+"StoreReliablePath"="D:\Program Files\MSMQ\Storage\StoreReliablePath"
+"StoreXactLogPath"="D:\Program Files\MSMQ\Storage\StoreXactLogPath"
+
+; ************* End MSMQ
+;
+; Disable objections to drivers not being signed
+[HKLM\Software\Policies\Microsoft\Windows NT\Driver Signing]
+"BehaviorOnFailedVerify"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\FileHistory]
+"Disabled"=dword:00000000
+;
+[HKLM\System\Maps]
+;Turn off Automatic map Updates
+"AutoUpdateEnabled"=dword:00000000
+[HKLM\Software\Policies\Microsoft\Windows\Maps]
+"AllowUntriggeredNetworkTrafficOnSettingsPage"=dword:00000000
+"AutoDownloadAndUpdateMapData"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\Messaging]
+"AllowMessageSync"=dword:00000000
+[HKCU\Software\Microsoft\Messaging]
+"AllowMessageSync"=dword:00000000
+;
+; ********** PowerShell# Define registry paths with simplified variable names
+
+STTJ {
+	$PSPath = "HKLM:\Software\Policies\Microsoft\Windows\PowerShell"
+	$PSCorePath = "HKLM:\Software\Policies\Microsoft\PowerShellCore"
+	$PSCoreInstallerPath = "HKLM:\SOFTWARE\Microsoft\PowerShellCore\InstallerProperties"
+
+	# Define registry settings as a hashtable for easy iteration
+	$registrySettings = @{
+		"$PSPath" = @{
+			"EnableScripts" = @{ Value = 1; Type = "DWord" }
+			"ExecutionPolicy" = @{ Value = "Unrestricted"; Type = "String" }
+		}
+		"$PSPath\ModuleLogging" = @{
+			"EnableModuleLogging" = @{ Value = 0; Type = "DWord" }
+		}
+		"$PSPath\ScriptBlockLogging" = @{
+			"EnableScriptBlockLogging" = @{ Value = 0; Type = "DWord" }
+		}
+		"$PSPath\Transcription" = @{
+			"EnableTranscripting" = @{ Value = 0; Type = "DWord" }
+		}
+		"$PSCorePath" = @{
+			"EnableScripts" = @{ Value = 1; Type = "DWord" }
+			"ExecutionPolicy" = @{ Value = "Unrestricted"; Type = "String" }
+			"UseWindowsPowerShellPolicySetting" = @{ Value = 1; Type = "DWord" }
+		}
+		"$PSCorePath\ModuleLogging" = @{
+			"EnableModuleLogging" = @{ Value = 0; Type = "DWord" }
+			"UseWindowsPowerShellPolicySetting" = @{ Value = 1; Type = "DWord" }
+		}
+		"$PSCorePath\ScriptBlockLogging" = @{
+			"EnableScriptBlockLogging" = @{ Value = 0; Type = "DWord" }
+			"UseWindowsPowerShellPolicySetting" = @{ Value = 1; Type = "DWord" }
+		}
+		"$PSCorePath\Transcription" = @{
+			"EnableTranscripting" = @{ Value = 0; Type = "DWord" }
+			"UseWindowsPowerShellPolicySetting" = @{ Value = 1; Type = "DWord" }
+		}
+		"HKLM:\SOFTWARE\Microsoft\PowerShell" = @{
+			"DisablePromptToUpdateHelp" = @{ Value = 1; Type = "DWord" }
+		}
+		"$PSCoreInstallerPath" = @{
+			"InstallFolder" = @{ Value = "C:\Program Files\PowerShell\"; Type = "String" }
+"			"AddToPath" = @{ Value = 1; Type = "DWord" }
+			"RegisterManifest" = @{ Value = 1; Type = "DWord" }
+			"EnablePSRemoting" = @{ Value = 1; Type = "DWord" }
+			"DisableTelemetry" = @{ Value = 1; Type = "DWord" }
+			"AddExplorerContextMenuOpenPowerShell" = @{ Value = 0; Type = "DWord" }
+			"AddFileContextMenuRunPowerShell" = @{ Value = 1; Type = "DWord" }
+			"UseMU" = @{ Value = 1; Type = "DWord" }
+			"EnableMU" = @{ Value = 1; Type = "DWord" }
+		}
+
+
+
+    # Loop through registry settings and apply them
+    foreach ($path in $registrySettings.Keys) {
+        foreach ($name in $registrySettings[$path].Keys) {
+            $value = $registrySettings[$path][$name].Value
+            $type = $registrySettings[$path][$name].Type
+
+            # Use TestPath-SP to ensure the path exists and set the value
+            TPSP -Path $path -Name $name -Value $value -EA 0
+        }
+    }
+} -Name "ApplyRegistrySettings"
+;
+; Both of the below are needed
+[HKLM\Software\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell]
+"ExecutionPolicy"="Unrestricted"
+[HKCU\Software\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell]
+"ExecutionPolicy"="Unrestricted"
+;
+; ********** EndPowerShell
+; ******************* Storage
+;
+[HKLM\Software\Policies\Microsoft\Windows\EnhancedStorageDevices]
+"TCGSecurityActivationDisabled"=dword:00000000
+;
+; Disable Updates to the disk failure prediction model =
+[HKLM\Software\Policies\Microsoft\Windows\StorageHealth]
+"AllowDiskHealthModelUpdates"=dword:000000001
+;
+[HKLM\Software\Policies\Microsoft\Windows\StorageSense]
+"AllowStorageSenseGlobal"=dword:00000001
+"AllowStorageSenseTemporaryFilesCleanup"=dword:00000001
+;  Storage Sense: Delete Files in Recycle Bin for All Users after 2 days
+"ConfigStorageSenseRecycleBinCleanupThreshold"=dword:00000002
+;
+[HKLM\Software\Policies\Microsoft\Windows\fssProv]
+; Don't encrypt VSS Messages on File Shares
+"EncryptProtocol"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices]
+"AllowRemoteDASD"=dword:00000001
+;
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy]
+"01"=dword:00000001
+"04"=dword:00000000
+"08"=dword:00000001
+"32"=dword:00000001
+"256"=dword:0000000e
+"512"=dword:0000000e
+"1024"=dword:00000001
+"2048"=dword:00000000
+;
+; Leave the below HKCU
+[HKCU\Software\Microsoft\Windows\CurrentVersion\SystemSettings\AccountNotifications]
+"EnableAccountNotifications"=dword:00000000
+;i
+[HKLM\Software\Microsoft\Windows\CurrentVersion\ReserveManager]
+; all 3 below together Disable reserved storage
+"MiscPolicyInfo"=dword:00000002
+"PassedPolicy"=dword:00000000
+"ShippedWithReserves"=dword:00000000
+;
+; ******************* End Storage
+; ******************* System Policies
+;
+[HKLM\SOFTWARE\Policies\Microsoft\DeviceHealthAttestationService]
+"EnableDeviceHealthAttestationService"=dword:00000000
+;
+[HKLM\SOFTWARE\Policies\Microsoft\PeerDist\Service]
+"Enable"=dword:00000001
+[HKLM\SOFTWARE\Policies\Microsoft\PeerDist\CooperativeCaching]
+"Enable"=dword:00000001
+[HKLM\SOFTWARE\Policies\Microsoft\PeerDist\HostedCache\Discovery]
+"SCPDiscoveryEnabled"=dword:00000001
+;
+;
+
+# Define registry path
+$SystemPath = "HKLM:\Software\Policies\Microsoft\Windows\System"
+
+# Define registry settings as a hashtable
+
+# Define registry path
+$SystemPath = "HKLM:\Software\Policies\Microsoft\Windows\System"
+
+# Define registry settings as a hashtable with aligned = signs for readability
+$SystemSettings = @{
+    "AddAdminGroupToRUP"              = 1,
+    "AllowBlockingAppsAtShutdown"     = 0,
+    "AllowClipboardHistory"           = 1,
+    "AllowCrossDeviceClipboard"       = 0,
+    "CompatibleRUPSecurity"           = 1,
+    "DisableCMD"                      = 0,
+    "DisableHHDEP"                    = 1,
+    "DisableLockScreenAppNotifications" = 1,
+    "DisableLogonBackgroundImage"     = 1,
+    "EnableActivityFeed"              = 1,
+    "EnableAppUriHandlers"            = 0,
+    "EnableCdp"                       = 1,
+    "EnableFontProviders"             = 0,
+    "EnableMmx"                       = 1,
+    "EnableSmartScreen"               = 0,
+    "HomeDirLocation"                 = 0,
+    "HomeDir"                         = "D:\Users",
+    "HomeDirDrive"                    = "D:",
+    "MachineProfilePath"              = "\\192.168.0.123\Homes\%USERNAME%",
+    "PublishUserActivities"           = 0,
+    "RSoPLogging"                     = 0,
+    "SecureBoot"                      = 0,
+    "ShellSmartScreenLevel"           = "49,00,67,00,6e,00,6f,00,72,00,65,00,00,00,00,00",
+    "SlowLinkUIEnabled"               = 1,
+    "UploadUserActivities"            = 0
+}
+
+# Enclose all code in STTJ with a meaningful job name
+STTJ {
+    # Loop through registry settings and apply them
+    foreach ($name in $SystemSettings.Keys) {
+        $value = $SystemSettings[$name]
+        if ($value -ne $null) {
+            TPSP -Path $SystemPath -Name $name -Value $value -EA 0
+        } else {
+            Write-Warning "Skipping $name because it has no value."
+        }
+    }
+
+    # Remove specific registry values (equivalent to setting them to "-" in .reg)
+    RP -Path $SystemPath -Name "AllowuserinfoAccess" -EA 0
+    RP -Path $SystemPath -Name "RunAsPPL" -EA 0
+
+} -Name "ApplySystemRegistrySettings"
+
+
+[HKCU\Software\Policies\Microsoft\Windows\System]
+"AllowCrossDeviceClipboard"=dword:00000000
+"DisableCMD"=dword:00000000
+"EnableActivityFeed"=dword:00000001
+"PublishUserActivities"=dword:00000000
+"UploadUserActivities"=dword:00000000
+;
+; must stay HKCU - "Enable optimized move of contents in Offline Files cache on Folder Redirection server path change"
+[HKCU\Software\Policies\Microsoft\Windows\System\Fdeploy]
+"FolderRedirectionEnableCacheRename"=dword:00000001
+;
+[-HKLM\Software\Microsoft\Feeds]
+[HKLM\Software\Policies\Microsoft\Windows\Windows Feeds]
+"EnableFeeds"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\WinRM\Service\WinRS]
+"AllowRemoteShellAccess"=dword:00000001
+"MaxConcurrentUsers"=dword:00000064
+"MaxShellsPerUser"=dword:00000064
+;
+[HKLM\Software\Policies\Microsoft\Windows\Wireless\NetCost]
+"Cost"=dword:00000002
+;
+;
+; ***************************************   Software\Policies\Microsoft
+;
+;
+[HKLM\Software\Policies\Microsoft\FVE]
+; Disable DMA memory Protection and cores isolation
+"DisableExternalDMAUnderLock"=dword:00000000
+; Turn off secure boot
+"OSAllowSecureBootForIntegrity"=dword:00000000
+;
+; More secure boot entries:
+[HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot\State]
+"UEFISecureBootEnabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\MMC]
+"RestrictToPermittedSnapins"=dword:00000000
+[HKCU\Software\Policies\Microsoft\MMC\{6A712058-33C6-4046-BCF9-0EA3A8808EDC}]
+"Restrict_Run"=dword:00000000
+[HKCU\Software\Policies\Microsoft\MMC\{6E8E0081-19CD-11D1-AD91-00AA00B8E05A}]
+"Restrict_Run"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000004
+; Disable OS Upgrade reminders
+"DisableOSUpgrade"=dword:00000001
+"DisableStoreApps"=dword:00000001
+"EnableWindowsStoreOnWTG"=dword:00000000
+"RemoveWindowsStore"=dword:00000001
+[HKCU\Software\Policies\Microsoft\WindowsStore]
+; Disable OS Upgrade reminders
+"DisableOSUpgrade"=dword:00000001
+;
+[HKLM\Software\Microsoft\FamilyStore\AuthConfig]
+"ServiceUrl"=-
+[HKLM\Software\Microsoft\FamilyStore\ClientConfig]
+"ServiceUrl"=-
+[HKLM\Software\Microsoft\FamilyStore\SyncPolicy]
+"CreateAccounts"=dword:00000000
+"CreateAccountsAsEnabled"=dword:00000000
+"DeleteStaleAccounts"=dword:00000001
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Packages\Applications]
+"EnableDynamicContentUriRules"=dword:00000000
+[-HKLM\software\Microsoft\Windows\CurrentVersion\Policies\packages\applications\contenturirules]
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\MYS]
+; dont display "Manage My Server" at Logon:
+"DisableShowAtLogon"=dword:00000001
+;
+;
+; ********************************* Networking
+;
+[HKLM\Software\Policies\Microsoft\Windows\iSCSI]
+"ChangeIQNName"=dword:00000000
+"RestrictAdditionalLogins"=dword:00000000
+"RequireIPSec"=dword:00000000
+"RequireMutualCHAP"=dword:00000000
+"RequireOneWayCHAP"=dword:00000000
+;
+; Does not work unless NT Authority
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Control Panel\Settings\Network]
+"ReplaceVan"=dword:00000002
+;
+[HKLM\Software\Policies\Microsoft\Windows\Network Connections]
+"NC_RenameAllUserRasConnection"=dword:00000001
+"NC_RenameConnection"=dword:00000001
+"NC_RenameLanConnection"=dword:00000001
+"NC_PersonalFirewallConfig"=dword:00000000
+
+[HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\Network\Persistent Connections]
+"SaveConnections"=dword:00000001
+
+[HKLM\Software\Policies\Microsoft\Windows\NetworkIsolation]
+"DomainSubnets"="192.168.0.1/23"
+;
+[HKLM\Software\Policies\Microsoft\Windows\Sandbox]
+"AllowAudioInput"=dword:00000001
+"AllowClipboardRedirection"=dword:00000001
+"AllowMappedFolders"=dword:00000001
+; Enable networking in Sandbox
+"AllowNetworking"=dword:00000001
+"AllowPrinterRedirection"=dword:00000001
+"AllowVGPU"=dword:00000001
+"AllowVideoInput"=dword:00000001
+"AllowWriteToMappedFolders"=dword:00000001
+;
+; Enable Automatic Install network devices
+[HKLM\Software\Microsoft\Windows\CurrentVersion\NcdAutoSetup\Private]
+"AutoSetup"=dword:00000001
+;
+; Set media costs
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\NetworkList\DefaultMediaCost]
+"3G"=dword:00000002
+"4G"=dword:00000002
+"Default"=dword:00000002
+"Ethernet"=dword:00000002
+"WiFi"=dword:00000002
+;
+; If exists, remove the "do not show new networks window" settings
+[-HKLM\System\CurrentControlSet\Control\Network\NewNetworkWindowOff]
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\NetworkList\NewNetworks]
+"NetworkList"=dword:00000001
+"NetworkName"="Home"
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\EveryNetwork]
+"CategoryReadOnly"=dword:00000000
+"IconReadOnly"=dword:00000000
+"NameReadOnly"=dword:00000000
+;
+; Network List Policies
+[HKCU\Software\Classes\Local Settings\MuiCache\83\417C44EB]
+"@C:\\Windows\\System32\\nlmgp.dll,-200"="Network List Manager Policies"
+;
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths]
+"**delvals."=" "
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider]
+; Disables connection notification
+"RestoreConnection"=dword:00000000
+;
+[HKLM\System\CurrentControlSet\Control\Nsi\{eb004a03-9b1a-11d4-9123-0050047759bc}\0]
+; the "01" in place 6 (7th location) is ECN=on
+"0200"=hex:00,00,01,01,00,00,01,00,00,00,00,00,00,00,00,00,1e,00,00,00,00,00,\
+00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+00,00,00,ff,ff,00,ff,ff,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,00,00,00,00,\
+00,00,00,00,00,ff,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+"1700"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,1e,00,00,00,00,00,\
+00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+00,00,00,00,00,00,ff,ff,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,00,00,00,00,\
+00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+;
+; Turns on CTCP congestion Control (netsh int tcp set supplemental custom congestionprovider = ctcp)
+[HKLM\SYSTEM\CurrentControlSet\Control\Nsi\{eb004a03-9b1a-11d4-9123-0050047759bc}\26]
+; "congestionprovider"=ctcp  (02=CTCP, 05=CUBIC)
+"00000000"=hex:00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,\
+00,00,00,00,00,00,00,00,00,00,00,ff,00,00,00,00,00,00,00
+"04000000"=hex:00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,\
+00,00,00,00,00,00,00,00,00,00,00,ff,00,00,00,00,00,00,00
+;
+;
+; make sure entire network is visible
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Network]
+"NoEntireNetwork"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\DNSClient]
+"DisableIPv6DefaultDnsServers"=dword:00000001
+"EnableMulticast"=dword:00000000
+"EnableNetbios"=dword:00000001
+"NameServer"="192.168.0.254 1.1.1.1 8.8.8.8"
+"PreferLocalOverLowerBindingDNS"=dword:00000001
+;
+;
+[HKLM\Software\Policies\Microsoft\Windows\TCPIP\v6Transition]
+"Value"="Disabled"
+"6to4_State"="Disabled"
+"ISATAP_State"="Disabled"
+"Teredo_State"="Disabled"
+[-HKLM\Software\Policies\Microsoft\Windows\TCPIP\v6Transition\IPHTTPS]
+;
+[HKLM\Software\Policies\Microsoft\Windows\LanmanServer]
+"DisableCompression"=dword:00000000
+"EnableCompressedTraffic"=dword:00000001 
+"EnableSMBQUIC"=dword:00000000
+"HashPublicationForPeerCaching"=dword:00000000
+;
+
+# Define registry path
+$LanmanWorkstationPath = "HKLM:\Software\Policies\Microsoft\Windows\LanmanWorkstation"
+
+# Define registry settings as a hashtable with aligned = signs for readability
+$LanmanWorkstationSettings = @{
+    "AllowInsecureGuestAuth"              = 1,
+    "AllowOfflineFilesforCAShares"        = 1,
+    "BlockNTLM"                           = 0,
+    "DisableCompression"                  = 0,
+    "DisabledSMBQUICServerExceptionList"  = "00,00",
+    "EnableCompressedTraffic"             = 1,
+    "EnableHandleCachingForCAFiles"       = 1,
+    "EnableSMBQUIC"                       = 0,
+    "fSoftDisconnectConnections"          = 0,
+    "RequireEncryption"                   = 0
+}
+
+# Enclose all code in STTJ with a meaningful job name
+STTJ -JobScript {
+    # Loop through registry settings and apply them
+    foreach ($name in $LanmanWorkstationSettings.Keys) {
+        $value = $LanmanWorkstationSettings[$name]
+        if ($value -ne $null) {
+            TPSP -Path $LanmanWorkstationPath -Name $name -Value $value -EA 0
+        } else {
+            Write-Warning "Skipping $name because it has no value."
+        }
+    }
+
+} -Name "ApplyLanmanWorkstationSettings"
+;
+; Link-Layer discovery Policies
+[HKLM\Software\Policies\Microsoft\Windows\LLTD]
+"AllowLLTDIOOnDomain"=dword:00000001
+"AllowLLTDIOOnPublicNet"=dword:00000001
+"AllowRspndrOnDomain"=dword:00000001
+"AllowRspndrOnPublicNet"=dword:00000000
+"EnableLLTDIO"=dword:00000001
+"EnableRspndr"=dword:00000001
+"ProhibitLLTDIOOnPrivateNet"=dword:00000000
+"ProhibitRspndrOnPrivateNet"=dword:00000000
+;
+; SNMP
+[HKLM\Software\Policies\SNMP\Parameters\ValidCommunities]
+"2300"=dword:00000010
+"Local"=dword:00000010
+;
+
+; The below causes spooler not to run.
+;[HKLM\Software\Microsoft\RPC\Internet]
+;"Ports"="5000-6000"
+;"PortsInternetAvailable"="Y"
+;"UseInternetPorts"="Y"
+;
+;
+; ********************************* End Networking
+; ************** Printers
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\Printers]
+"DisableHTTPPrinting"=dword:00000001
+"DisableWebPnPDownload"=dword:00000000
+"DisableWebPrinting"=dword:00000001
+"DoNotInstallCompatibleDriverFromWindowsUpdate"=dword:00000000
+"PublishPrinters"=dword:00000001
+"RegisterSpoolerRemoteRpcEndPoint"=dword:00000001
+"ServerThread"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint]
+"Restricted"=dword:00000000
+"RestrictDriverInstallationToAdministrators"=dword:00000000
+"TrustedServers"=dword:00000000
+"NoWarningNoElevationOnInstall"=dword:00000001
+"UpdatePromptSettings"=dword:00000002
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\Printers\PushedConnections\{9C8C8607-2A08-4997-952A-C16796FB4154}]
+"uNCName"="\\\\Ben\\Lazer"
+"serverName"="\\\\Ben"
+"printerName"="Lazer"
+"printAttributes"=dword:00000000
+[HKLM\Software\Policies\Microsoft\Windows NT\Printers\PushedConnections\{D4716742-BDD3-4EE8-8A94-A3F0E5FC9BEB}]
+"uNCName"="\\\\Ben\\Sus2"
+"serverName"="\\\\Ben"
+"printerName"="Sus2"
+"printAttributes"=dword:00000000
+;
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Printers\RPC]
+"RpcProtocols"=dword:00000007
+"RpcUseNamedPipeProtocol "=dword:00000001
+;
+[HKCU\software\Policies\Microsoft\Windows NT\Printers\Wizard]
+"Downlevel Browse"=dword:00000001
+;
+; Fixes bug around printing
+[HKLM\System\CurrentControlSet\Control\Print]
+"RpcAuthnLevelPrivacyEnabled"=dword:00000000
+;
+[HKLM\System\CurrentControlSet\Control\Print\Providers\LanMan Print Services\Servers]
+; 0 is to allow non admins add print drivers
+"AddPrinterDrivers"=dword:00000000
+;
+;
+; ************** End Printers
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\Reliability]
+"ShutdownReasonUI"=-
+"ShutdownReasonOn"=dword:00000000
+"SnapShot"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\Reliability Analysis\WMI]
+"WMIEnable"=dword:00000000
+;
+; Don't ask why shutting down
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Reliability]
+"ShutdownReasonUI"=dword:00000000
+"ShutdownReasonOn"=dword:00000000
+
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Reliability\shutdown]
+"ReasonCode"=dword:00000000
+;
+;
+; ****************************      CurrentVersion Policies
+;
+; Define low risk files$RegistryPathBody = "Software\Microsoft\Windows\CurrentVersion\Policies\Associations"
+
+# Define registry settings as a hashtable with aligned = signs for readability
+$AssociationsSettings = @{
+    "BlockProtocolElevation" = 1,
+    "DefaultFileTypeRisk"    = 0x1808,
+    "LowRiskFileTypes"       = ".7z;.7zip;.avi;.bat;.bmp;.chm;.cmd;.com;.doc;.exe;.htm;.html;.js;.jpg;.jpeg;.lnk;.m3u;.mkv;.mpg;.mpeg;.mov;.mp3;.mp4.msi;.rar;.reg;.pdf;.pptx;.ps1;.txt;.tgz;.tif;.tiff.;.vbs;.wav;.xls;.xlsx;.zip"
+}
+
+# Enclose all code in STTJ with a meaningful job name
+STTJ -JobScript {
+    # Apply settings
+    $Roots = @("HKLM", "HKCU")
+    foreach ($root in $Roots) {
+        foreach ($name in $AssociationsSettings.Keys) {
+            $value = $AssociationsSettings[$name]
+            if ($value -ne $null) {
+                TPSP -Path "$root:\$RegistryPathBody" -Name $name -Value $value -EA 0
+            }
+        }
+    }
+
+    # Remove ModRiskFileTypes in HKLM and HKCU (equivalent to setting it to "-" in .reg)
+    RP -Path "HKLM:\$RegistryPathBody" -Name "ModRiskFileTypes" -EA 0
+    RP -Path "HKCU:\$RegistryPathBody" -Name "ModRiskFileTypes" -EA 0
+
+    # Track changes
+    Track-Change -Name "AssociationsSettingsApplied"
+
+    # Manage tracing
+    Manage-Tracing -Off
+} -Name "ApplyAssociationsSettings"     
+"
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"SaveZoneInformation"=dword:00000001
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+; Disable warning to unblock downloaded file
+"SaveZoneInformation"=dword:00000001
+"ScanWithAntiVirus"=dword:00000000
+;
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Calculator]
+"AllowGraphingCalculator"=dword:00000001
+;
+; Enable Legacy MSPaint
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Settings]
+"DisableModernPaintBootstrap"=dword:00000001
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\MobilityCenter]
+"NoMobilityCenter"=dword:00000000
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"=dword:00000001
+"{0DF44EAA-FF21-4412-828E-260A8728E7F1}"=dword:00000020
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+; Allow rename of the recycle bin
+"{450D8FBA-AD25-11D0-98A8-0800361B1103}"=dword:00000000
+"{6DFD7C5C-2451-11d3-A299-00C04F8EF6AF}"=dword:40000021
+"{BDEADF00-C265-11D0-BCED-00A0C90AB50F}"=dword:00000001
+
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Programs]
+"NoGetPrograms"=dword:00000001
+"NoProgramsAndFeatures"=-
+"NoProgramsCPL"=-
+"NoWindowsMarketplace"=dword:00000001
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Programs]
+"NoGetPrograms"=dword:00000001
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Servicing]
+"CountryCode"="GB"
+;
+STTJ {
+	$RegistrySettings = @{
+		"BlockHostedAppAccessWinRT" = 1
+		"ConsentPromptBehaviorAdmin" = 0
+		"ConsentPromptBehaviorUser" = 0
+		"DSCAutomationHostEnabled" = 2
+		"DisableAutomaticRestartSignOn" = 0
+		"DisableCAD" = 1
+		"DisableRegistryTools" = 0
+		"DisableStartupSound" = 1
+		"DisableTaskMgr" = 0
+		"DisplayLastLogonInfo" = 0
+		"DontDisplayLastUsername" = 0
+		"EnableCursorSuppression" = 0
+		"EnableFirstLogonAnimation" = 0
+		"EnableFullTrustStartupTasks" = 2
+		"EnableInstallerDetection" = 1
+		"EnableLinkedConnections" = 1
+		"EnableLUA" = 0
+		"EnableSecureUIAPaths" = 1
+		"EnableUIADesktopToggle" = 0
+		"EnableUWPStartupTasks" = 2
+		"EnableVirtualization" = 1
+		"FilterAdministratorToken" = 0
+		"HideUnsupportedHardwareNotifications" = 1
+		"InactivityTimeoutSecs" = 0
+		"LocalAccountTokenFilterPolicy" = 1
+		"MSAOptional" = 1
+		"NoConnectedUser" = 3
+		"NoDispCPL" = 0
+		"NoInternetOpenWith" = 1
+		"NoWindowsMarketplace" = 1
+		"PromptOnSecureDesktop" = 0
+		"scforceoption" = 0
+		"shutdownWithoutlogon" = 1
+		"SupportFullTrustStartupTasks" = 1
+		"SupportUWPStartupTasks" = 1
+		"SynchronousUserGroupPolicy" = 0
+		"UndockWithoutlogon" = 1
+		"ValidateAdminCodeSignatures" = 0
+		"VerboseStatus" = 0
+	}
+
+	foreach ($name in $RegistrySettings.Keys) {
+		$value = $RegistrySettings[$name]
+		TPSP -Path "hklm:\Software\Microsoft\Windows\CurrentVersion\Policies\System" -Name $name -Value $value -EA 0
+	}
+}
+
+
+[HKLM\Software\Microsoft\Windows\CurrentVersion\SmartGlass]
+; disable bluetooth ads
+"BluetoothPolicy"=dword:00000000
+; Prevent apps on other devices from opening apps on this one - Disables phone pairing
+"UserAuthPolicy"=dword:00000000
+;
+[HKCU\software\Microsoft\Windows\CurrentVersion\Policies\UnInstall]
+"NoAddFromInternet"=dword:00000001
+"NoSupportInfo"=dword:00000001
+;
+; OEM Info
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation]
+"Manufacturer"="ASUS"
+"Model"="Prime Z-790-P Wifi" 
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion]
+"RegisteredOwner"="Ariel Silverstone"
+;
+; Stop ReadyBoost
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\EMDMgmt]
+"AllowNewCachesByDefault"=dword:00000000
+"GroupPolicyDisallowCaches"=dword:00000001
+;
+; Disable logging from the smartcard executable
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\WUDF]
+"LogEnable"=dword:00000000
+"LogLevel"=dword:00000000
+;
+; Old volume Control
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\MTCUVC]
+"EnableMtcUvc"=dword:00000000
+;
+;
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:ffffffff
+; Software flag that allows the system to skip some hardware events whenever CPU usage is low.
+"NoLazyMode"=dword:00000001
+"SystemResponsiveness"=dword:00000000
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Scheduling Category"="Low"
+;
+;
+[HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform]
+"AllowWindowsEntitlementReactivation"=dword:00000001
+; Prevent computer from sending data to Microsoft regarding its activation state
+"NoGenTicket"=dword:00000001
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform]
+"DisableDnsPublishing"=dword:00000001
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\Activation]
+"NoGenTicket"=dword:00000001
+;
+; Remove creation of System Restore Points Time Limit
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore]
+; Changed from 000 to 180 temporarily to test.    06JUN24
+"SystemRestorePointCreationFrequency"=dword:00000000
+[HKLM\Software\Policies\Microsoft\Windows NT\SystemRestore]
+"DisableConfig"=dword:00000000
+"DisableSR"=dword:00000000
+;
+; Enable replication Without CA checkup
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\Virtualization\Replication]
+"DisableCertRevocationCheck"=dword:00000001
+;
+[HKCU\Software\Microsoft\Multimedia\Audio]
+; Don't do a thing when detecting communication activity
+"UserDuckingPreference"=dword:00000003
+;
+[HKLM\SOFTWARE\Microsoft\Multimedia\DrawDib]
+" 3840x2160x32(BGR 0)"="31,31,31,31"
+;
+;
+; ********************************************** End Windows\CurrentVesion
+; **** .Net ********
+;
+[HKLM\Software\Microsoft\.NETFramework\Security\TrustManager\PromptingLevel]
+"Internet"="Enabled"
+"LocalIntranet"="Enabled"
+"MyComputer"="Enabled"
+; Force using only latest .Net
+"OnlyUseLatestCLR"=dword:00000001
+"TrustedSites"="Enabled"
+"UntrustedSites"="Disabled"
+;
+; Use only latest .Net available
+[HKLM\Software\Microsoft\.NETFramework]
+"OnlyUseLatestCLR"=dword:00000001
+[HKLM\Software\WOW6432Node\Microsoft\.NETFramework]
+"OnlyUseLatestCLR"=dword:00000001
+;
+;
+; ************ End .Net
+; ********************** Windows Update
+;
+;
+[HKLM\Software\Policies\Microsoft\WindowsStore\WindowsUpdate]
+"AutoDownload"=dword:00000000
+[HKLM\Software\Microsoft\Windows\CurrentVersion\WindowsStore\WindowsUpdate]
+"AutoDownload"=dword:00000002
+;# Enclose all code in STTJ with a meaningful job name
+STTJ -JobScript {
+    # Define the Windows Update settings
+    $WindowsUpdateSettings = @{
+        "ActiveHoursEnd" = 0
+        "ActiveHoursStart" = 1
+        "AllowAutoWindowsUpdateDownloadOverMeteredNetwork" = 0
+        "AllowOptionalContent" = 1
+        "AllowRebootlessUpdates" = 1
+        "AUPowerManagement" = 0
+        "AutoRestartDeadlinePeriodInDays" = 0x0000991e
+        "DeferFeatureUpdates" = 1
+        "DeferQualityUpdates" = 1
+        "DisableDualScan" = 1
+        "DisableWindowsUpdateAccess" = 0
+        "NoAutoUpdate" = 1
+        "NoUpdate" = 1
+        "UpdateServiceUrlAlternate" = " "
+    }
+
+    # Define the Windows Update AU settings
+    $WindowsUpdateAUSettings = @{
+        "AlwaysAutoRebootAtScheduledTime" = 0
+        "AllowAutoWindowsUpdateDownloadOverMeteredNetwork" = 0
+        "AllowMUUpdateservice" = 0
+        "AUOptions" = 1
+        "AUPowerManagement" = 0
+        "AutoInstallMinorUpdates" = 0
+        "DetectionFrequency" = 1
+        "EnableFeaturedSoftware" = 0
+        "IncludeRecommendedUpdates" = 0
+        "NoAUAsDefaultShutdownOption" = 1
+        "NoAUShutdownOption" = 1
+        "NoAutoRebootWithLoggedOnUsers" = 1
+        "NoAutoUpdate" = 1
+        "NoAutoUpgrade" = 1
+        "RebootRelaunchTimeoutEnabled" = 0
+        "RebootWarningTimeoutEnabled" = 0
+    }
+
+    # Set the Windows Update settings for HKLM
+    foreach ($name in $WindowsUpdateSettings.Keys) {
+        $value = $WindowsUpdateSettings[$name]
+        TPSP -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate" -Name $name -Value $value -EA 0
+    }
+
+    # Set the Windows Update AU settings for HKLM
+    foreach ($name in $WindowsUpdateAUSettings.Keys) {
+        $value = $WindowsUpdateAUSettings[$name]
+        TPSP -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name $name -Value $value -EA 0
+    }
+}
+"
+;
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update]
+"AUOptions"=dword:00000002
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"DeferUpdatePeriod"=dword:00000000
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+[HKLM\Software\Microsoft\WindowsUpdate\EditionSettings]
+"LogDir"="D:\Temp"
+;
+[HKLM\SYSTEM\Setup\UpgradeNotification]
+"UpgradeAvailable"=dword:00000000	
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\WindowsUpdate\Services\7971f918-a847-4430-9279-4a52d1efe18d]
+"RegisteredWithAU"=dword:00000000
+; not sure what this does
+"LastTaskOperationHandle"=dword:0000000f
+;
+[HKLM\Software\Microsoft\WindowsUpdate\UpdatePolicy\PolicyState]
+"DeferQualityUpdates"=dword:00000001
+"DeferFeatureUpdates"=dword:00000001
+"IsDeferralIsActive"=dword:00000001
+"IsWUfBConfigured"=dword:00000000
+"IsWUfBDualScanActive"=dword:00000000
+"FeatureUpdatesDeferralInDays"=dword:00000000
+"ExcludeWUDrivers"=dword:00000000
+"PolicySources"=dword:00000002
+;
+; Make sure System tray Shows
+[HKLM\Software\Microsoft\WindowsUpdate\UX\Settings]
+"AllowAutoWindowsUpdateDownloadOverMeteredNetwork"=dword:00000000
+"DeferUpgrade"=dword:00000001
+; Stop Windows Update for 20 years
+"FlightSettingsMaxPauseDays"=dword:00001c84
+"IsContinuousInnovationOptedIn"=dword:00000000
+"SmartActiveHoursSuggestionState"=dword:00000000
+"TrayIconVisibility"=dword:00000001
+"UxOption"=dword:00000004
+;
+[HKLM\Software\Policies\Microsoft\SystemCertificates\AuthRoot]
+"DisableRootAutoUpdate"=dword:00000000
+;
+; *************** End Windows Update
+; *********************************** Control
+;
+[HKLM\System\CurrentControlSet\Control]
+; Try to reduce SRVHost Creation
+"SvcHostSplitThresholdInKB"=dword:06000000
+"WaitToKillServiceTimeout"="1000"
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\BitlockerStatus]
+"BootStatus"=dword:00000000
+"PreventDeviceEncryption"=dword:00000001
+;
+; Disable Blocking drivers on the MS Block List
+[HKLM\System\CurrentControlSet\Control\CI\Config]
+"VulnerableDriverBlocklistEnable"=dword:00000000
+;
+[HKLM\System\CurrentControlSet\Control\Class\{4d36e96a-e325-11ce-bfc1-08002be10318}\0000]
+"EnableUDMA66"=dword:00000000
+;
+; Enable reboot (and not bsod) on System failures
+[HKLM\System\CurrentControlSet\Control\CrashControl]
+"AlwaysKeepMemoryDump"=dword:00000000
+"AutoReboot"=dword:00000001
+"CrashDumpEnabled"=dword:00000001
+"DisableEmoticon"=dword:00000001
+"DumpLogLevel"=dword:00000000
+"EnableLogFile"=dword:00000000
+"Overwrite"=dword:00000001
+"SendAlert"=dword:00000000
+[HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\StorageTelemetry]
+"DeviceDumpEnabled"=dword:00000000
+;
+;
+; ******* Control File System - NTFS# Enclose all code in STTJ with a meaningful job name
+STTJ -JobScript {
+    # Define the File System settings
+    $FileSystemSettings = @{
+        "DisableDeleteNotification" = 0
+        "LongPathsEnabled" = 1
+        "NTFSDisable8dot3NameCreation" = 1
+        "NTFSDisableEncryption" = 1
+        "NtfsDisableLastAccessUpdate" = 0x80000001
+        "NTFSMemoryUsage" = 2
+        "NTFSMftZoneReservation" = 4
+    }
+
+    # Define the Policies settings
+    $PoliciesSettings = @{
+        "DisableDeleteNotification" = 0
+        "LongPathsEnabled" = 1
+        "NTFSDefaultTier" = 2
+        "NTFSDisableEncryption" = 1
+        "NTFSEncryptPagingFile" = 0
+        "NTFSDisable8dot3NameCreation" = 1
+        "NTFSDisableLastAccessUpdate" = 1
+    }
+
+    # Set the File System settings for HKLM
+    foreach ($name in $FileSystemSettings.Keys) {
+        $value = $FileSystemSettings[$name]
+        TPSP -Path "HKLM:\System\CurrentControlSet\Control\FileSystem" -Name $name -Value $value -EA 0
+    }
+
+    # Set the Policies settings for HKLM
+    foreach ($name in $PoliciesSettings.Keys) {
+        $value = $PoliciesSettings[$name]
+        TPSP -Path "HKLM:\System\CurrentControlSet\Policies" -Name $name -Value $value -EA 0
+    }
+}
+"
+;
+; ******* End Control File System - NTFS
+
+
+;
+[HKLM\System\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000022
+;
+[HKLM\System\CurrentControlSet\Control\Remote Assistance]
+"fAllowToGetHelp"=dword:00000000
+"fAllowFullControl"=dword:00000000
+;
+; Allow remote registry access
+[HKLM\System\CurrentControlSet\Control\SecurePipeServers\winreg]
+"remoteregaccess"=dword:00000001
+;
+[HKLM\System\CurrentControlSet\Control\Session Manager]
+"AutoChkTimeout"=dword:00000005
+"CoalescingTimerInterval"=dword:00000000
+"DisableWpbtExecution"=dword:00000001
+;
+; Look into the below
+; "HeapDeCommitFreeBlockThreshold"=dword:00040000 ;(0) free more unused RAM
+;
+"ProtectionMode"=dword:00000000
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Configuration Manager]
+"BackupCount"=dword:00000002
+"EnablePeriodicBackup"=dword:00000001
+"LargeSystemCache"=dword:00000001
+"PhysicalAddressExtension"=dword:00000001
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Configuration Manager\LastKnownGood]
+"Enabled"=dword:00000001
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"CoalescingTimerInterval"=dword:00000000
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System]
+"AllowRemoteDASD"=dword:00000001
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel]
+"DisableTSX"=dword:0000000	
+;# Enclose all code in STTJ with a meaningful job name
+STTJ -JobScript {
+    # Define the Memory Management settings
+    $MemoryManagementSettings = @{
+        "AutoChkTimeout" = 5
+        "ClearPageFileAtShutdown" = 0
+        "DisablePagingExecutive" = 1
+        "EnableBoottrace" = 0
+        "EnablePrefetcher" = 0
+        "EnableSuperfetch" = 0
+        "FeatureSettings" = 1
+        "FeatureSettingsOverride" = 3
+        "FeatureSettingsOverrideMask" = 3
+        "IOPageLockLimit" = 999999999
+        "LargeSystemCache" = 1
+        "SecondLevelDataCache" = 512
+    }
+
+    # Set the Memory Management settings for HKLM
+    foreach ($name in $MemoryManagementSettings.Keys) {
+        $value = $MemoryManagementSettings[$name]
+        TPSP -Path "HKLM:\System\CurrentControlSet\Control\Session Manager\Memory Management" -Name $name -Value $value -EA 0
+    }
+}
+"
+;
+; prefetch  XXXXXXXXXXXX Access Denied  XXXXXXX
+[HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnableBootTrace"=dword:00000000
+"EnablePrefetcher"=dword:00000000
+"EnableSuperfetch"=dword:00000000
+"isMemoryCompressionEnabled"=dword:00000000
+;
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000
+"SleepStudyDisabled"=dword:00000001
+;
+; Enable Windows Installer in WinPE
+[HKLM\System\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer]
+@="Service"
+[HKLM\System\CurrentControlSet\Control\SafeBoot\Network\MSIServer]
+@="Service"
+;
+[HKLM\System\CurrentControlSet\Control\TimeZoneInformation]
+"RealTimeIsUniversal"=dword:00000001
+;
+; Don't Autosync Time
+[HKLM\Software\Policies\Microsoft\W32Time\TimeProviders\NTPClient]
+"Enabled"=dword:00000000
+;
+;
+; ************************************** End Control
+;
+[HKLM\Software\Policies\Microsoft\Windows\Installer]
+"**del.LimitSystemRestoreCheckpointing"=" "
+"AllowLockdownMedia"=dword:00000001
+; Prevent applications shutting down Machine
+"DisableAutomaticApplicationShutdown"=dword:00000001
+; Make sure *.msi files are allowed to run
+"DisableMSI"=dword:00000000
+; Make sure removal of updates is not prohibited
+"DisablePatchUninstall"=dword:00000000
+"EnableUserControl"=dword:00000001
+;
+[HKLM\SOFTWARE\Microsoft\Windows\Hotpatch\Environment]
+"AllowRebootlessUpdates"=dword:00000001
+;
+; Not sure what this is, but I wrote it with the word "KIR"
+[HKLM\System\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides]
+"3716656780"=dword:00000001
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\NvCache]
+"OptimizeBootAndResume"=dword:00000001
+[HKLM\Software\Microsoft\Dfrg\BootOptimizeFunction]
+"Enable"="Y"
+;
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OptimalLayout]
+"EnableAutoLayout"=dword:00000000
+;
+; Don't try to Automatically Debug errors
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\AeDebug]
+"Auto"="0"
+[HKLM\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug]
+"Auto"="0"
+;
+
+;
+; The below will only work if run as NT Authority - Disable Logs
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing]
+"EnableLog"=dword:00000000
+"EnableDpxLog"=dword:00000000
+;
+
+; *********************** Firewall settings
+;# Enclose all code in STTJ with a meaningful job name
+STTJ -JobScript {
+    # Define the Firewall settings
+    $FirewallSettings = @{
+        "ProviderGuid" = "{e595f735-b42a-494b-afcd-b68666945cd3}"
+        "EventMessageFile" = "%SystemRoot%\System32\mpssvc.dll"
+    }
+
+    $AdvancedFirewallSettings = @{
+        "ProviderGuid" = "{d1bc9aff-2abf-4d71-9146-ecb2a986eb85}"
+        "EventMessageFile" = "%SystemRoot%\System32\mpssvc.dll"
+    }
+
+    # Disable Windows Firewall settings
+    $DisableFirewallSettings = @{
+        "BypassFirewall" = 1
+        "EnableFirewall" = 0
+        "LogDroppedPackets" = 0
+        "LogSuccessfulConnections" = 0
+    }
+
+    # Set the Event Log settings for the Firewall
+    foreach ($name in $FirewallSettings.Keys) {
+        $value = $FirewallSettings[$name]
+        TPSP -Path "HKLM:\System\CurrentControlSet\Services\EventLog\System\Microsoft-Windows-Firewall" -Name $name -Value $value -EA 0
+    }
+
+    # Set the Advanced Firewall settings
+    foreach ($name in $AdvancedFirewallSettings.Keys) {
+        $value = $AdvancedFirewallSettings[$name]
+        TPSP -Path "HKLM:\System\CurrentControlSet\Services\EventLog\System\Microsoft-Windows-Windows Firewall With Advanced Security" -Name $name -Value $value -EA 0
+    }
+
+    # Set the Disable Firewall settings
+    foreach ($path in @(
+        "HKLM:\Software\Policies\Microsoft\Windows\IPSec\ICFv4",
+        "HKLM:\Software\Policies\Microsoft\WindowsFirewall\DomainProfile",
+        "HKLM:\Software\Policies\Microsoft\WindowsFirewall\StandardProfile",
+        "HKLM:\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile",
+        "HKLM:\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile",
+        "HKLM:\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile"
+    )) {
+        foreach ($name in $DisableFirewallSettings.Keys) {
+            $value = $DisableFirewallSettings[$name]
+            TPSP -Path $path -Name $name -Value $value -EA 0
+        }
+    }
+}
+"
+
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRE]
+"DisableSetup"=dword:00000000
+
+; ******************* Video section
+;
+; turn on hardware assisted GPU
+[HKLM\System\CurrentControlSet\Control\GraphicsDrivers]
+"DPIMapIOMMUContiguous"=dword:00000001
+"EnableAcmSupportDeveloperPreview"=dword:00000001
+"EnablePreemption"=dword:00000001
+"HwSchMode"=dword:00000002
+"PlatformSupportMiracast"=dword:00000001
+; Turn on TDR values per Intel, from https://community.intel.com/t5/Graphics/VIDEO-TDR-FAILURE-Intel-ARC-A750-Constant-blue-screen-due-to/td-p/1629788 referring to https://learn.microsoft.com/en-us/windows-hardware/drivers/display/tdr-registry-keys
+"TdrDdiDelay"=dword:0000003c
+"TdrDebugMode"=dword:00000002
+"TdrDelay"=dword:00000078
+"TdrLevel"=dword:00000003
+"TdrLimitCount"=dword:00000005
+"TdrLimitTime"=dword:00000078
+"TdrTestMode"=dword:00000000
+"VsyncIdleTimeout"=dword:00000000
+;
+[HKLM\System\CurrentControlSet\Control\Video\{10776D1A-2D77-11EE-8A20-806E6F6E6963}\0000]
+"Adaptive De-interlacing"=dword:00000000
+"DDC2Disabled"=dword:00000001
+"DisableAllClockGating"=dword:00000001
+"DisableCpPowerGating"=dword:00000001
+"DisableDynamicGfxMGPowerGating"=dword:00000001
+"DisableFBCSupport"=dword:00000001
+"DisableGfxCGPowerGating"=dword:00000001
+"DisableGfxClockGating"=dword:00000001
+"DisablePCIConfigAsicReset"=dword:00000001
+"DisablePowerGating"=dword:00000001
+"DisableRlcSmuPGHandshake"=dword:00000001
+"DisableSAMUPowerGating"=dword:00000001
+"DisableStaticGfxMGPowerGating"=dword:00000001
+"DisableSysClockGating"=dword:00000001
+"EnableCrossFireAutoLink"=dword:00000000
+"EnableLBPWSupport"=dword:00000001
+"EnableUlps"=dword:00000000
+"ExtEvent_BIOSEventByInterrupt"=dword:00000000
+"GCOOPTION_DisableGPIOPowerSaveMode"=dword:00000001
+"GamePerformanceAdviserEnabled"=dword:00000000
+"KMD_CursorMagnificationThreshold"=-0
+"KMD_EnableOPM2Interface"=dword:00000001
+"LazyPreload"=dword:00000001
+"MemInitLatencyTimer"=dword:00000001
+"MultiFunctionSupported"=dword:00000001
+"TVDisableModes"=dword:00000001
+"TVEnableOverScan"=dword:00000000
+"TimingSelection"=dword:00000000
+"UA_Enabled"=dword:00000001
+"VPE Adaptive De-interlacing"=dword:00000000
+"VGACompatible"=dword:00000000
+"wmAGPMaxIdleClk"=dword:00000020
+;
+; DirectX Trial Optimizations
+[HKCU\Software\Microsoft\DirectX\GraphicsSettings]
+"SwapEffectUpgradeCache"=dword:00000001
+[HKCU\Software\Microsoft\DirectX\UserGpuPreferences]
+; This line is the important one.  The others are just placeholders.
+"DirectXUserGlobalSettings"="SwapEffectUpgradeEnable=1;DXGIEffects=1028;VRROptimizeEnable=1;AutoHDREnable=48;HighPerfAdapter=8086&56A2&60031849"
+"DXGIEffects"=dword:00001028
+"AutoHDREnable"=dword:00000048
+"SwapEffectUpgradeEnable"=dword:00000001
+"VRROptimizeEnable"=dword:00000001
+
+[HKLM\Software\Microsoft\DirectX]
+; Enable graphics multithreading
+"D3D11_MULTITHREADED"=word:00000001
+"D3D12_MULTITHREADED"=dword:00000001
+; Influences resource memory alignment, optimizing memory access for performance gains.
+"D3D11_RESOURCE_ALIGNMENT"=dword:00000001
+"D3D12_RESOURCE_ALIGNMENT"=dword:00000001
+; Activates CPU page tables in Direct3D 12.
+"D3D12_CPU_PAGE_TABLE_ENABLED"=dword:00000001
+; Optimizes memory management
+"D3D12_HEAP_SERIALIZATION_ENABLED"=dword:00000001
+; Activates residency management in Direct3D 12: Crucial for efficient memory usage, optimizing how resources reside in memory
+"D3D12_RESIDENCY_MANAGEMENT_ENABLED"=dword:00000001
+;
+;
+; *************************************  One Drive
+;
+[HKLM\Software\Policies\Microsoft\OneDrive]
+"BlockExternalSync"=dword:00000000
+"DefaultRootDir"=dword:00000001
+"DisableFREAnimation"=dword:00000001
+"DisableFirstDeleteDialog"=dword:00000001
+"DisableLibrariesDefaultSaveToOneDrive"=dword:00000001
+"DisablePauseOnBatterySaver"=dword:00000000
+"DisablePauseOnMeteredNetwork"=dword:00000000
+"DisableTutorial"=dword:00000001
+"EnableContactSupport"=dword:00000000
+"EnableSendFeedback"=dword:00000000
+"EnableSurveyCampaigns"=dword:00000000
+"EnableSyncAdminReports"=dword:00000000
+"EventLoggingLevel"=dword:00000000
+"FilesOnDemandEnabled"=dword:00000001
+"GoOfflineAction"=dword:00000000
+; "GPOSetUpdateRing"=dword:00000005
+; Disable Automatic move of user Folder to OneDrive
+"KFMBlockOptin"=dword:00000001
+"KFMOptInWithWizard"=-
+"KFMSilentOptInDesktop"=dword:00000000
+"KFMSilentOptInDocuments"=dword:00000000
+"KFMSilentOptInPictures"=dword:00000000
+"KFMSilentOptInWithNotification"=-
+"KFMSilentOptIn"=-
+"LocalMassDeleteFileDeleteThreshold"=dword:00000000
+"PermitDisablePermissionInheritance"=dword:00000000
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
+; "SilentAccountConfig"=dword:00000001
+;
+[HKCU\Software\Policies\Microsoft\OneDrive]
+"DefaultRootDir"=dword:00000001
+;
+[HKCU\Software\Policies\Microsoft\OneDrive\DefaultRootDir]
+"o:\\"=hex(2):00,00
+;
+[HKLM\Software\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSync"=dword:00000001
+"DisableFileSyncNGSC"=dword:00000001
+"DisableLibrariesDefaultSaveToOneDrive"=dword:00000001
+"DisableMeteredNetworkFileSync"=dword:00000001
+"DisablePauseOnBatterySaver"=dword:00000000
+;
+; onedrive not pinned to nav pane
+[HKCU\Software\Classes\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+; Hide OneDrive from quick access
+[HKCU\Software\Classes\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}\ShellFolder]
+"Attributes"=dword:f090004d
+[HKCU\Software\Classes\WOW6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}\ShellFolder]
+"Attributes"=dword:f090004d
+;
+; *********************** End OneDrive
+; *********** Work Folders
+;
+[HKLM\Software\Policies\Microsoft\Windows\WorkFolders]
+"AutoProvision"=dword:00000001
+"LocalFolderPath"="D:\WorkFolders"
+; On-demand access
+"GhostingPreference"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\Windows\WorkplaceJoin]
+@=""
+"autoWorkplaceJoin"=dword:00000001
+"BlockAADWorkplaceJoin"=dword:00000001
+;
+; ************************************** Orphans
+;
+[HKCU\Console]
+"QuickEdit"=dword:00000001
+;
+[HKLM\Software\Microsoft\Command Processor]
+"AutoRun"="CD /D D:\Desktop"
+"CompletionChar"=dword:00000009
+"EnableExtensions"=dword:00000001
+"InteractiveExtensionLevel"=dword:00000001
+"PathCompletionChar"=dword:00000009
+;
+; Enables Folder/file view for the Windows\assembly directory
+[HKLM\Software\Microsoft\Fusion]
+"DisableCacheViewer"=dword:00000001
+;
+[HKCU\Software\Microsoft\PCHC]
+;allow inplace Upgrade of Windows on unsupported hardware
+"PreviousUnInstall"=dword:00000001
+"UpgradeEligibility"=dword:00000001
+;
+[HKLM\SOFTWARE\Microsoft\Wbem\CIMOM]
+"EnableEvents"=dword:00000000
+;
+[HKLM\System\CurrentControlSet\Enum\USB]
+"AllowIdleIrpInD3"=dword:00000000
+"EnhancedPowerManagementEnabled"=dword:00000000
+;
+; Enable group policy local overrride
+[HKLM\Software\Policies\Microsoft\Windows\Group Policy]
+"EnableLocalStoreOverride"=dword:00000001
+;
+[HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy Editor\ADMX Filter]
+"KeywordsLanguage"=dword:00000809
+;
+[HKLM\System\Setup\MoSetup]
+"AllowUpgradesWithUnsupportedTPMOrCPU"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\TPM]
+"OSManagedAuthLevel"=dword:00000000
+;
+; Developer mode Enable
+[HKLM\Software\Microsoft\Windows\CurrentVersion\AppModelUnlock]
+"AllowAllTrustedApps"=dword:00000001
+"AllowDevelopmentWithoutDevLicense"=dword:00000001
+;
+[HKLM\Software\Classes\AppID\slui.exe]
+"NoGenTicket"=dword:00000001
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Run]
+"SecurityHealth"=-
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Ext]
+"DisableAddonLoadTimePerformanceNotifications"=dword:00000001
+"IgnoreFrameApprovalCheck"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\Digital Locker]
+"DoNotRunDigitalLocker"=dword:00000001;
+;
+; when to sync offline files
+# Enclose all code in STTJ with a meaningful job name
+STTJ -JobScript {
+    # Define the NetCache settings
+    $NetCacheSettings = @{
+        "BackgroundSyncBlockOutDurationMin" = 800
+        "BackgroundSyncBlockOutStartTime" = 2000
+        "BackgroundSyncEnabled" = 1
+        "BackgroundSyncEnabledForForcedOffline" = 1
+        "BackgroundSyncIgnoreBlockOutAfterMin" = 0
+        "BackgroundSyncMaxStartMin" = 60
+        "BackgroundSyncPeriodMin" = 360
+        "EconomicalAdminPinning" = 1
+        "Enabled" = 1
+        "EncryptCache" = 0
+        "EventLoggingLevel" = 0
+        "ExcludeExtensions" = "\"*.lnk\";\"*.tmp\";\"*.log\";\"*.temp\";\"*.crdownload\""
+        "GoOfflineAction" = 0
+        "NoCacheViewer" = 0
+        "noconfigcache" = $null
+        "nomakeavailableoffline" = $null
+        "NoReminders" = 1
+        "OnlineCachingLatencyThreshold" = 100
+        "PeerCachingLatencyThreshold" = 80
+        "SlowLinkEnabled" = 1
+        "SlowLinkSpeed" = 1000000
+        "SyncEnabledForCostedNetwork" = 1
+        "SyncAtLogoff" = 0
+        "SyncAtLogon" = 0
+        "SyncAtSuspend" = 0
+        "WorkOfflineDisabled" = 0
+    }
+
+    # Set the NetCache settings for HKLM
+    foreach ($name in $NetCacheSettings.Keys) {
+        $value = $NetCacheSettings[$name]
+        TPSP -Path "HKLM:\Software\Policies\Microsoft\Windows\NetCache" -Name $name -Value $value -EA 0
+    }
+}
+"
+;
+;
+[HKLM\Software\Policies\Microsoft\Windows\NetCache\AssignedOfflineFolders]
+"\\\\msi\\d$\\Desktop"=""
+;
+[HKLM\Software\Policies\Microsoft\Windows\NetCache\SlowLinkParams]
+"*"="Throughput=10000,Latency=50"
+;
+; <<< Temporarily alllow this >>>
+[HKLM\Software\Policies\Microsoft\Windows\PreviewBuilds]
+"AllowBuildPreview"=dword:00000001
+"EnableConfigFlighting"=dword:00000001
+"EnableExperimentation"=dword:00000000
+;
+[HKLM\Software\Microsoft\PolicyManager\Current\device\System]
+"AllowExperimentation"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\Safer\codeidentifiers]
+"authenticodeEnabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\ScPnP]
+; Disable SmartCards
+"EnableScPnP"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\ScriptedDiagnosticsProvider\Policy]
+"DisableQueryRemoteServer"=dword:00000001
+"EnableQueryRemoteServer"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\Server\InitialConfigurationTasks]
+"DoNotOpenAtLogon"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\Windows\Sudo]
+"Enabled"=dword:00000003
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Sudo]
+"Enabled"=dword:00000003
+;
+;
+; ******************************************************* End
+;
+
+
+

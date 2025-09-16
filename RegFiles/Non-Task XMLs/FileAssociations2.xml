@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultAssociations>
+  <Association Identifier=".7z" ProgId="ArchiveFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier=".7zip" ProgId="ArchiveFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier=".c" ProgId="Notepad++_file" ApplicationName="Notepad++" />
+  <Association Identifier=".cab" ProgId="CABFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier=".dib" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".ini" ProgId="Notepad++_file" ApplicationName="Notepad++" />
+  <Association Identifier=".rar" ProgId="ArchiveFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier=".sh" ProgId="Notepad++_file" ApplicationName="Notepad++" />
+  <Association Identifier=".tar" ProgId="ArchiveFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier=".tga" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".tgz" ProgId="ArchiveFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier=".tif" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".tiff" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".txt" ProgId="txtfile" />
+  <Association Identifier=".xml" ProgId="Notepad++_file" ApplicationName="Notepad++" />
+  <Association Identifier=".zip" ProgId="ArchiveFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier="https" ProgId="MSEdgeHTM" />
+  <Association Identifier="microsoft-edge" ProgId="MSEdgeHTM" />
+  <Association Identifier="microsoft-edge-holographic" ProgId="MSEdgeHTM" />
+  <Association Identifier="ms-xbl-3d8b930f" ProgId="MSEdgeHTM" />
+</DefaultAssociations>

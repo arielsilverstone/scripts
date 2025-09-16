@@ -1,0 +1,627 @@
+{
+  // Application data paths
+  "ApplicationDataPaths": {
+    "Application.EnvironmentVariables": {
+      "WINDSURFPORTABLE": "D:\\ProgramFiles\\Dev\\Windsurf"
+    },
+    "Locale": "en-GB",
+    "Portable": "D:\\ProgramFiles\\Dev\\Windsurf\\data"
+  },
+
+
+  // Breadcrumbs
+  "Breadcrumbs": {
+    "Enabled": true,
+    "FilePath": "on",
+    "SymbolPath": "on",
+    "SymbolSortOrder": "name"
+  },
+
+
+  // Database
+  "DatabaseClient": {
+    "AutoSync": true
+  },
+
+
+  // Editor
+  "Editor": {
+    "[Powershell]": {
+      "Editor.DefaultFormatter": "ms-VSCode.Powershell-PSanalyzer",
+      "Editor": {
+		  "FormatOnPaste": true,
+		  "FormatOnSave": false,
+	  },
+      "Files.Encoding": "utf8bom"
+    },
+    "[Python]": {
+      "Editor.DefaultFormatter": "ms-Python.Black-Formatter",
+     "Editor": {
+		  "FormatOnPaste": true,
+		  "FormatOnSave": false,
+	  },
+      "Files.Encoding": "utf8",
+      "Python": {
+		  "Formatting.BlackArgs": [
+			"LineLength",
+			"80"
+		  ],
+		"Formatting.Provider": "black"
+	  },
+    },
+    "BracketPairColorization.Enabled": true,
+    "ColumnSelection": false,
+    "CursorBlinking": "smooth",
+    "CursorSmoothCaretAnimation": "on",
+    "CursorStyle": "line",
+    "CursorSurroundingLines": 5,
+    "DefaultFormatter": "ms-VSCode.Powershell-PSanalyzer",
+    "ExperimentalEditContextEnabled": true,
+    "Folding": true,
+    "FontFamily": "FiraCode,Consolas,'CourierNew',Monospace",
+    "FontLigatures": true,
+    "FontSize": 14,
+    "FontWeight": "600",
+    "FormatOnPaste": true,
+    "FormatOnSave": false,
+    "FormatOnType": true,
+    "GlyphMargin": true,
+    "Guides": {
+      "BracketPairs": "active",
+      "HighlightActiveIndentation": false,
+      "Indentation": true
+    },
+    "LineHeight": 1.4,
+    "LineNumbers": "on",
+    "Minimap.Enabled": true,
+    "RenderLineHighlight": "all",
+    "RenderLineHighlightOnlyWhenFocus": false,
+    "Rulers": [5,10,15,20,25,30,35,40,50,60,80,100,110,120],
+    "ShowFoldingControls": "always",
+    "TabSize": 5,
+    "UnicodeHighlight.AmbiguousCharacters": false,
+    "WordWrap": "on"
+  },
+
+
+  // Explorer
+  "Explorer": {
+    "CompactFolders": true,
+    "ConfirmDelete": false,
+    "ConfirmDragAndDrop": false
+  },
+
+
+  // Extensions
+  "Extensions": {
+    "AutoCheckUpdates": true,
+    "AutoUpdate": false,
+    "PreRelease": true
+  },
+
+
+  // File 
+  "FileLocations": {
+    "Archives": "H:\\Dev\\Archives",
+    "Configs": [
+      "D:\\ProgramFiles\\Dev\\Settings\\User\\settings.Json",
+      "D:\\ProgramFiles\\Dev\\Settings\\System\\settings.Json"
+    ],
+    "Projects": [
+      "D:\\Desktop\\New\\#Projects",
+      "H:\\Dev\\Projects"
+    ],
+    "Scripts": [
+      "H:\\Dev\\Projects\\Scripts"
+    ],
+    "Templates": [
+      "D:\\ProgramFiles\\Dev\\Templates",
+      "H:\\Dev\\Templates"
+    ],
+    "Workspaces": [
+      "D:\\Desktop\\New\\###Work###",
+      "D:\\Desktop\\New",
+      "H:\\Dev\\Projects",
+      "D:\\Desktop\\New\\Projects"
+    ]
+  },
+  "Files": {
+    "Associations": {
+      "*.Ps1profile": "powershell",
+      "*.Pwsh": "powershell"
+    },
+    "AutoSave": "onFocusChange",
+    "AutoSaveDelay": 1000,
+    "DefaultLanguage": "powershell",
+    "Exclude": {
+      "**/.DSStore": true,
+      "**/.Git": true,
+      "**/Pycache": true,
+      "**/bin": true,
+      "**/nodeModules": true,
+      "**/obj": true,
+      "**/temp": true
+    }
+  },
+
+  // Git
+  "Git": {
+    "AutoRepositoryDetection": true,
+    "ConfirmSync": false,
+    "EnableCommitSigning": false,
+    "EnableSmartCommit": true,
+    "IgnoreLegacyWarning": true,
+    "OpenRepositoryInParentFolders": "never",
+    "Path": "D:\\ProgramFiles\\Dev\\Git\\Bin\\Git.EXE",
+    "SuggestSmartCommit": true,
+    "TerminalAuthentication": true,
+    "UseEditorAsCommitInput": true,
+    "AutoFetch": true
+  },
+
+
+  // Naming Conventions
+  "NamingConventions": {
+    "ArchiveSuffix": "V{version}",
+    "DateFormat": "DDMMMYY",
+    "ProcessedPrefix": "proc",
+    "ScanPrefix": "scan",
+    "TimeFormat": "HHmm"
+  },
+
+
+  // Notebook
+  "Notebook": {
+    "CellToolbarLocation": {
+      "Default": "right",
+      "JupyterNotebook": "left"
+    },
+    "CodeFormatting": {
+      "Provider": "black"
+    },
+    "MultiCursor.Enabled": true,
+    "ShowCellToolbar": true,
+    "ShowOutline": true,
+    "ShowRunToolbar": true,
+    "ShowStatusbar": true,
+    "ShowToolbar": true
+  },
+
+
+  // PowerShell
+  "PowerShell": {
+    "CodeFormatting": {
+      "AddWhitespaceAroundPipe": true,
+      "AlignPropertyValuePairs": true,
+      "AutoCorrectAliases": true,
+      "IgnoreOneLineBlock": true,
+      "NewLineAfterCloseBrace": true,
+      "NewLineAfterOpenBrace": true,
+      "PipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
+      "Preset": "Custom",
+      "TrimWhitespaceAroundPipe": false,
+      "UseCorrectCasing": false,
+      "WhitespaceAfterCloseBrace": true,
+      "WhitespaceAfterSeparator": true,
+      "WhitespaceAroundOperator": true,
+      "WhitespaceBeforeOpenBrace": true,
+      "WhitespaceBeforeOpenParen": true
+    },
+    "Debugging": {
+      "CreateTemporaryIntegratedConsole": true
+    },
+    "Developer": {
+      "EditorServicesLogLevel": "None"
+    },
+    "EnableProfileLoading": false,
+    "IntegratedConsole": {
+      "FocusConsoleOnExecute": false,
+      "HistorySize": 10000,
+      "ShowOnStartup": false
+    },
+	"NeverUse": ["JoinPath", "TypeDWord", "-F"],
+	"requiredElements": [
+	],
+    "ScriptAnalysis": {
+      "SettingsPath": "D:\\Desktop\\New\\PSScriptAnalyzerSettings.PSd1"
+    },
+    "StartAutomatically": false
+  },
+
+
+  // Rider
+  "Rider": {
+    "Browser": {
+      "Jcef": {
+        "Log": {
+          "Level": "OFF"
+        }
+      }
+    }
+  },
+
+
+  // Security
+  "Security": {
+    "CrashReporter": false,
+    "Workspace": {
+		"Trust": {
+			"Enabled": true,
+			"UntrustedFiles": "open"
+		},
+	},
+  },
+
+
+  // Settings Sync
+  "SettingsSync": {
+    "AutoDownload": true,
+    "AutoUpload": false,
+    "SystemSettingsPath": "D:\\ProgramFiles\\Dev\\Settings\\System",
+    "UserSettingsPath": "D:\\ProgramFiles\\Dev\\Settings\\User"
+  },
+
+
+  // SQLTools Configuration
+  "SQLTools": {
+    "Connections": [
+      {
+        "Database": "D:\\Desktop\\New\\regpaths.Db",
+        "Driver": "SQLite",
+        "Group": "Development",
+        "Name": "Sqlite"
+      }
+    ],
+    "Format": {
+      "IdentifierCase": "original",
+      "ReservedWordCase": "upper"
+    },
+    "UseNodeRuntime": false
+  },
+
+
+  // Storage
+  "Storage": {
+    "Path": "H:\\Dev\\Projects"
+  },
+  "StorageLocations": {
+    "BackuPS": "H:\\Dev\\BackuPS",
+    "Cache": "D:\\Temp",
+    "Downloads": "D:\\Desktop",
+    "Logs": "H:\\Dev\\Projects\\Log",
+    "Projects": "H:\\Dev\\Projects"
+  },
+
+
+  // System
+  "System": {
+    "Directories": {
+      "Logs": "H:\\Dev\\Projects\\Log"
+    },
+  },
+
+
+  // Terminal
+  "Terminal": {
+    "ExplorerKind": "integrated",
+    "Integrated": {
+      "AllowChords": true,
+      "AutomationProfile": {
+		"Windows": {
+			"Args": {
+			  "NoLogo": true,
+			  "NoProfile": true,
+			  "ExecutionPolicy": "Unrestricted",
+			  "ExecutionEnvironment": "D:\\Desktop"
+			},
+			"Icon": "terminalPowershell",
+			"Path": "D:\\Program Files\\Dev\\PowerShell\\7\\pwsh.Exe"
+		},
+      },
+      "CommandsToSkiPShell": {
+        "workbench.Action.Terminal.RunSelectedText"
+      },
+      "ConfirmOnExit": "never",
+      "CopyOnSelection": true,
+      "CursorBlinking": true,
+      "CursorStyle": "line",
+      "DefaultLocation": "view",
+      "DefaultProfile.Windows": "PowerShell",
+      "DetectLocale": "false",
+      "DrawBoldTextInBrightColors": true,
+      "EnableMultiLinePasteWarning": "never",
+      "EnablePersistentSessions": false,
+      "Env": {
+		"Windows": {
+			"Path": "D:\\ProgramFiles\\Dev\\Git\\bin;D:\\ProgramFiles\\Dev\\WindSurf;D:\\ProgramFiles\\Dev\\Python;D:\\ProgramFiles\\Dev\\SQLite;D:\\ProgramFiles\\Dev\\Trae"
+		}
+      },
+      "FontFamily": "Consolas",
+      "FontSize": 14,
+      "GpuAcceleration": "on",
+      "InheritEnv": true,
+      "LineHeight": 1.4,
+      "PersistentSessionReviveProcess": "onExitAndWindowClose",
+      "Profiles: {
+		"Windows": {
+			"CommandPrompt": {
+			  "Args": {
+				"NoLogo": true,
+				"NoProfile": true,
+				"ExecutionPolicy": "Unrestricted",
+				"ExecutionEnvironment": "D:\\Desktop",
+				"runAs": "System"
+			  },
+			  "Path": "cmd.Exe"
+			},
+        },
+        "PowerShell": {
+          "Args": {
+            "NoLogo": true,
+            "NoProfile": true,
+            "ExecutionPolicy": "Unrestricted",
+            "ExecutionEnvironment": "D:\\Desktop",
+            "runAs": "System"
+          },
+          "Env": {
+            "PSModulePath": "D:\\ProgramFiles\\PowerShell\\7\\Modules"
+          },
+          "Icon": "terminalPowershell",
+          "Path": "D:\\ProgramFiles\\PowerShell\\7\\pwsh.Exe"
+        }
+      },
+      "Reuse": "single",
+      "RightClickBehavior": "selectWord",
+      "Scrollback": 10000,
+      "ShellArgs.Windows": [
+        "NoExit"
+      ],
+      "ShellIntegration": {
+		"DecorationsEnabled": "both",
+		"Enabled": true,
+	  },
+      "ShowExitAlert": false,
+      "SplitCwd": "inherited",
+      "Tabs": {
+		"Enabled": true,
+		"HideCondition": "never",
+		"Location": "right",
+		"ShowActiveTerminal": "always"
+	  },
+    },
+    "SourceControlRepositoriesKind": "integrated"
+  },
+
+
+  // Telemetry 
+  "Telemetry": {
+    "TelemetryLevel": "none",
+    "EnableCrashReporter": false,
+    "EnableTelemetry": false
+  },
+
+
+  // Trae
+  "Trae": {
+    "alternateMarketplaceExtensionGalleryItemURL": "https://marketplace.visualstudio.com/items",
+    "alternateMarketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+    "extensionsPath": "D:\\Program Files\\Dev\\Trae\\resources\\app\\extensions",
+    "marketplaceExtensionGalleryServiceURL": "https://open-vsx.org/VSCode/gallery",
+    "marketplaceGalleryItemURL": "https://open-vsx.org/extension"
+  },
+
+
+  // Update
+  "Update": {
+    "Mode": "manual",
+    "ShowReleaseNotes": false,
+    "NotifyOnNewVersion": true,
+	"releaseTrack": "prerelease"
+  },
+
+
+  // Window
+  "Window": {
+    "CommandCenter": 1,
+    "RestoreFullscreen": false,
+    "Title": "${dirty}${activeEditorLong}${separator}${rootPath}${separator}${activeEditorShort}",
+    "ZoomLevel": 1
+  },
+
+
+  // WindSurf
+  "WindSurf": {
+    "alternateMarketplaceExtensionGalleryItemURL": "https://open-vsx.org/extension",
+    "alternateMarketplaceExtensionGalleryServiceURL": "https://open-vsx.org/VSCode/gallery",
+    "extensionsPath": "D:\\Program Files\\Dev\\WindSurf\\resources\\app\\extensions",
+    "marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+    "marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
+	"cascadeCommandsAllowList": [
+      "git"
+    ]
+  },
+
+
+  // Workbench settings
+  "Workbench": {
+    "ColorCustomizations": {
+      "[Default Light Modern]": {
+        "Editor": {
+			"Background": "#f8f6f2",
+		},
+        "EditorIndentGuide": {
+			"ActiveBackground1": "#f0f0f5",
+			"Background1": "#f5f5f5",
+		},
+        "EditorRuler": {
+			"Foreground": "#b8e0e0",
+		},
+        "EditorWhitespace": {
+			"Foreground": "#e0e0e0",
+		},
+        "StatusBar": {
+			"Background": "#b8e0e0",
+			"Border": "#70c0c0",
+			"Foreground": "#333333",
+		},
+        "Tab": {
+			"ActiveBackground": "#e0f0f0",
+			"InactiveBackground": "#f0f8f8"
+		},
+      }
+    },
+    "ColorTheme": "Default Light Modern",
+    "EditorAssociations": {
+		"*.Ipynb": "jupyterNotebook"
+    },
+    "EnableExperiments": true,
+    "Settings.EnableNaturalLanguageSearch": true,
+    "StartupEditor": "none",
+    "Tree": {
+		"Indent": 20,
+		"RenderIndentGuides": "always"
+	},
+  },
+
+
+  // Integrated AI Rules (consolidated from master)
+  "IntegratedAIRules": {
+    "Editor": {
+      "AutoSave": "onFocusChange",
+      "Encoding": "utf8",
+      "FontFamily": "Consolas",
+      "FontSize": 14,
+      "FontWeight": 600,
+      "Layouts": [
+        "ThreeColumn(10,35,60)",
+        "TwoColumn(10,50)"
+      ],
+      "LineHeight": 1.4,
+      "Preferred": "D:\\PortApPS\\Notepad++\\Notepad++.Exe",
+      "Rulers": [0,5,10,15,20,25,30,35,40,50,60,80,120],
+      "Theme": "Default Light Modern"
+    },
+    "File": {
+		"Standards": {
+		  "JsonConfigs": "DedicatedDirectory",
+		  "SettingsSplit": [
+			"System",
+			"User"
+		  ],
+		  "Versioning": "GitRequired"
+		},
+    },
+    "Git": {
+		"Config": {
+		  "Executable": "D:\\ProgramFiles\\Dev\\Git\\Bin\\Git.EXE",
+		  "MainBranch": "Master",
+		  "MasterBranches": [
+			"New",
+			"JSON",
+			"PDFs",
+			"Projects"
+		  ],
+		},
+       "RepositoryStructure": {
+			"MasterClone": "D:\\ProgramFiles\\Dev\\Master\\Master.Git",
+			"MasterPrime": "H:\\Dev\\MasterRepo\\Master.Git"
+		},
+		"SuggestSmartCommit": true
+    },
+    "Installation": {
+		"Paths": {
+		  "Python": "D:\\ProgramFiles\\Dev\\Python\\Lib",
+		  "Sqlite": "D:\\ProgramFiles\\Dev\\SQLite\\Bin",
+		  "WorkDirectories": [
+			"D:\\Desktop\\New",
+			"H:\\Dev\\Projects"
+		  ]
+		},
+    },
+    "PowerShell": {
+		"Environment": {
+		  "LogicFile": "Functions.PS1",
+		  "ProfileLoad": false,
+		  "PSModulePath": "D:\\ProgramFiles\\PowerShell\\7\\Modules",
+		  "PSPath": "D:\\ProgramFiles\\PowerShell\\7\\pwsh.Exe"
+		},
+    },
+		"Standards": {
+		  "AliasCapitalize": "Under5Chars",
+		  "AlwaysAlign": [
+			"=",
+			"{",
+			"(",
+			"Name",
+			"Path",
+			"Value"
+		  ],
+		  "Autocorrect": true,
+		  "ControlFlow": "PreferIfOverTryCatch",
+		  "Encoding": "UTF8BOM",
+		  "InlineFunctions": false,
+		  "JobSwitches": "AfterJobClose",
+		  "NamingCase": "PascalCase",
+		  "NeverUse": [
+			"JoinPath",
+			"TypeDWord",
+			"-F"
+		  ],
+		  "PathVarLengthMax": 15,
+		  "PipelineMinUses": 3,
+		  "PreferNotUse": [
+			"Try/Catch",
+			"Tuples"
+		  ],
+		  "VarLengthMax": 10
+		},
+    "Script": {
+		"Formatting": {
+		  "LogDirectory": "H:\\Dev\\Logs",
+		  "Logging": true,
+		  "MaxLength": 100,
+		  "PausePoints": "frequent",
+		  "ProgressDisplay": "pctIncrementingIfOver10s",
+		  "WordWrap": 79
+		},
+    },
+		"RequiredElements": [
+		  "FooterWithTracingTermination",
+		  "ScriptWideVariables",
+		  "SetGlobalAliases",
+		  "TrackChangeCall"
+		],
+    "Security": {
+      "UntrustedFiles": "Open",
+      "WorkspaceTrust": true
+    },
+    "System": {
+		"Directories": {
+		  "Archives": "H:\\Dev\\Archives",
+		  "BackuPS": "H:\\Dev\\BackuPS",
+		  "Logs": "H:\\Dev\\Logs",
+		  "ProgramFiles": "D:\\ProgramFiles",
+		  "Projects": "H:\\Dev\\Projects",
+		  "SystemDesktop": "D:\\Desktop",
+		  "Temp": "D:\\Temp",
+		  "Templates": "H:\\Dev\\Templates",
+		  "UserDirectories": "D:\\Users"
+		},
+    },
+    "User": {
+		"Profile": {
+		  "Email": "CISSP43@gmail.Com",
+		  "Language": "en-GB",
+		  "Name": "Ariel",
+		  "PrimaryScripting": "PowerShell",
+		  "ProhibitedNames": [
+			"SS*"
+		  ],
+		  "ProhibitedPhrases": [
+			"FinalSolution"
+		  ],
+		  "SecondaryScripting": "Python"
+		},
+    }
+  }
+}
