@@ -1,0 +1,352 @@
+Windows Registry Editor Version 5.00
+;
+;
+; Date function
+[HKCU\Changes]
+"AppsFileChanged"=-
+"AppsFileChanged"="14JAN25"
+;
+;
+; *********************************  Prevent specific apps from running
+;
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ctfmon.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000005    
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\fontdrvhost.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001    
+"IoPriority"==dword:00000000
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\lsass.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001    
+; Add Notepad ++
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]
+"Debugger"="d:\\PortApps\\Notepad++\\notepad++.exe -notepadStyleCmdline -z"
+"Notepad++"="D:\\PortApps\\Notepad++\\notepad++.exe"
+"readme"="call NotepadStarter.exe instead of notepad.exe. To disable this option remove notepad.exe entry"
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sihost.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001    
+"IoPriority"==dword:00000000    
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sppsvc.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001    
+"IoPriority"==dword:00000000     
+;                                                          
+; Below, fix to mapped-drives-not-available-from-elevated-command
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\osu!.exe]
+"EAFModules"=""
+"MitigationAuditOptions"=hex(2):00,00
+"MitigationOptions"=hex(2):00,00
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vgc.exe]
+"EAFModules"=""
+"MitigationAuditOptions"=hex(2):00,00
+"MitigationOptions"=hex(2):00,00
+;
+;
+; *********************************  End specific apps
+; *********************************  Begin 3rd Party Apps
+; ********************  Adobe
+;
+; Deny consent
+[HKLM\SOFTWARE\Adobe\Adobe Genuine Service\Consent\Retail]
+"ConsentInfo"=hex(7):55,00,73,00,65,00,72,00,54,00,79,00,70,00,65,00,3a,00,20,\
+  00,59,00,65,00,6c,00,6c,00,6f,00,77,00,5a,00,6f,00,6e,00,65,00,00,00,43,00,\
+  6f,00,6e,00,73,00,65,00,6e,00,74,00,3a,00,20,00,4e,00,6f,00,20,00,7c,00,20,\
+  00,44,00,61,00,74,00,65,00,41,00,6e,00,64,00,54,00,69,00,6d,00,65,00,3a,00,\
+  20,00,31,00,37,00,31,00,36,00,35,00,30,00,33,00,37,00,35,00,38,00,20,00,7c,\
+  00,20,00,44,00,6f,00,6e,00,74,00,41,00,73,00,6b,00,41,00,67,00,61,00,69,00,\
+  6e,00,3a,00,20,00,4e,00,6f,00,20,00,7c,00,20,00,43,00,6f,00,6e,00,73,00,65,\
+  00,6e,00,74,00,65,00,64,00,42,00,75,00,74,00,74,00,6f,00,6e,00,54,00,65,00,\
+  78,00,74,00,3a,00,20,00,49,00,6e,00,73,00,74,00,61,00,6c,00,6c,00,20,00,7c,\
+  00,20,00,52,00,65,00,74,00,72,00,69,00,65,00,73,00,3a,00,20,00,30,00,20,00,\
+  7c,00,20,00,50,00,65,00,6e,00,64,00,69,00,6e,00,67,00,3a,00,20,00,4e,00,6f,\
+  00,00,00,00,00
+;
+;
+; remove Adobe TM
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\Font Drivers]
+"Adobe Type Manager"=-     
+;
+; ********************  Eldos
+;
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\SharedTaskScheduler]
+"{8E1DF471-6439-4FBB-AC8D-97CC89D10700}"=-
+[HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\SharedTaskScheduler]
+"{8E1DF471-6439-4FBB-AC8D-97CC89D10700}"=-
+[-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{8E1DF471-6439-4FBB-AC8D-97CC89D10700}]
+[-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\EldosIconOverlay-cbfs6]
+[-HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\EldosIconOverlay-cbfs6]
+;
+; ********************  HP
+;
+[HKCU\Software\Classes\Local Settings\Printers\PropertyBags\Manufacturers\HP]
+"DuplexDefault"=dword:00000001
+"GrayscaleDefault"=dword:00000001
+"PrintQuality"=dword:00000000
+"PrivatePrintDefault"=dword:00000000
+"PrivatePrintPin"=dword:00000000
+"SEPMinimumPasswordLength"=dword:00000000
+;
+[HKCU\Software\Policies\Hewlett-Packard\HP Print Settings\ADSPrintPolicy]
+"AllowUserDefaults"=dword:00000001
+"DuplexDefault"=dword:00000001
+"EconomodeDefault"=dword:00000000
+"EdgelineQACDefault"=dword:00000000
+"GrayscaleDefault"=dword:00000001
+"OfficeInkDefault"=dword:00000000
+"PrivatePrintDefault"=dword:00000000
+"PrivatePrintPin"=dword:00000000
+"SEPMinimumPasswordLength"=dword:00000000
+;
+; *********************  Intel
+;
+[-HKLM\Software\Intel\PSIS]
+[-HKLM\SOFTWARE\Intel\Driver and Support Assistant]
+;
+;
+[HKLM\Software\Intel\Display\igfxcui\3D]
+"PrebuiltShaderBinaryDirPath"="d:\\Program Files\\Intel\\PrebuiltShaderBinaries"
+;
+[HKLM\Software\Intel\InfInst]
+"RebootRequired"="False"
+;
+[HKLM\SOFTWARE\Intel\Intel Arc Control]
+"Shortcut"=dword:00000000
+;
+[HKLM\Software\Intel\Prounstl\Services]
+"ixgbt"=-
+;
+; ******************************  Logitech Bullshit
+;
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"vidc.i420"=-
+"vidc.spv1"=-
+[HKLM\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"vidc.i420"=-
+"vidc.spv1"=-
+;
+; *********** Mellanox
+;
+[HKLM\SOFTWARE\Mellanox\MLNX_WinOF2]
+"InstalledPath"="D:\\program files\\mellanox\\MLNX_WinOF2"
+;
+; *********** Microsoft Office
+;
+[HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide]
+"DisableLogManagement"=dword:00000001
+"InstallPath"="D:\\Program Files\\Office"
+;
+[HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration]
+"TimerInterval"="900000"
+;
+; *********** Notepad++
+;
+; Replace notepad With notepad++ on drive D
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]
+"Debugger"="d:\PortApps\Notepad++\notepad++.exe -notepadStyleCmdline -z"
+;
+; *********** Reflect 
+;
+[HKLM\SOFTWARE\Macrium\RMBuilder\Settings]
+"unsupported"=dword:00000000
+"bootprompt"=dword:00000001
+"multiboot"=dword:00000001
+"iscsi"=dword:00000001
+"networkprofiles"=dword:00000001
+"addwifi"=dword:00000001
+"staticip"=dword:00000001
+;
+; ********************  StarWind
+;
+[HKLM\Software\StarWind Software\License\StarWindService]
+"LicenseInstallCheckProductType"="Pegasus"
+"OldLicenseInstallCheckProductType"="Pegasus"
+;
+;********************  SysInternals
+;
+; Eula accepted tweak for SysInternals apps  - Try for all apps
+[HKCU\Software\SysInternals]
+"EulaAccepted"=dword:00000001
+;
+[HKCU\Software\SysInternals\AutoRuns]
+"EulaAccepted"=dword:00000001
+[HKCU\Software\Sysinternals\Process Explorer]
+"ColorGraphBk"=dword:00f0f0f0
+"ColorGraphBkDark"=dword:00343434
+;
+;********************  Thorium
+;
+[HKLM\Software\Thorium]
+"UsageStatsInSample"=dword:00000000
+;
+; ********************  VirtualBox
+;
+[HKLM\Software\Oracle\VBoxSDS]
+"ServerSession0"=dword:00000001
+;
+; ********************  Zoom
+;
+; [HKLM\Software\Policies\Zoom\Zoom Meetings\Chat]
+; "PlaySoundForIMMessage"=dword:00000000
+; [HKLM\Software\Policies\Zoom\Zoom Meetings\Recommended\Chat]
+; "MuteIMNotificationWhenInMeeting"=dword:00000001
+; "PlaySoundForIMMessage"=dword:00000000
+; ;
+; [HKLM\Software\Policies\Zoom\Zoom Meetings\General]
+; "AlwaysCheckLatestVersion"=dword:00000000
+; "AutoStartAfterReboot"=dword:00000000
+; "AutoStartInSystemTray"=dword:00000000
+; "DisableCreatingDesktopShortcut"=dword:00000001
+; "DisableFacebookLogin"=dword:00000001
+; "DisableGoogleLogin"=dword:00000001
+; "DisableZoomApps"=dword:00000001
+; "DisableZoomAppsGuestAccess"=dword:00000001
+; "EnableAutoUploadDumps"=dword:00000000
+; "EnableAutoUploadMemlogs"=dword:00000000
+; "EnableClientAutoUpdate"=dword:00000000
+; "EnablePhoneLogin"=dword:00000001
+; "EnableSilentAutoUpdate"=dword:00000000
+; "KeepSignedIn"=dword:00000001
+; ;
+; [HKLM\Software\Policies\Zoom\Zoom Meetings\Recommended\General]
+; "AlwaysCheckLatestVersion"=dword:00000000
+; "AutoStartAfterReboot"=dword:00000000
+; "AutoStartInSystemTray"=dword:00000000
+; "DisableCreatingDesktopShortcut"=dword:00000001
+; "DisableFacebookLogin"=dword:00000001
+; "DisableGoogleLogin"=dword:00000001
+; "DisableZoomApps"=dword:00000001
+; "DisableZoomAppsGuestAccess"=dword:00000001
+; "EnableAutoUploadDumps"=dword:00000000
+; "EnableAutoUploadMemlogs"=dword:00000000
+; "EnableClientAutoUpdate"=dword:00000000
+; "EnableSilentAutoUpdate"=dword:00000000
+; ;
+; [HKLM\Software\Policies\zoom\zoom meetings\Updates]
+; "au2_SafeUpgradePeriod"=-
+; "au2_setUpdateSchedule"=-
+; "AU2_EnableAutoUpdate"=dword:00000000
+; "AU2_EnablePromptUpdateForAU2"=dword:00000000
+; "AU2_EnableUpdateSuccessNotification"=dword:00000000
+; "AU2_InstallAtIdleTime"=dword:00000000
+;
+;
+; *********************************  End 3rd Party Apps
+; ******************************  Edge residual
+;
+
+; IE BHOS
+[-HKLM\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects]
+
+[-HKLM\Software\Clients\StartMenuInternet\Microsoft Edge]
+[-HKLM\Software\Clients\StartMenuInternet\IEXPLORE.EXE]
+
+[-HKLM\Software\WOW6432Node\Microsoft\EdgeUpdate]
+[-HKLM\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Extensions]
+
+[-HKCR\OCHelper.BrowserHelper]
+[-HKCR\OCHelper.BrowserHelper.1]
+;
+;
+;[-HKLM\Software\Microsoft\EdgeUpdate]
+[HKLM\SOFTWARE\Wow6432Node\Microsoft\EdgeUpdateDev]
+"AllowUninstall"=dword:00000001
+;
+;
+[HKLM\Software\Policies\Microsoft\Edge\SmartScreenAllowListDomains]
+"1"="*"
+[HKCU\Software\Microsoft\Edge\SmartScreenEnabled]
+@=dword:00000000
+;
+;
+[HKLM\Software\Policies\Microsoft\MicrosoftEdge]
+"PreventFirstRunPage"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+"PreventOverride"=dword:00000000
+;
+;
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\MicrosoftEdge]
+"OSIntegrationLevel"=dword:0
+[HKCU\Software\Microsoft\Windows\CurrentVersion\MicrosoftEdge]
+"OSIntegrationLevel"=dword:0
+[HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\MicrosoftEdge]
+"OSIntegrationLevel"=dword:0
+[HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\MicrosoftEdge]
+"OSIntegrationLevel"=dword:0
+;
+;
+[HKCU\Software\Microsoft\Edge\Defaults]
+; Disable Automatic Installation of Microsoft Edge Chromium
+"is_DSE_Recommended"="0"
+;
+[HKLM\Software\Microsoft\EdgeUpdate]
+"DoNotUpdateToEdgeWithChromium"=dword:00000001
+;
+;
+;  Internet Explorer
+;
+[HKCU\Software\Microsoft\Internet Explorer]
+"No3DBorder"=dword:00000000
+"RtfConverterFlags"=dword:00000001
+"AppliedUnattend"=dword:00000000
+;
+[HKCU\Software\Microsoft\Internet Explorer\AutoComplete]
+"Append Completion"="no"
+;
+[HKCU\Software\Microsoft\Internet Explorer\Main]
+"DoNotTrack"=dword:00000001
+"EnablePreBinding"=dword:00000000
+"HideNewEdgeButton"=dword:00000001
+;
+[HKCU\Software\Microsoft\Internet Explorer\SearchScopes]
+"ShowSearchSuggestionsInAddressGlobal"=dword:00000000 
+;
+;  Internet Explorer - Policies
+;
+[HKLM\Software\Policies\Microsoft\Internet Explorer]
+"AllowServicePoweredQSA"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Internet Explorer\Feed Discovery]
+"Enabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Internet Explorer\Feeds]
+"BackgroundSyncStatus"=dword:00000000
+"DisableEnclosureDownload"=dword:00000001
+"DisableAddRemove"=dword:00000001
+"DisableFeedPane"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\Internet Explorer\Geolocation]
+"PolicyDisableGeolocation"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions]
+"NoUpdateCheck"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\Internet Explorer\Suggested Sites]
+"Enabled"=dword:00000000
+;
+;
+; ****************************** End Edge Residual
+;
+[HKLM\SOFTWARE\Policies\Google\Update]
+"Install{ADDE8406-A0F3-4AC2-8878-ADC0BD37BD86}"=dword:00000000
+"Install{4CCED17F-7852-4AFC-9E9E-C89D8795BDD2}"=dword:00000001
+"Install{D936DAAE-38D4-4F72-82DD-F3824534C273}"=dword:00000000
+"Install{87CD15E4-0C94-47DB-B96A-BBE485C1E31C}"=dword:00000000
+;
+; ****************************** Server Manager
+;
+[HKLM\Software\Microsoft\ServerManagementGateway]
+"InstallDir"="d:\\Program Files\\Windows Admin Center\\"
+"SMEAutoUpdate"="0"
+"SMEPort"="443"
+"SMETelemetryPrivacyType"="None"
+"TokenAuthenticationEnabled"=""
+"WebSocketValidationOverride"="*"
+"WinRMHTTPS"=""
+;
+;
+[HKLM\Software\Policies\Microsoft\Windows\Server\ServerManager]
+"DoNotOpenAtLogon"=dword:00000001
+;
+; ****************************** End Server Manager
+
+;
+;

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultAssociations>
+  <Association Identifier=".7z" ProgId="ArchiveFolder" ApplicationName="7zip" />
+  <Association Identifier=".7zip" ProgId="ArchiveFolder" ApplicationName="7zip" />
+  <Association Identifier=".bmp" ProgId="PhotoViewer.FileAssoc.bmp" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".c" ProgId="Notepad++_file" ApplicationName="NotePad++"/>
+  <Association Identifier=".cab" ProgId="CABFolder" ApplicationName="Windows Explorer" />
+  <Association Identifier=".dib" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".gif" ProgId="PhotoViewer.FileAssoc.gif" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".htm" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier=".html" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier=".ini" ProgId="Notepad++_file" ApplicationName="NotePad++"/>
+  <Association Identifier=".jfif" ProgId="PhotoViewer.FileAssoc.jfif" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".jpe" ProgId="PhotoViewer.FileAssoc.Jpeg" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".jpeg" ProgId="PhotoViewer.FileAssoc.Jpeg" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".jpg" ProgId="PhotoViewer.FileAssoc.Jpeg" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".jxr" ProgId="PhotoViewer.FileAssoc.Wdp" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".mht" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier=".mhtml" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier=".png" ProgId="PhotoViewer.FileAssoc.png" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".rar" ProgId="ArchiveFolder" ApplicationName="7zip" />
+  <Association Identifier=".sh" ProgId="Notepad++_file" ApplicationName="NotePad++"/>
+  <Association Identifier=".svg" ProgId="ThoriumHTM" ApplicationName="Thorium"/>>
+  <Association Identifier=".tar" ProgId="ArchiveFolder" ApplicationName="7zip" />
+  <Association Identifier=".tga" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".tgz" ProgId="ArchiveFolder" ApplicationName="7zip" />
+  <Association Identifier=".tif" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".tiff" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".txt" ProgId="txtfile" />
+  <Association Identifier=".url" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier=".wdp" ProgId="PhotoViewer.FileAssoc.Wdp" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".xht" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier=".xhtml" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier=".xml" ProgId="Notepad++_file" ApplicationName="NotePad++"/>
+  <Association Identifier=".zip" ProgId="ArchiveFolder" ApplicationName="7zip" />
+  <Association Identifier="ftp" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier="http" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier="https" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier="microsoft-edge" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier="microsoft-edge-holographic" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+  <Association Identifier="ms-xbl-3d8b930f" ProgId="ThoriumHTM" ApplicationName="Thorium"/>
+	
+</DefaultAssociations>

@@ -1,0 +1,582 @@
+Windows Registry Editor Version 5.00
+;
+;
+; Date function
+[HKCU\Changes]
+"PrivacyNTelemteryChanged"=-
+"PrivacyNTelemteryChanged"="09FEB25"
+;
+;
+; *******************************  Telemetry, Privacy and Data Collection
+;
+[-HKLM\SOFTWARE\Microsoft\DataSharing]
+;
+[HKLM\Software\Microsoft\DataCollection]
+"AllowTelemetry"=dword:00000000
+;
+;
+[HKLM\Software\Policies\Microsoft\Biometrics]
+"Enabled"=dword:00000000
+[HKLM\Software\Policies\Microsoft\Biometrics\Credential Provider]
+"Enabled"=dword:00000000
+[-HKLM\SOFTWARE\Policies\Microsoft\Biometrics\FacialFeatures]
+[HKLM\Software\Microsoft\Windows\CurrentVersion\WinBio\Credential Provider]
+"Domain Accounts"=dword:00000000
+;
+; Disable find my device
+[HKLM\Software\Policies\Microsoft\FindMyDevice]
+"AllowFindMyDevice"=dword:00000000
+"LocationSyncEnabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\WMDRM]
+"DisableOnline"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\WindowsMediaPlayer]
+"DesktopShortcut"="no"
+"DisableAutoUpdate"=dword:00000001
+"GroupPrivacyAcceptance"=dword:00000000
+"PreventCDDVDMetadataRetrieval"=dword:00000001
+"PreventCodecDownload"=dword:00000001
+"PreventLibrarySharing"=dword:00000001
+"PreventMusicFileMetadataRetrieval"=dword:00000001
+"PreventRadioPresetsRetrieval"=dword:00000001
+"QuickLaunchShortcut"="no"
+"UsageTracking"=dword:00000000
+[HKCU\Software\Microsoft\MediaPlayer\Preferences]
+"DisableMRU"=dword:00000001
+"UsageTracking"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\WindowsMediaPlayer\Protocols]
+"WindowsMediaStreamingProtocols"=dword:00000000
+"Multicast"=dword:00000000
+"UDP"=dword:00000000
+"TCP"=dword:00000000
+"HTTP"=dword:00000000
+;
+; disable diagnostics & feedback 
+[HKCU\Software\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=dword:00000000
+;
+; Deny "getting to know me"
+; [HKU\.DEFAULT\Software\Microsoft\Personalization\Settings]
+; "AcceptedPrivacyPolicy"=dword:00000000
+; "RestrictImplicitInkCollection"=dword:00000001
+; [HKLM\Software\Microsoft\Personalization\Settings]
+; "AcceptedPrivacyPolicy"=dword:00000000
+; "RestrictImplicitInkCollection"=dword:00000001
+; [HKCU\Software\Microsoft\Personalization\Settings]
+; "AcceptedPrivacyPolicy"=dword:00000000
+; "RestrictImplicitInkCollection"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001
+; Deny Camera on lock screen
+"NoLockScreenCamera"=dword:00000001
+"NoLockScreenSlideshow"=dword:00000001
+;
+; Telemetry - text input
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\TextInput]
+"AllowLanguageFeaturesUninstall"=dword:00000001
+"AllowLinguisticDataCollection"=dword:00000000
+;
+;
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Lock Screen]
+"SlideshowDuration"=dword:00000000
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\SessionData]
+"AllowLockScreen"=dword:00000000
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\UserSwitch]
+"Enabled"=dword:00000001
+;
+;
+[HKLM\Software\Policies\Microsoft\Camera]
+; Allow Camera in general
+"AllowCamera"=dword:00000001
+;
+; Don't allow frame server
+[HKLM\SOFTWARE\Microsoft\Windows Media Foundation]
+"EnableFrameServerMode"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Dsh]
+; Windows tries to reinstall WebExperience even if it is removed and stored in deprovisioned apps list
+"AllowNewsAndInterests"=dword:00000000
+;
+[HKLM\Software\Microsoft\Speech_OneCore\Preferences]
+; Disable Cortana search history
+"HistoryViewEnabled"=dword:00000000
+"ModelDownloadAllowed"=dword:00000000
+"VoiceActivationEnableAboveLockscreen"=dword:00000000
+;
+;Turn Off "Allow apps to use voice activation" for Current User
+[HKLM\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps]
+"AgentActivationEnabled"=dword:00000000
+"AgentActivationLastUsed"=dword:00000000
+"AgentActivationOnLockScreenEnabled"=dword:00000000
+;
+[HKCU\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy]
+"HasAccepted"=dword:00000000
+[HKLM\Software\Policies\Microsoft\Speech]
+"AllowSpeechModelUpdate"=dword:00000000
+;
+; UEV Telemetry
+[HKLM\Software\Microsoft\UEV\Agent\Configuration]
+"CustomerExperienceImprovementProgram"=dword:00000000
+"DontSyncWindows8AppSettings"=dword:00000001
+"SynceEnabled"=dword:00000000
+"SyncOverMeteredNetwork"=dword:00000000
+"SyncOverMeteredNetworkWhenRoaming"=dword:0000000
+;   
+;
+[HKLM\Software\Microsoft\PolicyManager\Default\WiFi\AllowWiFiHotSpotReporting]
+"Value"=dword:00000000
+[HKLM\Software\Microsoft\PolicyManager\Default\WiFi\AllowAutoConnectToWiFiSenseHotspots]
+"Value"=dword:00000000
+;
+; Disable wifisense
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\GroupPolicy]
+; Disable power management on network adapters
+"fDisablePowerManagement"=dword:00000001
+[HKLM\Software\Policies\Microsoft\Windows\WcmSvc\Local]
+"WCMPresent"=dword:00000001
+;
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\LooselyCoupled]
+"Value"="Deny"	
+;
+; disable location services
+[HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\LocationAndSensors]
+"LocationEnabled"=dword:00000000
+;
+;
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"SensorPermissionState"=dword:00000000
+[HKCU\Software\Microsoft\Windows NT\CurrentVersion\Sensor\Permissions\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"SensorPermissionState"=dword:00000000
+;
+;
+[HKCU\Software\Microsoft\Input\Settings]
+"EmojiSuggestion"=dword:00000000
+"EmojiTranslation"=dword:00000000
+"EnableExpressiveInputShellHotkey"=dword:00000001
+"EnableExpressiveInputEmojiMultipleSelection"=dword:00000000
+"EnableHwkbAutocorrection"=dword:00000001
+"EnableHwkbAutocorrection2"=dword:00000000
+"EnableHwkbMode"=dword:00000001
+"EnableHwkbTextPrediction"=dword:00000001
+"HarvestContacts"=dword:00000000
+; Use space after suggestion
+"HasTrailer"=dword:00000001
+; "HTREnabled"=dword:00000000
+; "HwkbAutocorrectionAlwaysOffList"=-
+"HwkbInlinePredictionAlwaysOffList"=dword:00000001
+"InsightsEnabled"=dword:00000000
+"IsVoiceTypingKeyEnabled"=dword:00000000
+"KeyboardMode"=dword:00000000
+"LMDataLoggerEnabled"=dword:00000000
+"MultilingualEnabled"=dword:00000001
+"PeriodShortcut"=dword:00000001
+"Prediction"=dword:00000001
+"Private"=dword:00000001
+"ProofDataSources"=dword:00000000
+"SearchDataSources"=dword:00000000
+"ShortenMultilingualTraversal"=dword:00000001
+"Spellcheck"=dword:00000001
+[HKLM\Software\Microsoft\Input\Settings]
+"AutoAccent"=dword:00000001
+"AutoApostrophe"=dword:00000001
+"AutoCap"=dword:00000001
+"AutoCapAllTokens"=dword:00000001
+"AutoCorrectFirstWord"=dword:00000001
+"AutoCorrection"=dword:00000001
+"AutoCorrectVisualDelay"=dword:00000001
+"DictationEnabled"=dword:00000000
+"DisablePersonalization"=dword:00000001
+; Disable emojis
+"EmojiSuggestion"=dword:00000000
+"EmojiTranslation"=dword:00000000
+"EnableExpressiveInputShellHotkey"=dword:00000000
+"EnableExpressiveInputEmojiMultipleSelection"=dword:00000000
+"EnableHwkbAutocorrection"=dword:00000001
+"EnableHwkbAutocorrection2"=dword:00000000
+"EnableHwkbTextPrediction"=dword:00000001
+"EnableHwkbMode"=dword:00000001
+"EnableHwkbTextPrediction"=dword:00000000
+"HarvestContacts"=dword:00000000
+; Use space after suggestion
+"HasTrailer"=dword:00000001
+; "HTREnabled"=dword:00000000
+; "HwkbAutocorrectionAlwaysOffList"=-
+"HwkbInlinePredictionAlwaysOffList"=dword:00000001
+"InsightsEnabled"=dword:00000000
+"IsVoiceTypingKeyEnabled"=dword:00000000
+"KeyboardMode"=dword:00000000
+"LMDataLoggerEnabled"=dword:00000000
+; "MaxCorrections"=dword:00000000
+"MultilingualEnabled"=dword:00000001
+; "NotActiveLanguagePenalty"=dword:00000001
+;"NotPredictedLanguagePenalty"=dword:00000001
+"PeriodShortcut"=dword:00000001
+"Prediction"=dword:00000001
+"Private"=dword:00000001
+"ProofDataSources"=dword:00000000
+"SearchDataSources"=dword:00000000
+"ShortenMultilingualTraversal"=dword:00000001
+"Spellcheck"=dword:00000001
+;
+;
+[HKLM\Software\Policies\Microsoft\WindowsInkWorkspace]
+"AllowSuggestedAppsInWindowsInkWorkspace"=dword:00000000
+"AllowWindowsInkWorkspace"=dword:00000000
+[HKLM\Software\Microsoft\Windows\CurrentVersion\PenWorkspace]
+"PenWorkspaceButtonDesiredVisibility"=dword:00000000
+"PenWorkspaceAppSuggestionsEnabled"=dword:00000000
+[HKCU\software\policies\Microsoft\PenTraining]
+"DisablePenTraining"=dword:00000001
+;
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\UserPolicy\ImproveInkingAndTyping]
+"DefaultValue"=dword:00000000
+"InheritsFromDevice"=dword:00000000
+"LegacyKeyName"="Enabled"
+"LegacyKeyType"=dword:00000000
+"LegacyProjection"=dword:00000000
+;
+[HKLM\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\HandwritingErrorReports]
+; Dont collect data about handwriting
+"PreventHandwritingErrorReports"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\InternetManagement]
+"RestrictCommunication"=dword:00000001
+;
+;
+; [HKCU\Software\Microsoft\TabletTip\1.7]
+; "DisableACIntegration"=dword:00000001
+; "DisableEdgeTarget"=dword:00000001
+; "EnableKeyAudioFeedback"=dword:00000000
+; "EnableAutocorrection"=dword:00000001
+; "EnableDoubleTapSpace"=dword:00000001
+; "EnablePredictionSpaceInsertion"=dword:00000001
+; "EnableSpellchecking"=dword:00000001
+; "EnableTextPrediction"=dword:00000001
+; "HideIPTIPTarget"=dword:00000001
+; "HideIPTIPTouchTarget"=dword:00000001
+; "IncludeRareChar"=dword:00000000
+; "TouchKeyboardTapInvoke"=dword:00000001
+; ;
+; [HKLM\Software\Policies\Microsoft\Windows\TabletPC]
+; "PreventHandwritingDataSharing"=dword:00000001
+; [HKLM\Software\Policies\Microsoft\TabletPC]
+; "DisableJournal"=dword:00000001
+; "DisableSnippingTool"=dword:00000000
+; "TurnOffPenFeedback"=dword:00000001
+; "TurnOffTouchInput"=dword:00000001
+; "TurnOffPanning"=dword:00000001
+; 
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\Troubleshooting\AllowRecommendations]
+"TroubleshootingAllowRecommendations"=dword:00000005
+;
+;
+[HKLM\Software\Policies\Microsoft\PCHealth\ErrorReporting]
+[HKLM\SOFTWARE\Wow6432Node\Microsoft\PCHealth\ErrorReporting]
+"AllOrNone"=dword:00000000
+"DoReport"=dword:00000000
+"DWNoSecondLevelCollection"=dword:00000001
+"DWNoFileCollection"=dword:00000001
+"DWNoExternalURL"=dword:00000000
+"ForceQueueMode"=dword:00000001
+"IncludeKernelFaults"=dword:00000000
+"IncludeMicrosoftApps"=dword:00000000
+"IncludeShutdownErrs"=dword:00000000
+"IncludeWindowsApps"=dword:00000000
+"ShowUI"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\PCHealth\ErrorReporting\DW]
+"DWAllowHeadless"=dword:00000000
+"DWFileTreeRoot"=""
+"DWNoExternalURL"=dword:00000001
+"DWNoFileCollection"=dword:00000001
+"DWNoSecondLevelCollection"=dword:00000001
+"DWReporteeName"="shit"
+;
+[HKLM\Software\Policies\Microsoft\EventViewer]
+"MicrosoftEventVwrDisableLinks"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\PCHealth\HelpSvc]
+"Headlines"=dword:00000000
+"MicrosoftKBSearch"=dword:00000000
+;
+;
+[HKLM\SOFTWARE\Microsoft\MdmCommon\SettingValues]
+"LocationSyncEnabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Messenger\Client]
+"CEIP"=dword:00000002
+"PreventAutoRun"=dword:00000001
+"PreventRun"=dword:00000001
+;
+[HKLM\Software\Policies\Microsoft\SoundRecorder]
+; Disable sound recorder
+"Soundrec"=dword:00000001
+"AllowSpeechModelUpdate"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\SQMClient]
+"CorporateSQMURL"="ichs.local"
+[HKLM\Software\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+"studyid"=-
+[HKLM\Software\Microsoft\SQMClient\Windows]
+"DisableOptinExperience"=dword:00000001
+"CEIPEnable"=dword:00000000
+"SqmLoggerRunning"=dword:00000000
+;
+[HKLM\Software\Microsoft\SQMClient\Reliability]
+"CEIPEnable"=dword:00000000
+"SqmLoggerRunning"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\AppV\CEIP]
+"CEIPEnable"=dword:00000000
+;
+; Disable CEIP from using bitlocker
+[HKLM\SOFTWARE\Policies\Microsoft\FVE\MDOPBitLockerManagement\Configuration]
+"CustomerExperienceImprovementProgram"=dword:00000000
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"AllowTelemetry"=dword:00000000
+"DisableOneSettingsDownloads"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001
+"LimitDiagnosticLogCollection"=dword:00000001
+"MaxTelemetryAllowed"=dword:00000000
+"MicrosoftEdgeDataOptIn"=dword:00000000
+[HKLM\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"AllowTelemetry"=dword:00000000
+"DisableOneSettingsDownloads"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001
+"LimitDiagnosticLogCollection"=dword:00000001
+"MaxTelemetryAllowed"=dword:00000000
+"MicrosoftEdgeDataOptIn"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\DataCollection]
+"AllowCommercialDataPipeline"=dword:00000000
+"AllowDesktopAnalyticsProcessing"=dword:00000000
+"AllowDeviceNameInTelemetry"=dword:00000000
+; If enabled, preview builds won't work "AllowBuildPreview"=dword:00000000
+"AllowTelemetry"=dword:00000000
+"AllowUpdateComplianceProcessing"=dword:00000000
+"AllowWUfBCloudProcessing"=dword:00000000
+"CommercialId"="0"
+"ConfigureMicrosoft365UploadEndpoint"=-
+"DisableDeviceDelete"=dword:00000000
+"DisableDiagnosticDataViewer"=dword:00000000
+"DisableEnterpriseAuthProxy"=dword:00000001
+"DisableOneSettingsDownloads"=dword:00000001
+"DisableTelemetryOptInChangeNotification"=dword:00000000
+"DisableTelemetryOptInSettingsUx"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001
+; If enabled, preview builds won't work  "EnableConfigFlighting"=dword:00000000
+"EnableOneSettingsAuditing"=dword:00000000
+"LimitDiagnosticLogCollection"=dword:00000001
+"LimitDumpCollection"=dword:00000001
+"LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000001
+"MicrosoftEdgeDataOptIn"=dword:00000000
+"TelemetryProxyServer"="host.local:8080"
+;
+[HKCU\Software\Policies\Microsoft\Windows\DataCollection]
+"AllowCommercialDataPipeline"=dword:00000000
+"AllowDesktopAnalyticsProcessing"=dword:00000000
+"AllowDeviceNameInTelemetry"=dword:00000000
+; If enabled, preview builds won't work "AllowBuildPreview"=dword:00000000
+"AllowTelemetry"=dword:00000000
+"AllowUpdateComplianceProcessing"=dword:00000000
+"AllowWUfBCloudProcessing"=dword:00000000
+"CommercialId"="0"
+"ConfigureMicrosoft365UploadEndpoint"=-
+"DisableDeviceDelete"=dword:00000000
+"DisableDiagnosticDataViewer"=dword:00000000
+"DisableEnterpriseAuthProxy"=dword:00000001
+"DisableOneSettingsDownloads"=dword:00000001
+"DisableTelemetryOptInChangeNotification"=dword:00000000
+"DisableTelemetryOptInSettingsUx"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001
+; If enabled, preview builds won't work  "EnableConfigFlighting"=dword:00000000
+"EnableOneSettingsAuditing"=dword:00000000
+"LimitDiagnosticLogCollection"=dword:00000001
+"LimitDumpCollection"=dword:00000001
+"LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000001
+"MicrosoftEdgeDataOptIn"=dword:00000000
+"TelemetryProxyServer"="host.local:8080"
+;
+; Stop power telemetry
+[HKLM\SYSTEM\CurrentControlSet\Control\Power\EnergyEstimation\TaggedEnergy]
+"DisableTaggedEnergyLogging"=dword:00000001
+"TelemetryMaxApplication"=dword:00000000
+"TelemetryMaxTagPerApplication"=dword:00000000
+;
+;
+; *************************** App Compat
+;
+[HKLM\Software\Policies\Microsoft\Windows\AppCompat]
+; disable app telemtry
+"AITEnable"=dword:00000000
+"AllowTelemetry"=dword:00000000
+"DisableEngine"=dword:00000001
+; Disable inventory collector
+"DisableInventory"=dword:00000001
+"DisablePCA"=dword:00000001
+"DisablePCAUI"=dword:00000001
+"disableproppage"=-
+; disable steps recorder
+"DisableUAR"=dword:00000001
+"SbEnable"=dword:00000001
+"VDMDisallowed"=dword:00000001
+[HKCU\Software\Policies\Microsoft\Windows\AppCompat]]
+"DisablePCA"=dword:00000001
+;
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Appraiser]
+; Disable Microsoft Compatibility Appraiser
+"HaveUploadedForTarget"=dword:00000001
+;
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\AIT]
+"AITEnable"=dword:00000000
+;
+[HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\ClientTelemetry]
+"IsCensusDisabled"=dword:00000001
+"DontRetryOnError"=dword:00000001
+"TaskEnableRun"=dword:00000001
+
+;
+[HKLM\System\CurrentControlSet\Policies\Microsoft\Compatibility]
+"DisableDeviceFlags"=dword:00000000
+"DisableDriverShims"=dword:00000000
+;
+;
+; *************************** End App Compat
+;
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\Group Policy\{A2E30F80-D7DE-11d2-BBDE-00C04F86AE3B}]
+"NoSlowLink"=dword:00000001
+"NoBackgroundPolicy"=dword:00000001
+"NoGPOListChanges"=dword:00000001
+;
+; Tracing
+[HKLM\SOFTWARE\Microsoft\Tracing]
+"EnableConsoleTracing"=dword:00000000
+;
+;
+; don't Let apps use advertising ID
+[HKLM\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+[HKCU\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+[HKLM\Software\Policies\Microsoft\Windows\AdvertisingInfo]
+"AllowAdvertising"=dword:00000000
+"DisabledByGroupPolicy"=dword:00000001
+"Enabled"=dword:00000000
+[HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\UserPolicy\AdvertisingInfo]
+"DefaultValue"=dword:00000000
+"InheritsFromDevice"=dword:00000000
+"LegacyKeyName"="Disabled"
+"LegacyKeyType"=dword:00000000
+"LegacyProjection"=dword:00000000
+"ManageLegacyKeySecurity"=dword:00000000
+"StaticMigrationPath"="-"
+;
+;
+; Dont allow advertising on Bluetooth
+[HKLM\SOFTWARE\Microsoft\PolicyManager\default\Bluetooth\AllowAdvertising]
+"value"=dword:00000000
+; ON HOLD Disable Bluetooth "Swift Pair"
+[HKLM\SOFTWARE\Microsoft\PolicyManager\default\Bluetooth\AllowPromptedProximalConnections]
+"value"=dword:00000001
+;
+;
+; Disabling advertising info and device metadata collection for this machine
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Device Metadata]
+"DeviceMetadataServiceURL"="about:blank"
+"MaxRetryLimit"=dword:00000000
+"PreventDeviceMetadataFromNetwork"=dword:0000001
+"RequestBatchSize"=dword:00000000
+"Start_TrackProgs"=dword:00000000
+"SubscribedContent-310093Enabled"=dword:00000000
+; Don't get tips, tricks, suggestions as you use Windows 
+"SubscribedContent-338389Enabled"=dword:00000000
+;
+[HKLM\Software\Policies\Microsoft\Windows\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+;
+[HKCU\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"EnableSecondOOBE"=dword:00000000
+; Disable Disable “Get Even More Out of Windows” 
+"ScoobeSystemSettingEnabled"=dword:00000000
+;
+[HKLM\SOFTWARE\Policies\Microsoft\Windows\WTDS\Components]
+"CaptureThreatWindow"=dword:00000000
+;
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Privacy]
+; Tailored experiences - Diagnostics & Feedback settings
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+;
+; Narrator
+[HKCU\SOFTWARE\Microsoft\Narrator\NoRoam]
+"DetailedFeedback"=dword:00000000
+; Stop Narrator
+"ScriptingEnabled"=dword:00000000
+; Disable key combo that starts Narrator
+"WinEnterLaunchEnabled"=dword:00000000
+;
+[HKCU\Software\Microsoft\LiveCaptions\UI]
+"ProfanityFilterOn"=dword:00000000
+;
+; Confuse telemtry
+[HKLM\Software\Microsoft\Windows\CurrentVersion\Shell\Update\TelemetryID]
+"TelemetryID"="FUCK-MICROSOFT"
+;
+;
+;************************ AMD telemetry 
+;
+[HKLM\SOFTWARE\AMDLOG]
+"Last_AmdlogSr_BrtLaunchEnable"=dword:00000000
+
+;************************ NVIDIA telemetry 
+;
+[HKLM\System\CurrentControlSet\Services\NVlddmkm]
+"EnableRID73779"=dword:00000001
+"EnableRID73780"=dword:00000001
+"EnableRID74361"=dword:00000001
+"NVFBCEnable"=dword:00000001
+;
+[HKLM\Software\NVIDIA Corporation\Global\FTS]
+"EnableRID44231"=dword:00000000
+"EnableRID64640"=dword:00000000
+"EnableRID66610"=dword:00000000
+;
+[HKLM\Software\NVIDIA Corporation\Global\CoProcManager]
+"ShowContextMenu"=dword:00000000
+"ShowTrayIcon"=dword:00000000
+;
+[HKLM\Software\NVIDIA Corporation\Global\NVCplApi\Policies]
+"ContextUIPolicy"=dword:00000000
+;
+[HKLM\Software\NVIDIA Corporation\Global\Stereo3D]
+"EnablePersistentStereoDesktop"=dword:00000001
+"EnableWindowedMode"=dword:00000005
+"StereoRefreshDefaultOn"=dword:00000000
+"StereoTypeSet"=dword:00000001
+"StereoVisionConfirmed"=dword:00000001
+;
+[HKLM\Software\NVIDIA Corporation\NvTray]
+"StartOnLogin"=dword:00000000
+;
+[HKLM\Software\NVIDIA Corporation\NVControlPanel2\Client]
+"launchsource"=dword:0000003d
+"OptInOrOutPreference"=dword:00000000
+;
+; ************************  End NVIDIA telemetry 
+;
+;
+
+
+
+
