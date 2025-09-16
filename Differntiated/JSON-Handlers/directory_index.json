@@ -1,0 +1,1882 @@
+{
+  "timestamp": "2025-03-31 18:25:10",
+  "files": {
+    "D:\\Desktop\\New\\Others.ps1": {
+      "extension": ".ps1",
+      "name": "Others.ps1",
+      "lastModified": "2025-03-20T12:36:12.426805-07:00",
+      "size": 4732
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\ComparisonScript.ps1": {
+      "extension": ".ps1",
+      "name": "ComparisonScript.ps1",
+      "lastModified": "2025-03-20T15:45:08.6675892-07:00",
+      "size": 1314
+    },
+    "D:\\Desktop\\New\\ssd-tune.ps1": {
+      "extension": ".ps1",
+      "name": "ssd-tune.ps1",
+      "lastModified": "2025-03-20T16:31:26.0523281-07:00",
+      "size": 106
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\create-master.ps1": {
+      "extension": ".ps1",
+      "name": "create-master.ps1",
+      "lastModified": "2025-03-28T18:09:45.0840061-07:00",
+      "size": 2054
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\requirements.txt": {
+      "extension": ".txt",
+      "name": "requirements.txt",
+      "lastModified": "2025-03-31T17:14:10-07:00",
+      "size": 130
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Shell.ps1": {
+      "extension": ".ps1",
+      "name": "Shell.ps1",
+      "lastModified": "2025-03-07T23:19:28.047319-08:00",
+      "size": 19463
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\Format-Scripts.ps1": {
+      "extension": ".ps1",
+      "name": "Format-Scripts.ps1",
+      "lastModified": "2025-03-29T18:01:33.8085009-07:00",
+      "size": 4646
+    },
+    "D:\\Desktop\\New\\Python\\text.txt": {
+      "extension": ".txt",
+      "name": "text.txt",
+      "lastModified": "2025-03-31T12:13:06.7703554-07:00",
+      "size": 4567
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\main.py": {
+      "extension": ".py",
+      "name": "main.py",
+      "lastModified": "2025-03-31T17:14:22-07:00",
+      "size": 1927
+    },
+    "D:\\Desktop\\New\\registry_paths.txt": {
+      "extension": ".txt",
+      "name": "registry_paths.txt",
+      "lastModified": "2025-03-31T18:02:46.1057822-07:00",
+      "size": 18
+    },
+    "D:\\Desktop\\New\\Edge.ps1": {
+      "extension": ".ps1",
+      "name": "Edge.ps1",
+      "lastModified": "2025-03-25T11:26:01.3813451-07:00",
+      "size": 3805
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Defender.ps1": {
+      "extension": ".ps1",
+      "name": "Defender.ps1",
+      "lastModified": "2025-03-24T19:35:36.4202923-07:00",
+      "size": 11892
+    },
+    "D:\\Desktop\\New\\StartIsBack.ps1": {
+      "extension": ".ps1",
+      "name": "StartIsBack.ps1",
+      "lastModified": "2025-03-20T15:27:27.2694932-07:00",
+      "size": 9320
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\job_details.html": {
+      "extension": ".html",
+      "name": "job_details.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 15745
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\README.txt": {
+      "extension": ".txt",
+      "name": "README.txt",
+      "lastModified": "2025-03-31T17:14:06-07:00",
+      "size": 444
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Services.ps1": {
+      "extension": ".ps1",
+      "name": "Services.ps1",
+      "lastModified": "2025-03-20T15:27:07.8239241-07:00",
+      "size": 38
+    },
+    "D:\\Desktop\\New\\WSIndex\\defender-3.ps1": {
+      "extension": ".ps1",
+      "name": "defender-3.ps1",
+      "lastModified": "2025-03-22T15:02:48.819339-07:00",
+      "size": 7397
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\Edge_RegPaths_Verified_44.json": {
+      "extension": ".json",
+      "name": "Edge_RegPaths_Verified_44.json",
+      "lastModified": "2025-03-25T10:57:53.2223776-07:00",
+      "size": 5118
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\downloads.html": {
+      "extension": ".html",
+      "name": "downloads.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 10509
+    },
+    "D:\\Desktop\\New\\directory_index.json": {
+      "extension": ".json",
+      "name": "directory_index.json",
+      "lastModified": "2025-03-31T18:15:43.2684415-07:00",
+      "size": 66273
+    },
+    "D:\\Desktop\\New\\Firewalls.ps1": {
+      "extension": ".ps1",
+      "name": "Firewalls.ps1",
+      "lastModified": "2025-03-21T16:17:22.6777188-07:00",
+      "size": 1792
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\gui\\indexing_tab.py": {
+      "extension": ".py",
+      "name": "indexing_tab.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 16271
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\core\\pdf_processor.py": {
+      "extension": ".py",
+      "name": "pdf_processor.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 5866
+    },
+    "D:\\Desktop\\New\\ConfigureFileAssociations.ps1": {
+      "extension": ".ps1",
+      "name": "ConfigureFileAssociations.ps1",
+      "lastModified": "2025-03-30T23:15:28.3439901-07:00",
+      "size": 1295
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\requirements.txt": {
+      "extension": ".txt",
+      "name": "requirements.txt",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 130
+    },
+    "D:\\Desktop\\New\\Modules\\Import-modules.psm1": {
+      "extension": ".psm1",
+      "name": "Import-modules.psm1",
+      "lastModified": "2025-03-30T22:35:35.6215594-07:00",
+      "size": 330
+    },
+    "D:\\Desktop\\New\\WSIndex\\with nbew code merged auto run.reg": {
+      "extension": ".reg",
+      "name": "with nbew code merged auto run.reg",
+      "lastModified": "2025-03-17T18:46:56.5355447-07:00",
+      "size": 59561
+    },
+    "D:\\Desktop\\New\\Others_Updated.ps1": {
+      "extension": ".ps1",
+      "name": "Others_Updated.ps1",
+      "lastModified": "2025-03-20T15:31:23.1297013-07:00",
+      "size": 7867
+    },
+    "D:\\Desktop\\New\\TraeIndex\\with nbew code merged auto run.reg": {
+      "extension": ".reg",
+      "name": "with nbew code merged auto run.reg",
+      "lastModified": "2025-03-17T18:46:56.5355447-07:00",
+      "size": 59561
+    },
+    "D:\\Desktop\\New\\Modules\\README.md": {
+      "extension": ".md",
+      "name": "README.md",
+      "lastModified": "2025-03-30T12:21:36.7079343-07:00",
+      "size": 1251
+    },
+    "D:\\Desktop\\New\\WSIndex\\Privacy.ps1": {
+      "extension": ".ps1",
+      "name": "Privacy.ps1",
+      "lastModified": "2025-03-20T16:31:33.1169125-07:00",
+      "size": 37655
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegJsonExport\\Export-RegJson.ps1": {
+      "extension": ".ps1",
+      "name": "Export-RegJson.ps1",
+      "lastModified": "2025-03-31T06:01:02-07:00",
+      "size": 310
+    },
+    "D:\\Desktop\\New\\WSIndex\\Vendors.ps1": {
+      "extension": ".ps1",
+      "name": "Vendors.ps1",
+      "lastModified": "2025-03-20T15:27:31.1170689-07:00",
+      "size": 8937
+    },
+    "D:\\Desktop\\New\\TraeIndex\\temp.ps1": {
+      "extension": ".ps1",
+      "name": "temp.ps1",
+      "lastModified": "2025-03-20T16:31:25.4434091-07:00",
+      "size": 1518
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\README.md": {
+      "extension": ".md",
+      "name": "README.md",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 688
+    },
+    "D:\\Desktop\\New\\WSIndex\\Enviornment.ps1": {
+      "extension": ".ps1",
+      "name": "Enviornment.ps1",
+      "lastModified": "2025-03-25T00:00:29.0335061-07:00",
+      "size": 1871
+    },
+    "D:\\Desktop\\New\\Main.ps1": {
+      "extension": ".ps1",
+      "name": "Main.ps1",
+      "lastModified": "2025-03-30T23:06:36.7365698-07:00",
+      "size": 10507
+    },
+    "D:\\Desktop\\New\\RegistryOps.psm1": {
+      "extension": ".psm1",
+      "name": "RegistryOps.psm1",
+      "lastModified": "2025-03-30T22:24:11.0844074-07:00",
+      "size": 1056
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\core\\pdf_renamer.py": {
+      "extension": ".py",
+      "name": "pdf_renamer.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 4594
+    },
+    "D:\\Desktop\\New\\DriveMapping.reg": {
+      "extension": ".reg",
+      "name": "DriveMapping.reg",
+      "lastModified": "2025-03-20T15:27:29.3223529-07:00",
+      "size": 8660
+    },
+    "D:\\Desktop\\New\\DisableMiniports.ps1": {
+      "extension": ".ps1",
+      "name": "DisableMiniports.ps1",
+      "lastModified": "2025-03-20T15:27:05.5853429-07:00",
+      "size": 46
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\web_app.py": {
+      "extension": ".py",
+      "name": "web_app.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 21780
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\DevSetupEnv.ps1": {
+      "extension": ".ps1",
+      "name": "DevSetupEnv.ps1",
+      "lastModified": "2025-03-29T17:28:03.3629188-07:00",
+      "size": 12998
+    },
+    "D:\\Desktop\\New\\DriveMapping.ps1": {
+      "extension": ".ps1",
+      "name": "DriveMapping.ps1",
+      "lastModified": "2025-03-24T23:22:41.5682453-07:00",
+      "size": 2274
+    },
+    "D:\\Desktop\\New\\WSIndex\\ControlPanel.ps1": {
+      "extension": ".ps1",
+      "name": "ControlPanel.ps1",
+      "lastModified": "2025-03-24T19:00:06.7509813-07:00",
+      "size": 11820
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\gui\\about_tab.py": {
+      "extension": ".py",
+      "name": "about_tab.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 4667
+    },
+    "D:\\Desktop\\New\\WSIndex\\Extensions.ps1": {
+      "extension": ".ps1",
+      "name": "Extensions.ps1",
+      "lastModified": "2025-03-10T00:26:24.7968277-07:00",
+      "size": 2140
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\bin\\OneDrivePDFIndexer.exe": {
+      "extension": ".exe",
+      "name": "OneDrivePDFIndexer.exe",
+      "lastModified": "2025-03-30T18:09:54-07:00",
+      "size": 78
+    },
+    "D:\\Desktop\\New\\Python\\install_python_and_libs.ps1": {
+      "extension": ".ps1",
+      "name": "install_python_and_libs.ps1",
+      "lastModified": "2025-03-31T09:47:49.5183176-07:00",
+      "size": 4909
+    },
+    "D:\\Desktop\\New\\New.code-workspace": {
+      "extension": ".code-workspace",
+      "name": "New.code-workspace",
+      "lastModified": "2025-03-30T21:20:01.1880921-07:00",
+      "size": 685
+    },
+    "D:\\Desktop\\New\\Bloatware.ps1": {
+      "extension": ".ps1",
+      "name": "Bloatware.ps1",
+      "lastModified": "2025-03-24T17:06:12.9902247-07:00",
+      "size": 1610
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\Parallel-functions.ps1": {
+      "extension": ".ps1",
+      "name": "Parallel-functions.ps1",
+      "lastModified": "2025-03-30T13:56:25.5570173-07:00",
+      "size": 3850
+    },
+    "D:\\Desktop\\New\\TraeIndex\\merged explorer from old .ps1": {
+      "extension": ".ps1",
+      "name": "merged explorer from old .ps1",
+      "lastModified": "2025-03-21T16:18:34.9528986-07:00",
+      "size": 4432
+    },
+    "D:\\Desktop\\New\\Functions.ps1": {
+      "extension": ".ps1",
+      "name": "Functions.ps1",
+      "lastModified": "2025-03-28T17:42:03.1674331-07:00",
+      "size": 7910
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\Lib-Downloader.py": {
+      "extension": ".py",
+      "name": "Lib-Downloader.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 2321
+    },
+    "D:\\Desktop\\New\\Modules\\JobControl.psm1": {
+      "extension": ".psm1",
+      "name": "JobControl.psm1",
+      "lastModified": "2025-03-30T22:25:09.7556026-07:00",
+      "size": 540
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\import sqlite3.py": {
+      "extension": ".py",
+      "name": "import sqlite3.py",
+      "lastModified": "2025-03-24T17:00:06.5270359-07:00",
+      "size": 275
+    },
+    "D:\\Desktop\\New\\PowerShell.ps1": {
+      "extension": ".ps1",
+      "name": "PowerShell.ps1",
+      "lastModified": "2025-03-28T15:51:55.0187964-07:00",
+      "size": 2592
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\docs\\user_manual.html": {
+      "extension": ".html",
+      "name": "user_manual.html",
+      "lastModified": "2025-03-30T18:09:54-07:00",
+      "size": 494
+    },
+    "D:\\Desktop\\New\\Modules\\Globals (2).psm1": {
+      "extension": ".psm1",
+      "name": "Globals (2).psm1",
+      "lastModified": "2025-03-30T22:36:01.7985626-07:00",
+      "size": 502
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\main.py": {
+      "extension": ".py",
+      "name": "main.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 1927
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Cleanup.ps1": {
+      "extension": ".ps1",
+      "name": "Cleanup.ps1",
+      "lastModified": "2025-03-20T15:27:03.2455486-07:00",
+      "size": 37
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Functions.ps1": {
+      "extension": ".ps1",
+      "name": "Functions.ps1",
+      "lastModified": "2025-03-24T19:46:09.5962423-07:00",
+      "size": 7900
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\README.md": {
+      "extension": ".md",
+      "name": "README.md",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 951
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\gui\\renaming_tab.py": {
+      "extension": ".py",
+      "name": "renaming_tab.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 14971
+    },
+    "D:\\Desktop\\New\\Tasks\\T-Clock.xml": {
+      "extension": ".xml",
+      "name": "T-Clock.xml",
+      "lastModified": "2025-03-14T15:29:58.6231278-07:00",
+      "size": 3060
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\gui\\renaming_tab.py": {
+      "extension": ".py",
+      "name": "renaming_tab.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 14971
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Desktop.ps1": {
+      "extension": ".ps1",
+      "name": "Desktop.ps1",
+      "lastModified": "2025-03-26T15:44:39.9110971-07:00",
+      "size": 10648
+    },
+    "D:\\Desktop\\New\\search_context_menu_registry.ps1": {
+      "extension": ".ps1",
+      "name": "search_context_menu_registry.ps1",
+      "lastModified": "2025-03-20T11:10:02.7161979-07:00",
+      "size": 2706
+    },
+    "D:\\Desktop\\New\\Vendors.ps1": {
+      "extension": ".ps1",
+      "name": "Vendors.ps1",
+      "lastModified": "2025-03-20T15:27:31.1170689-07:00",
+      "size": 8937
+    },
+    "D:\\Desktop\\New\\Defender.ps1": {
+      "extension": ".ps1",
+      "name": "Defender.ps1",
+      "lastModified": "2025-03-24T19:35:45.3025237-07:00",
+      "size": 11892
+    },
+    "D:\\Desktop\\New\\Power.ps1": {
+      "extension": ".ps1",
+      "name": "Power.ps1",
+      "lastModified": "2025-03-11T07:38:46.5003261-07:00",
+      "size": 4627
+    },
+    "D:\\Desktop\\New\\RegistryPaths.txt": {
+      "extension": ".txt",
+      "name": "RegistryPaths.txt",
+      "lastModified": "2025-03-31T18:24:02.0123779-07:00",
+      "size": 15823
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\conversion.ps1": {
+      "extension": ".ps1",
+      "name": "conversion.ps1",
+      "lastModified": "2025-03-13T16:34:33.4682539-07:00",
+      "size": 825
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Schedule.ps1": {
+      "extension": ".ps1",
+      "name": "Schedule.ps1",
+      "lastModified": "2025-03-18T16:44:31.9841751-07:00",
+      "size": 6801
+    },
+    "D:\\Desktop\\New\\ControlPanel.ps1": {
+      "extension": ".ps1",
+      "name": "ControlPanel.ps1",
+      "lastModified": "2025-03-31T15:29:17.060691-07:00",
+      "size": 11827
+    },
+    "D:\\Desktop\\New\\Cleanup.ps1": {
+      "extension": ".ps1",
+      "name": "Cleanup.ps1",
+      "lastModified": "2025-03-20T15:27:03.2455486-07:00",
+      "size": 37
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\SimpleInstall.py": {
+      "extension": ".py",
+      "name": "SimpleInstall.py",
+      "lastModified": "2025-03-31T17:14:22-07:00",
+      "size": 1093
+    },
+    "D:\\Desktop\\New\\WSIndex\\Main.ps1": {
+      "extension": ".ps1",
+      "name": "Main.ps1",
+      "lastModified": "2025-03-20T15:27:35.8188776-07:00",
+      "size": 1643
+    },
+    "D:\\Desktop\\New\\sqlite-example.ps1": {
+      "extension": ".ps1",
+      "name": "sqlite-example.ps1",
+      "lastModified": "2025-03-30T12:40:15.6670666-07:00",
+      "size": 1044
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\index_pdfs.html": {
+      "extension": ".html",
+      "name": "index_pdfs.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 7769
+    },
+    "D:\\Desktop\\New\\Tasks\\AutoRegBackup.ps1": {
+      "extension": ".ps1",
+      "name": "AutoRegBackup.ps1",
+      "lastModified": "2025-03-31T17:59:07.7459444-07:00",
+      "size": 1143
+    },
+    "D:\\Desktop\\New\\Network.ps1": {
+      "extension": ".ps1",
+      "name": "Network.ps1",
+      "lastModified": "2025-03-11T23:28:06.3924119-07:00",
+      "size": 18170
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\layout.html": {
+      "extension": ".html",
+      "name": "layout.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 4968
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Enviornment.ps1": {
+      "extension": ".ps1",
+      "name": "Enviornment.ps1",
+      "lastModified": "2025-03-20T15:27:34.122917-07:00",
+      "size": 1863
+    },
+    "D:\\Desktop\\New\\TraeIndex\\DisableMiniports.ps1": {
+      "extension": ".ps1",
+      "name": "DisableMiniports.ps1",
+      "lastModified": "2025-03-20T15:27:05.5853429-07:00",
+      "size": 46
+    },
+    "D:\\Desktop\\New\\profile.ps1": {
+      "extension": ".ps1",
+      "name": "profile.ps1",
+      "lastModified": "2025-03-15T01:06:32.3604846-07:00",
+      "size": 281
+    },
+    "D:\\Desktop\\New\\index": {
+      "extension": "",
+      "name": "index",
+      "lastModified": "2025-03-17T18:46:56.5355447-07:00",
+      "size": 59561
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegExport\\RegistryApplier.psm1": {
+      "extension": ".psm1",
+      "name": "RegistryApplier.psm1",
+      "lastModified": "2025-03-31T06:01:02-07:00",
+      "size": 550
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\install_tools.ps1": {
+      "extension": ".ps1",
+      "name": "install_tools.ps1",
+      "lastModified": "2025-03-20T16:31:19.5861732-07:00",
+      "size": 1189
+    },
+    "D:\\Desktop\\New\\.prettierrc": {
+      "extension": ".prettierrc",
+      "name": ".prettierrc",
+      "lastModified": "2025-03-28T18:29:06.5954335-07:00",
+      "size": 40
+    },
+    "D:\\Desktop\\New\\Schedule.ps1": {
+      "extension": ".ps1",
+      "name": "Schedule.ps1",
+      "lastModified": "2025-03-18T16:44:31.9841751-07:00",
+      "size": 6801
+    },
+    "D:\\Desktop\\New\\Desktop.ps1": {
+      "extension": ".ps1",
+      "name": "Desktop.ps1",
+      "lastModified": "2025-03-24T23:39:21.6467074-07:00",
+      "size": 9124
+    },
+    "D:\\Desktop\\New\\WSIndex\\ConfigureFileAssociations.ps1": {
+      "extension": ".ps1",
+      "name": "ConfigureFileAssociations.ps1",
+      "lastModified": "2025-03-20T15:32:16.8196757-07:00",
+      "size": 1295
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\static\\js\\main.js": {
+      "extension": ".js",
+      "name": "main.js",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 5040
+    },
+    "D:\\Desktop\\New\\WSIndex\\Sqlite.session.sql": {
+      "extension": ".sql",
+      "name": "Sqlite.session.sql",
+      "lastModified": "2025-03-28T18:17:34.0730992-07:00",
+      "size": 131
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Privacy.ps1": {
+      "extension": ".ps1",
+      "name": "Privacy.ps1",
+      "lastModified": "2025-03-20T16:31:33.1169125-07:00",
+      "size": 37655
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\scheduled_jobs.html": {
+      "extension": ".html",
+      "name": "scheduled_jobs.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 35087
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\jobs.html": {
+      "extension": ".html",
+      "name": "jobs.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 6532
+    },
+    "D:\\Desktop\\New\\WSIndex\\PowerShell.ps1": {
+      "extension": ".ps1",
+      "name": "PowerShell.ps1",
+      "lastModified": "2025-03-21T16:19:00.4695939-07:00",
+      "size": 2232
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\gui\\scheduling_tab.py": {
+      "extension": ".py",
+      "name": "scheduling_tab.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 44349
+    },
+    "D:\\Desktop\\New\\TraeIndex\\search_context_menu_registry.ps1": {
+      "extension": ".ps1",
+      "name": "search_context_menu_registry.ps1",
+      "lastModified": "2025-03-20T11:10:02.7161979-07:00",
+      "size": 2706
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegJsonExport\\ControlPanel.ps1": {
+      "extension": ".ps1",
+      "name": "ControlPanel.ps1",
+      "lastModified": "2025-03-31T15:29:17.060691-07:00",
+      "size": 11827
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\main.py": {
+      "extension": ".py",
+      "name": "main.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 1408
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Power.ps1": {
+      "extension": ".ps1",
+      "name": "Power.ps1",
+      "lastModified": "2025-03-11T07:38:46.5003261-07:00",
+      "size": 4627
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegExport\\RegistryLogger.psm1": {
+      "extension": ".psm1",
+      "name": "RegistryLogger.psm1",
+      "lastModified": "2025-03-31T06:01:02-07:00",
+      "size": 542
+    },
+    "D:\\Desktop\\New\\WSIndex\\ssd-tune.ps1": {
+      "extension": ".ps1",
+      "name": "ssd-tune.ps1",
+      "lastModified": "2025-03-20T16:31:26.0523281-07:00",
+      "size": 106
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Firewalls.ps1": {
+      "extension": ".ps1",
+      "name": "Firewalls.ps1",
+      "lastModified": "2025-03-28T17:36:29.1103029-07:00",
+      "size": 3239
+    },
+    "D:\\Desktop\\New\\WSIndex\\DriveMapping.ps1": {
+      "extension": ".ps1",
+      "name": "DriveMapping.ps1",
+      "lastModified": "2025-03-20T15:25:07.8478705-07:00",
+      "size": 4293
+    },
+    "D:\\Desktop\\New\\temp.ps1": {
+      "extension": ".ps1",
+      "name": "temp.ps1",
+      "lastModified": "2025-03-20T16:31:25.4434091-07:00",
+      "size": 1518
+    },
+    "D:\\Desktop\\New\\ExtractRegistryPaths.ps1": {
+      "extension": ".ps1",
+      "name": "ExtractRegistryPaths.ps1",
+      "lastModified": "2025-03-31T18:25:00.8376644-07:00",
+      "size": 1915
+    },
+    "D:\\Desktop\\New\\WSIndex\\NetworkServices.ps1": {
+      "extension": ".ps1",
+      "name": "NetworkServices.ps1",
+      "lastModified": "2025-03-18T14:54:51.8037356-07:00",
+      "size": 14822
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\powershell_functions\\README.md": {
+      "extension": ".md",
+      "name": "README.md",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 830
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\settings.html": {
+      "extension": ".html",
+      "name": "settings.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 6972
+    },
+    "D:\\Desktop\\New\\PDFs\\pdf indexing.ps1": {
+      "extension": ".ps1",
+      "name": "pdf indexing.ps1",
+      "lastModified": "2025-03-13T04:28:32.9000264-07:00",
+      "size": 4711
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\core\\index_generator.py": {
+      "extension": ".py",
+      "name": "index_generator.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 10209
+    },
+    "D:\\Desktop\\New\\WSIndex\\Network.ps1": {
+      "extension": ".ps1",
+      "name": "Network.ps1",
+      "lastModified": "2025-03-28T18:31:25.261249-07:00",
+      "size": 18331
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\about.html": {
+      "extension": ".html",
+      "name": "about.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 10141
+    },
+    "D:\\Desktop\\New\\WSIndex\\DisableMiniports.ps1": {
+      "extension": ".ps1",
+      "name": "DisableMiniports.ps1",
+      "lastModified": "2025-03-20T15:27:05.5853429-07:00",
+      "size": 46
+    },
+    "D:\\Desktop\\New\\newMisc.ps1": {
+      "extension": ".ps1",
+      "name": "newMisc.ps1",
+      "lastModified": "2025-03-23T18:35:40.924-07:00",
+      "size": 54712
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\install_tools.ps1": {
+      "extension": ".ps1",
+      "name": "install_tools.ps1",
+      "lastModified": "2025-03-20T16:31:19.5861732-07:00",
+      "size": 1189
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\web_app.py": {
+      "extension": ".py",
+      "name": "web_app.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 39674
+    },
+    "D:\\Desktop\\New\\configurefileassociations_registry_paths.txt": {
+      "extension": ".txt",
+      "name": "configurefileassociations_registry_paths.txt",
+      "lastModified": "2025-03-31T18:05:34.7896236-07:00",
+      "size": 392
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\conversion.ps1": {
+      "extension": ".ps1",
+      "name": "conversion.ps1",
+      "lastModified": "2025-03-13T16:34:33.4682539-07:00",
+      "size": 825
+    },
+    "D:\\Desktop\\New\\WSIndex\\missing_lines.reg": {
+      "extension": ".reg",
+      "name": "missing_lines.reg",
+      "lastModified": "2025-03-20T18:47:59.8908864-07:00",
+      "size": 92320
+    },
+    "D:\\Desktop\\New\\TraeIndex\\OneDrive.ps1": {
+      "extension": ".ps1",
+      "name": "OneDrive.ps1",
+      "lastModified": "2025-03-11T23:28:06.3888001-07:00",
+      "size": 4031
+    },
+    "D:\\Desktop\\New\\Python\\import sqlite3.py": {
+      "extension": ".py",
+      "name": "import sqlite3.py",
+      "lastModified": "2025-03-24T17:00:06.5270359-07:00",
+      "size": 275
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\gui\\main_window.py": {
+      "extension": ".py",
+      "name": "main_window.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 4625
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Others_Updated.ps1": {
+      "extension": ".ps1",
+      "name": "Others_Updated.ps1",
+      "lastModified": "2025-03-20T15:31:23.1297013-07:00",
+      "size": 7867
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Edge.ps1": {
+      "extension": ".ps1",
+      "name": "Edge.ps1",
+      "lastModified": "2025-03-25T18:00:14.4974633-07:00",
+      "size": 3488
+    },
+    "D:\\Desktop\\New\\TraeIndex\\CheckDB.ps1": {
+      "extension": ".ps1",
+      "name": "CheckDB.ps1",
+      "lastModified": "2025-03-25T18:20:58.8227111-07:00",
+      "size": 3464
+    },
+    "D:\\Desktop\\New\\WSIndex\\Desktop.ps1": {
+      "extension": ".ps1",
+      "name": "Desktop.ps1",
+      "lastModified": "2025-03-24T23:39:07.2066807-07:00",
+      "size": 9124
+    },
+    "D:\\Desktop\\New\\global_rules.md": {
+      "extension": ".md",
+      "name": "global_rules.md",
+      "lastModified": "2025-03-28T18:29:52.0973231-07:00",
+      "size": 2820
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\powershell_functions\\scripts\\install.ps1": {
+      "extension": ".ps1",
+      "name": "install.ps1",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 10601
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\Connect-Database.ps1": {
+      "extension": ".ps1",
+      "name": "Connect-Database.ps1",
+      "lastModified": "2025-03-28T18:12:59.8040848-07:00",
+      "size": 1212
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Database.ps1": {
+      "extension": ".ps1",
+      "name": "Database.ps1",
+      "lastModified": "2025-03-25T00:11:36.9486947-07:00",
+      "size": 17391
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegJsonExport\\Export-RegFile.ps1": {
+      "extension": ".ps1",
+      "name": "Export-RegFile.ps1",
+      "lastModified": "2025-03-31T16:04:10.6850082-07:00",
+      "size": 681
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\bin\\Qt5Core.dll": {
+      "extension": ".dll",
+      "name": "Qt5Core.dll",
+      "lastModified": "2025-03-30T18:09:54-07:00",
+      "size": 22
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\gui\\indexing_tab.py": {
+      "extension": ".py",
+      "name": "indexing_tab.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 16271
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegJsonExport\\RegistryLogger.psm1": {
+      "extension": ".psm1",
+      "name": "RegistryLogger.psm1",
+      "lastModified": "2025-03-31T06:01:02-07:00",
+      "size": 542
+    },
+    "D:\\Desktop\\New\\TraeIndex\\DriveMapping.reg": {
+      "extension": ".reg",
+      "name": "DriveMapping.reg",
+      "lastModified": "2025-03-20T15:27:29.3223529-07:00",
+      "size": 8660
+    },
+    "D:\\Desktop\\New\\WSIndex\\Schedule.ps1": {
+      "extension": ".ps1",
+      "name": "Schedule.ps1",
+      "lastModified": "2025-03-18T16:44:31.9841751-07:00",
+      "size": 6801
+    },
+    "D:\\Desktop\\New\\WSIndex\\StartIsBack.ps1": {
+      "extension": ".ps1",
+      "name": "StartIsBack.ps1",
+      "lastModified": "2025-03-20T15:27:27.2694932-07:00",
+      "size": 9320
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\ComparisonScript.ps1": {
+      "extension": ".ps1",
+      "name": "ComparisonScript.ps1",
+      "lastModified": "2025-03-20T15:45:08.6675892-07:00",
+      "size": 1314
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\gui\\settings_tab.py": {
+      "extension": ".py",
+      "name": "settings_tab.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 7487
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\create-master.ps1": {
+      "extension": ".ps1",
+      "name": "create-master.ps1",
+      "lastModified": "2025-03-28T18:09:45.0840061-07:00",
+      "size": 2054
+    },
+    "D:\\Desktop\\New\\TraeIndex\\ConfigureFileAssociations.ps1": {
+      "extension": ".ps1",
+      "name": "ConfigureFileAssociations.ps1",
+      "lastModified": "2025-03-20T15:32:16.8196757-07:00",
+      "size": 1295
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\README.txt": {
+      "extension": ".txt",
+      "name": "README.txt",
+      "lastModified": "2025-03-30T18:09:54-07:00",
+      "size": 672
+    },
+    "D:\\Desktop\\New\\Template.ps1": {
+      "extension": ".ps1",
+      "name": "Template.ps1",
+      "lastModified": "2025-03-29T17:52:16.9993732-07:00",
+      "size": 3285
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\run_desktop.bat": {
+      "extension": ".bat",
+      "name": "run_desktop.bat",
+      "lastModified": "2025-03-31T17:18:46-07:00",
+      "size": 122
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\onedrive_indexer.log": {
+      "extension": ".log",
+      "name": "onedrive_indexer.log",
+      "lastModified": "2025-03-31T10:24:07.5673306-07:00",
+      "size": 0
+    },
+    "D:\\Desktop\\New\\new 1.txt": {
+      "extension": ".txt",
+      "name": "new 1.txt",
+      "lastModified": "2025-03-30T12:07:15.7722479-07:00",
+      "size": 1384
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\download_tools.ps1": {
+      "extension": ".ps1",
+      "name": "download_tools.ps1",
+      "lastModified": "2025-03-20T08:27:27.9892518-07:00",
+      "size": 3242
+    },
+    "D:\\Desktop\\New\\TraeIndex\\missing_lines.reg": {
+      "extension": ".reg",
+      "name": "missing_lines.reg",
+      "lastModified": "2025-03-20T18:47:59.8908864-07:00",
+      "size": 92320
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Main.ps1": {
+      "extension": ".ps1",
+      "name": "Main.ps1",
+      "lastModified": "2025-03-20T15:27:35.8188776-07:00",
+      "size": 1643
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Bloatware.ps1": {
+      "extension": ".ps1",
+      "name": "Bloatware.ps1",
+      "lastModified": "2025-03-21T16:16:59.6567538-07:00",
+      "size": 1360
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\index.html": {
+      "extension": ".html",
+      "name": "index.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 4438
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegJsonExport\\RunRegistryCapture.ps1": {
+      "extension": ".ps1",
+      "name": "RunRegistryCapture.ps1",
+      "lastModified": "2025-03-31T06:05:56-07:00",
+      "size": 866
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\rename_pdfs.html": {
+      "extension": ".html",
+      "name": "rename_pdfs.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 8057
+    },
+    "D:\\Desktop\\New\\TraeIndex\\ssd-tune.ps1": {
+      "extension": ".ps1",
+      "name": "ssd-tune.ps1",
+      "lastModified": "2025-03-20T16:31:26.0523281-07:00",
+      "size": 106
+    },
+    "D:\\Desktop\\New\\Enviornment.ps1": {
+      "extension": ".ps1",
+      "name": "Enviornment.ps1",
+      "lastModified": "2025-03-28T17:03:28.2202357-07:00",
+      "size": 15558
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\static\\js\\main.js": {
+      "extension": ".js",
+      "name": "main.js",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 5040
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Network.ps1": {
+      "extension": ".ps1",
+      "name": "Network.ps1",
+      "lastModified": "2025-03-11T23:28:06.3924119-07:00",
+      "size": 18170
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\powershell_functions\\install_dependencies.ps1": {
+      "extension": ".ps1",
+      "name": "install_dependencies.ps1",
+      "lastModified": "2025-03-30T19:24:46-07:00",
+      "size": 7888
+    },
+    "D:\\Desktop\\New\\PrivacyAndTelemtry.reg": {
+      "extension": ".reg",
+      "name": "PrivacyAndTelemtry.reg",
+      "lastModified": "2025-03-16T19:09:05.0580302-07:00",
+      "size": 10986
+    },
+    "D:\\Desktop\\New\\TraeIndex\\StartIsBack.ps1": {
+      "extension": ".ps1",
+      "name": "StartIsBack.ps1",
+      "lastModified": "2025-03-20T15:27:27.2694932-07:00",
+      "size": 9320
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\about.html": {
+      "extension": ".html",
+      "name": "about.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 10141
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\core\\pdf_renamer.py": {
+      "extension": ".py",
+      "name": "pdf_renamer.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 4594
+    },
+    "D:\\Desktop\\New\\WSIndex\\search_context_menu_registry.ps1": {
+      "extension": ".ps1",
+      "name": "search_context_menu_registry.ps1",
+      "lastModified": "2025-03-20T11:10:02.7161979-07:00",
+      "size": 2706
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\run_web.bat": {
+      "extension": ".bat",
+      "name": "run_web.bat",
+      "lastModified": "2025-03-31T17:18:50-07:00",
+      "size": 121
+    },
+    "D:\\Desktop\\New\\regpaths.db": {
+      "extension": ".db",
+      "name": "regpaths.db",
+      "lastModified": "2025-03-25T00:11:43.1187747-07:00",
+      "size": 135168
+    },
+    "D:\\Desktop\\New\\OneDrive.ps1": {
+      "extension": ".ps1",
+      "name": "OneDrive.ps1",
+      "lastModified": "2025-03-11T23:28:06.3888001-07:00",
+      "size": 4031
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\settings.html": {
+      "extension": ".html",
+      "name": "settings.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 7435
+    },
+    "D:\\Desktop\\New\\ps1_database.json": {
+      "extension": ".json",
+      "name": "ps1_database.json",
+      "lastModified": "2025-03-20T14:52:42.5166716-07:00",
+      "size": 4605
+    },
+    "D:\\Desktop\\New\\WSIndex\\Shell.ps1": {
+      "extension": ".ps1",
+      "name": "Shell.ps1",
+      "lastModified": "2025-03-07T23:19:28.047319-08:00",
+      "size": 19463
+    },
+    "D:\\Desktop\\New\\WSIndex\\Defender.ps1": {
+      "extension": ".ps1",
+      "name": "Defender.ps1",
+      "lastModified": "2025-03-22T18:44:27.403-07:00",
+      "size": 12290
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\sqlite-example.ps1": {
+      "extension": ".ps1",
+      "name": "sqlite-example.ps1",
+      "lastModified": "2025-03-30T12:40:15.6670666-07:00",
+      "size": 1044
+    },
+    "D:\\Desktop\\New\\WSIndex\\search_agent_ransack_registry.ps1": {
+      "extension": ".ps1",
+      "name": "search_agent_ransack_registry.ps1",
+      "lastModified": "2025-03-20T10:31:54.4265474-07:00",
+      "size": 620
+    },
+    "D:\\Desktop\\New\\Modules\\RegistryOps.psm1": {
+      "extension": ".psm1",
+      "name": "RegistryOps.psm1",
+      "lastModified": "2025-03-30T22:25:13.648907-07:00",
+      "size": 1056
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Extensions.ps1": {
+      "extension": ".ps1",
+      "name": "Extensions.ps1",
+      "lastModified": "2025-03-10T00:26:24.7968277-07:00",
+      "size": 2140
+    },
+    "D:\\Desktop\\New\\WSIndex\\Services.ps1": {
+      "extension": ".ps1",
+      "name": "Services.ps1",
+      "lastModified": "2025-03-20T15:27:07.8239241-07:00",
+      "size": 38
+    },
+    "D:\\Desktop\\New\\Tasks\\Env Vars.xml": {
+      "extension": ".xml",
+      "name": "Env Vars.xml",
+      "lastModified": "2025-03-14T15:29:50.8131475-07:00",
+      "size": 3486
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\SimpleInstall.py": {
+      "extension": ".py",
+      "name": "SimpleInstall.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 1093
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\core\\onedrive_connector.py": {
+      "extension": ".py",
+      "name": "onedrive_connector.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 16406
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegExport\\Export-RegJson.ps1": {
+      "extension": ".ps1",
+      "name": "Export-RegJson.ps1",
+      "lastModified": "2025-03-31T06:01:02-07:00",
+      "size": 310
+    },
+    "D:\\Desktop\\New\\Explorer.ps1": {
+      "extension": ".ps1",
+      "name": "Explorer.ps1",
+      "lastModified": "2025-03-28T18:32:57.5694768-07:00",
+      "size": 58197
+    },
+    "D:\\Desktop\\New\\Services.ps1": {
+      "extension": ".ps1",
+      "name": "Services.ps1",
+      "lastModified": "2025-03-20T15:27:07.8239241-07:00",
+      "size": 38
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\run_desktop.bat": {
+      "extension": ".bat",
+      "name": "run_desktop.bat",
+      "lastModified": "2025-03-31T17:18:58-07:00",
+      "size": 122
+    },
+    "D:\\Desktop\\New\\PDFs\\import os.py": {
+      "extension": ".py",
+      "name": "import os.py",
+      "lastModified": "2025-03-12T05:53:49.2909297-07:00",
+      "size": 4220
+    },
+    "D:\\Desktop\\New\\TraeIndex\\newMisc.ps1": {
+      "extension": ".ps1",
+      "name": "newMisc.ps1",
+      "lastModified": "2025-03-23T18:35:40.924-07:00",
+      "size": 54712
+    },
+    "D:\\Desktop\\New\\Modules\\Globals.psm1": {
+      "extension": ".psm1",
+      "name": "Globals.psm1",
+      "lastModified": "2025-03-30T22:27:38.1423904-07:00",
+      "size": 921
+    },
+    "D:\\Desktop\\New\\TraeIndex\\NetworkServices.ps1": {
+      "extension": ".ps1",
+      "name": "NetworkServices.ps1",
+      "lastModified": "2025-03-18T14:54:51.8037356-07:00",
+      "size": 14822
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\bin\\Qt5Widgets.dll": {
+      "extension": ".dll",
+      "name": "Qt5Widgets.dll",
+      "lastModified": "2025-03-30T18:09:54-07:00",
+      "size": 22
+    },
+    "D:\\Desktop\\New\\with nbew code merged auto run.reg": {
+      "extension": ".reg",
+      "name": "with nbew code merged auto run.reg",
+      "lastModified": "2025-03-17T18:46:56.5355447-07:00",
+      "size": 59561
+    },
+    "D:\\Desktop\\New\\Extensions.ps1": {
+      "extension": ".ps1",
+      "name": "Extensions.ps1",
+      "lastModified": "2025-03-25T15:17:32.6367392-07:00",
+      "size": 2098
+    },
+    "D:\\Desktop\\New\\WSIndex\\Edge.ps1": {
+      "extension": ".ps1",
+      "name": "Edge.ps1",
+      "lastModified": "2025-03-25T11:25:52.818711-07:00",
+      "size": 3805
+    },
+    "D:\\Desktop\\New\\Template_aligned.ps1": {
+      "extension": ".ps1",
+      "name": "Template_aligned.ps1",
+      "lastModified": "2025-03-29T11:57:20.8088542-07:00",
+      "size": 3415
+    },
+    "D:\\Desktop\\New\\TraeIndex\\ConnectToSQLite.ps1": {
+      "extension": ".ps1",
+      "name": "ConnectToSQLite.ps1",
+      "lastModified": "2025-03-24T17:19:03.052307-07:00",
+      "size": 794
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\config\\default_config.json": {
+      "extension": ".json",
+      "name": "default_config.json",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 362
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\core\\scheduler.py": {
+      "extension": ".py",
+      "name": "scheduler.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 30412
+    },
+    "D:\\Desktop\\New\\PDFs\\Lib-Downloader.py": {
+      "extension": ".py",
+      "name": "Lib-Downloader.py",
+      "lastModified": "2025-03-30T14:35:17.4860302-07:00",
+      "size": 2150
+    },
+    "D:\\Desktop\\New\\TraeIndex\\MediaPlayer.ps1": {
+      "extension": ".ps1",
+      "name": "MediaPlayer.ps1",
+      "lastModified": "2025-03-28T18:01:43.8395554-07:00",
+      "size": 2508
+    },
+    "D:\\Desktop\\New\\CreateDirectoryIndex.ps1": {
+      "extension": ".ps1",
+      "name": "CreateDirectoryIndex.ps1",
+      "lastModified": "2025-03-31T18:13:16.2643568-07:00",
+      "size": 1792
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\check_system_settings.ps1": {
+      "extension": ".ps1",
+      "name": "check_system_settings.ps1",
+      "lastModified": "2025-03-24T16:14:42.0250105-07:00",
+      "size": 7818
+    },
+    "D:\\Desktop\\New\\TraeIndex\\search_agent_ransack_registry.ps1": {
+      "extension": ".ps1",
+      "name": "search_agent_ransack_registry.ps1",
+      "lastModified": "2025-03-20T10:31:54.4265474-07:00",
+      "size": 620
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\README.txt": {
+      "extension": ".txt",
+      "name": "README.txt",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 444
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\lib\\pdf_processor.dll": {
+      "extension": ".dll",
+      "name": "pdf_processor.dll",
+      "lastModified": "2025-03-30T18:09:54-07:00",
+      "size": 26
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\assets\\app_icon.svg": {
+      "extension": ".svg",
+      "name": "app_icon.svg",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 1842
+    },
+    "D:\\Desktop\\New\\todo.txt": {
+      "extension": ".txt",
+      "name": "todo.txt",
+      "lastModified": "2025-03-22T19:34:55.4710969-07:00",
+      "size": 613
+    },
+    "D:\\Desktop\\New\\missing_lines.reg": {
+      "extension": ".reg",
+      "name": "missing_lines.reg",
+      "lastModified": "2025-03-20T18:47:59.8908864-07:00",
+      "size": 92320
+    },
+    "D:\\Desktop\\New\\Modules\\Import-modules.psm": {
+      "extension": ".psm",
+      "name": "Import-modules.psm",
+      "lastModified": "2025-03-30T22:20:20.032097-07:00",
+      "size": 374
+    },
+    "D:\\Desktop\\New\\WSIndex\\Functions.ps1": {
+      "extension": ".ps1",
+      "name": "Functions.ps1",
+      "lastModified": "2025-03-26T12:36:36.8033542-07:00",
+      "size": 8247
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegExport\\Export-RegFile.ps1": {
+      "extension": ".ps1",
+      "name": "Export-RegFile.ps1",
+      "lastModified": "2025-03-31T16:01:47.0285224-07:00",
+      "size": 773
+    },
+    "D:\\Desktop\\New\\TraeIndex\\PowerShell.ps1": {
+      "extension": ".ps1",
+      "name": "PowerShell.ps1",
+      "lastModified": "2025-03-21T16:19:00.4695939-07:00",
+      "size": 2232
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\My system is windows.md": {
+      "extension": ".md",
+      "name": "My system is windows.md",
+      "lastModified": "2025-03-31T09:11:03.4945146-07:00",
+      "size": 2837
+    },
+    "D:\\Desktop\\New\\WSIndex\\RegistryPaths.ps1": {
+      "extension": ".ps1",
+      "name": "RegistryPaths.ps1",
+      "lastModified": "2025-03-25T19:17:54.4249001-07:00",
+      "size": 3403
+    },
+    "D:\\Desktop\\New\\.gpt-runner\\copilot.gpt.md": {
+      "extension": ".md",
+      "name": "copilot.gpt.md",
+      "lastModified": "2025-03-28T19:42:48.2246955-07:00",
+      "size": 1065
+    },
+    "D:\\Desktop\\New\\TraeIndex\\TraeIndex.db": {
+      "extension": ".db",
+      "name": "TraeIndex.db",
+      "lastModified": "2025-03-25T18:01:42.1975957-07:00",
+      "size": 0
+    },
+    "D:\\Desktop\\New\\WSIndex\\Cleanup.ps1": {
+      "extension": ".ps1",
+      "name": "Cleanup.ps1",
+      "lastModified": "2025-03-20T15:27:03.2455486-07:00",
+      "size": 37
+    },
+    "D:\\Desktop\\New\\TraeIndex\\ControlPanel.ps1": {
+      "extension": ".ps1",
+      "name": "ControlPanel.ps1",
+      "lastModified": "2025-03-26T15:44:39.9099702-07:00",
+      "size": 12265
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\web_app.py": {
+      "extension": ".py",
+      "name": "web_app.py",
+      "lastModified": "2025-03-31T17:14:22-07:00",
+      "size": 39674
+    },
+    "D:\\Desktop\\New\\Format-Scripts.ps1": {
+      "extension": ".ps1",
+      "name": "Format-Scripts.ps1",
+      "lastModified": "2025-03-31T13:16:11.1762929-07:00",
+      "size": 4352
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\check_system_settings.ps1": {
+      "extension": ".ps1",
+      "name": "check_system_settings.ps1",
+      "lastModified": "2025-03-24T16:14:42.0250105-07:00",
+      "size": 7818
+    },
+    "D:\\Desktop\\New\\WSIndex\\OneDrive.ps1": {
+      "extension": ".ps1",
+      "name": "OneDrive.ps1",
+      "lastModified": "2025-03-11T23:28:06.3888001-07:00",
+      "size": 4031
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegJsonExport\\RegistryApplier.psm1": {
+      "extension": ".psm1",
+      "name": "RegistryApplier.psm1",
+      "lastModified": "2025-03-31T06:01:02-07:00",
+      "size": 550
+    },
+    "D:\\Desktop\\New\\Modules\\Main.ps1": {
+      "extension": ".ps1",
+      "name": "Main.ps1",
+      "lastModified": "2025-03-30T23:07:33.5189169-07:00",
+      "size": 10507
+    },
+    "D:\\Desktop\\New\\TraeIndex\\DriveMapping.ps1": {
+      "extension": ".ps1",
+      "name": "DriveMapping.ps1",
+      "lastModified": "2025-03-24T20:11:29.0841111-07:00",
+      "size": 2253
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\run_web.bat": {
+      "extension": ".bat",
+      "name": "run_web.bat",
+      "lastModified": "2025-03-31T17:19:30-07:00",
+      "size": 121
+    },
+    "D:\\Desktop\\New\\Shell.ps1": {
+      "extension": ".ps1",
+      "name": "Shell.ps1",
+      "lastModified": "2025-03-07T23:19:28.047319-08:00",
+      "size": 19463
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\bin\\Qt5Gui.dll": {
+      "extension": ".dll",
+      "name": "Qt5Gui.dll",
+      "lastModified": "2025-03-30T18:09:54-07:00",
+      "size": 22
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\core\\config_manager.py": {
+      "extension": ".py",
+      "name": "config_manager.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 3136
+    },
+    "D:\\Desktop\\New\\WSIndex\\Bloatware.ps1": {
+      "extension": ".ps1",
+      "name": "Bloatware.ps1",
+      "lastModified": "2025-03-21T16:16:59.6567538-07:00",
+      "size": 1360
+    },
+    "D:\\Desktop\\New\\Python\\deploy_to_local.py": {
+      "extension": ".py",
+      "name": "deploy_to_local.py",
+      "lastModified": "2025-03-31T10:14:51.7570705-07:00",
+      "size": 4595
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\powershell_functions\\scripts\\onedrive_indexer.ps1": {
+      "extension": ".ps1",
+      "name": "onedrive_indexer.ps1",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 9365
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\gui\\main_window.py": {
+      "extension": ".py",
+      "name": "main_window.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 4437
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\static\\css\\style.css": {
+      "extension": ".css",
+      "name": "style.css",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 2646
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\core\\index_generator.py": {
+      "extension": ".py",
+      "name": "index_generator.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 10209
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\Connect-Database.ps1": {
+      "extension": ".ps1",
+      "name": "Connect-Database.ps1",
+      "lastModified": "2025-03-28T18:12:59.8040848-07:00",
+      "size": 1212
+    },
+    "D:\\Desktop\\New\\WSIndex\\MediaPlayer.ps1": {
+      "extension": ".ps1",
+      "name": "MediaPlayer.ps1",
+      "lastModified": "2025-03-15T19:25:46.9636504-07:00",
+      "size": 1878
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\gui\\about_tab.py": {
+      "extension": ".py",
+      "name": "about_tab.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 4667
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Vendors.ps1": {
+      "extension": ".ps1",
+      "name": "Vendors.ps1",
+      "lastModified": "2025-03-20T15:27:31.1170689-07:00",
+      "size": 8937
+    },
+    "D:\\Desktop\\New\\conversation.txt": {
+      "extension": ".txt",
+      "name": "conversation.txt",
+      "lastModified": "2025-03-19T16:03:47.4539701-07:00",
+      "size": 19078
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\core\\pdf_processor.py": {
+      "extension": ".py",
+      "name": "pdf_processor.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 5866
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\download_tools.ps1": {
+      "extension": ".ps1",
+      "name": "download_tools.ps1",
+      "lastModified": "2025-03-20T08:27:27.9892518-07:00",
+      "size": 3242
+    },
+    "D:\\Desktop\\New\\WSIndex\\merged explorer from old .ps1": {
+      "extension": ".ps1",
+      "name": "merged explorer from old .ps1",
+      "lastModified": "2025-03-21T16:18:34.9528986-07:00",
+      "size": 4432
+    },
+    "D:\\Desktop\\New\\file instructions.txt": {
+      "extension": ".txt",
+      "name": "file instructions.txt",
+      "lastModified": "2025-03-26T19:32:00.1208426-07:00",
+      "size": 2972
+    },
+    "D:\\Desktop\\New\\PDFs\\index pdfs.py": {
+      "extension": ".py",
+      "name": "index pdfs.py",
+      "lastModified": "2025-03-12T05:49:53.830762-07:00",
+      "size": 5077
+    },
+    "D:\\Desktop\\New\\Tasks\\EnvVars.ps1": {
+      "extension": ".ps1",
+      "name": "EnvVars.ps1",
+      "lastModified": "2025-03-31T18:00:31.8671802-07:00",
+      "size": 1187
+    },
+    "D:\\Desktop\\New\\Python\\simpleinstaller.py": {
+      "extension": ".py",
+      "name": "simpleinstaller.py",
+      "lastModified": "2025-03-31T09:57:48.5108144-07:00",
+      "size": 1141
+    },
+    "D:\\Desktop\\New\\all_registry_paths.txt": {
+      "extension": ".txt",
+      "name": "all_registry_paths.txt",
+      "lastModified": "2025-03-31T18:10:15.7003935-07:00",
+      "size": 2819
+    },
+    "D:\\Desktop\\New\\Assistance Scripts\\DevSetupEnv.ps1": {
+      "extension": ".ps1",
+      "name": "DevSetupEnv.ps1",
+      "lastModified": "2025-03-29T17:28:03.3629188-07:00",
+      "size": 12998
+    },
+    "D:\\Desktop\\New\\NetworkServices.ps1": {
+      "extension": ".ps1",
+      "name": "NetworkServices.ps1",
+      "lastModified": "2025-03-18T14:54:51.8037356-07:00",
+      "size": 14822
+    },
+    "D:\\Desktop\\New\\WSIndex\\WindowsUpdate.ps1": {
+      "extension": ".ps1",
+      "name": "WindowsUpdate.ps1",
+      "lastModified": "2025-02-24T16:56:49.7764613-08:00",
+      "size": 4256
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\jobs.html": {
+      "extension": ".html",
+      "name": "jobs.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 6532
+    },
+    "D:\\Desktop\\New\\Tasks\\T-Clock.ps1": {
+      "extension": ".ps1",
+      "name": "T-Clock.ps1",
+      "lastModified": "2025-03-31T18:00:50.2629918-07:00",
+      "size": 1001
+    },
+    "D:\\Desktop\\New\\WSIndex\\Others.ps1": {
+      "extension": ".ps1",
+      "name": "Others.ps1",
+      "lastModified": "2025-03-20T12:36:12.426805-07:00",
+      "size": 4732
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Explorer.ps1": {
+      "extension": ".ps1",
+      "name": "Explorer.ps1",
+      "lastModified": "2025-03-26T16:23:13.861349-07:00",
+      "size": 40362
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\core\\config_manager.py": {
+      "extension": ".py",
+      "name": "config_manager.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 3178
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts\\Parallel-functions.ps1": {
+      "extension": ".ps1",
+      "name": "Parallel-functions.ps1",
+      "lastModified": "2025-03-30T13:56:25.5570173-07:00",
+      "size": 3850
+    },
+    "D:\\Desktop\\New\\Modules\\AliasConfig.psm1": {
+      "extension": ".psm1",
+      "name": "AliasConfig.psm1",
+      "lastModified": "2025-03-30T22:26:27.6796466-07:00",
+      "size": 372
+    },
+    "D:\\Desktop\\New\\WSIndex\\newMisc.ps1": {
+      "extension": ".ps1",
+      "name": "newMisc.ps1",
+      "lastModified": "2025-03-23T18:35:40.924-07:00",
+      "size": 54712
+    },
+    "D:\\Desktop\\New\\WSIndex\\Power.ps1": {
+      "extension": ".ps1",
+      "name": "Power.ps1",
+      "lastModified": "2025-03-11T07:38:46.5003261-07:00",
+      "size": 4627
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\gui\\settings_tab.py": {
+      "extension": ".py",
+      "name": "settings_tab.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 8405
+    },
+    "D:\\Desktop\\New\\TraeIndex\\sqlite_installer.exe": {
+      "extension": ".exe",
+      "name": "sqlite_installer.exe",
+      "lastModified": "2025-03-24T17:27:33.1417218-07:00",
+      "size": 2414
+    },
+    "D:\\Desktop\\New\\TraeIndex\\WindowsUpdate.ps1": {
+      "extension": ".ps1",
+      "name": "WindowsUpdate.ps1",
+      "lastModified": "2025-02-24T16:56:49.7764613-08:00",
+      "size": 4256
+    },
+    "D:\\Desktop\\New\\Privacy.ps1": {
+      "extension": ".ps1",
+      "name": "Privacy.ps1",
+      "lastModified": "2025-03-20T16:31:33.1169125-07:00",
+      "size": 37655
+    },
+    "D:\\Desktop\\New\\search_agent_ransack_registry.ps1": {
+      "extension": ".ps1",
+      "name": "search_agent_ransack_registry.ps1",
+      "lastModified": "2025-03-20T10:31:54.4265474-07:00",
+      "size": 620
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\index.html": {
+      "extension": ".html",
+      "name": "index.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 4438
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\static\\css\\style.css": {
+      "extension": ".css",
+      "name": "style.css",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 2646
+    },
+    "D:\\Desktop\\New\\Tasks\\AutoRegBackup.xml": {
+      "extension": ".xml",
+      "name": "AutoRegBackup.xml",
+      "lastModified": "2025-03-14T15:30:10.0218173-07:00",
+      "size": 3462
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\core\\onedrive_connector.py": {
+      "extension": ".py",
+      "name": "onedrive_connector.py",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 16882
+    },
+    "D:\\Desktop\\New\\Python\\Lib-Downloader.py": {
+      "extension": ".py",
+      "name": "Lib-Downloader.py",
+      "lastModified": "2025-03-30T14:35:17.4860302-07:00",
+      "size": 2150
+    },
+    "D:\\Desktop\\New\\MediaPlayer.ps1": {
+      "extension": ".ps1",
+      "name": "MediaPlayer.ps1",
+      "lastModified": "2025-03-15T19:25:46.9636504-07:00",
+      "size": 1878
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\README.md": {
+      "extension": ".md",
+      "name": "README.md",
+      "lastModified": "2025-03-30T18:29:32-07:00",
+      "size": 2338
+    },
+    "D:\\Desktop\\New\\TraeIndex\\Others.ps1": {
+      "extension": ".ps1",
+      "name": "Others.ps1",
+      "lastModified": "2025-03-20T12:36:12.426805-07:00",
+      "size": 4732
+    },
+    "D:\\Desktop\\New\\WSIndex\\Others_Updated.ps1": {
+      "extension": ".ps1",
+      "name": "Others_Updated.ps1",
+      "lastModified": "2025-03-20T15:31:23.1297013-07:00",
+      "size": 7867
+    },
+    "D:\\Desktop\\New\\PDFs\\AI Instructions - PDF Index.md": {
+      "extension": ".md",
+      "name": "AI Instructions - PDF Index.md",
+      "lastModified": "2025-03-15T00:52:33.134861-07:00",
+      "size": 1129
+    },
+    "D:\\Desktop\\New\\Modules\\logging.psm1": {
+      "extension": ".psm1",
+      "name": "logging.psm1",
+      "lastModified": "2025-03-30T22:23:08.2201155-07:00",
+      "size": 505
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates\\index_pdfs.html": {
+      "extension": ".html",
+      "name": "index_pdfs.html",
+      "lastModified": "2025-03-31T17:14:36-07:00",
+      "size": 7769
+    },
+    "D:\\Desktop\\New\\WindowsUpdate.ps1": {
+      "extension": ".ps1",
+      "name": "WindowsUpdate.ps1",
+      "lastModified": "2025-02-24T16:56:49.7764613-08:00",
+      "size": 4256
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core\\Lib-Downloader.py": {
+      "extension": ".py",
+      "name": "Lib-Downloader.py",
+      "lastModified": "2025-03-31T17:14:22-07:00",
+      "size": 2321
+    },
+    "D:\\Desktop\\New\\merged explorer from old .ps1": {
+      "extension": ".ps1",
+      "name": "merged explorer from old .ps1",
+      "lastModified": "2025-03-21T16:18:34.9528986-07:00",
+      "size": 4432
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\layout.html": {
+      "extension": ".html",
+      "name": "layout.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 4497
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\rename_pdfs.html": {
+      "extension": ".html",
+      "name": "rename_pdfs.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 8057
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates\\job_details.html": {
+      "extension": ".html",
+      "name": "job_details.html",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 6797
+    },
+    "D:\\Desktop\\New\\WSIndex\\temp.ps1": {
+      "extension": ".ps1",
+      "name": "temp.ps1",
+      "lastModified": "2025-03-20T16:31:25.4434091-07:00",
+      "size": 1518
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\scripts\\onedrive_indexer.py": {
+      "extension": ".py",
+      "name": "onedrive_indexer.py",
+      "lastModified": "2025-03-30T18:09:12-07:00",
+      "size": 10300
+    }
+  },
+  "statistics": {
+    "totalDirs": 37,
+    "totalSize": 2533271,
+    "totalFiles": 287
+  },
+  "directories": {
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\core": {
+      "name": "core",
+      "lastModified": "2025-03-31T17:20:46.2239134-07:00"
+    },
+    "D:\\Desktop\\New\\.gpt-runner": {
+      "name": ".gpt-runner",
+      "lastModified": "2025-03-30T21:06:57.2344347-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\powershell_functions\\scripts": {
+      "name": "scripts",
+      "lastModified": "2025-03-31T17:20:47.3112488-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\docs": {
+      "name": "docs",
+      "lastModified": "2025-03-31T17:20:47.1593013-07:00"
+    },
+    "D:\\Desktop\\New\\TraeIndex": {
+      "name": "TraeIndex",
+      "lastModified": "2025-03-30T21:06:58.2677797-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Core": {
+      "name": "OneDrive Indexer Core",
+      "lastModified": "2025-03-31T17:20:45.8732669-07:00"
+    },
+    "D:\\Desktop\\New\\Python": {
+      "name": "Python",
+      "lastModified": "2025-03-31T17:20:48.1418299-07:00"
+    },
+    "D:\\Desktop\\New\\WSIndex": {
+      "name": "WSIndex",
+      "lastModified": "2025-03-30T21:06:59.0928141-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\bin": {
+      "name": "bin",
+      "lastModified": "2025-03-31T17:20:47.121904-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\gui": {
+      "name": "gui",
+      "lastModified": "2025-03-31T17:20:46.4994085-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full": {
+      "name": "OneDrive Indexer Full",
+      "lastModified": "2025-03-31T17:20:46.7331439-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\gui": {
+      "name": "gui",
+      "lastModified": "2025-03-31T17:20:47.6990962-07:00"
+    },
+    "D:\\Desktop\\New\\Modules": {
+      "name": "Modules",
+      "lastModified": "2025-03-31T17:21:56.0197852-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\templates": {
+      "name": "templates",
+      "lastModified": "2025-03-31T17:20:48.0044317-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\static\\js": {
+      "name": "js",
+      "lastModified": "2025-03-31T17:20:46.712293-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\powershell_functions": {
+      "name": "powershell_functions",
+      "lastModified": "2025-03-31T17:20:47.2751754-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec": {
+      "name": "PDF Tools- PS_Python_Exec",
+      "lastModified": "2025-03-31T17:20:47.3320522-07:00"
+    },
+    "D:\\Desktop\\New\\Assistance Scripts": {
+      "name": "Assistance Scripts",
+      "lastModified": "2025-03-31T17:20:45.27342-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable": {
+      "name": "executable",
+      "lastModified": "2025-03-31T17:20:47.1805969-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\scripts": {
+      "name": "scripts",
+      "lastModified": "2025-03-31T17:20:47.7355792-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs": {
+      "name": "PDFs",
+      "lastModified": "2025-03-31T17:20:46.9524486-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\templates": {
+      "name": "templates",
+      "lastModified": "2025-03-31T17:20:46.9311937-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\static": {
+      "name": "static",
+      "lastModified": "2025-03-31T17:20:46.6953085-07:00"
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegJsonExport": {
+      "name": "RegJsonExport",
+      "lastModified": "2025-03-31T17:20:48.3933799-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\core": {
+      "name": "core",
+      "lastModified": "2025-03-31T17:20:47.5832387-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions": {
+      "name": "python_functions",
+      "lastModified": "2025-03-31T17:20:47.8482728-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\static": {
+      "name": "static",
+      "lastModified": "2025-03-31T17:20:47.8103973-07:00"
+    },
+    "D:\\Desktop\\New\\RegPathsExport\\RegExport": {
+      "name": "RegExport",
+      "lastModified": "2025-03-31T17:20:48.2557959-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\assets": {
+      "name": "assets",
+      "lastModified": "2025-03-31T17:20:47.4300985-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\static\\css": {
+      "name": "css",
+      "lastModified": "2025-03-31T17:20:47.7893688-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\executable\\lib": {
+      "name": "lib",
+      "lastModified": "2025-03-31T17:20:47.1966862-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\OneDrive Indexer Full\\static\\css": {
+      "name": "css",
+      "lastModified": "2025-03-31T17:20:46.6737917-07:00"
+    },
+    "D:\\Desktop\\New\\RegPathsExport": {
+      "name": "RegPathsExport",
+      "lastModified": "2025-03-31T17:20:48.2774151-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\static\\js": {
+      "name": "js",
+      "lastModified": "2025-03-31T17:20:47.8260214-07:00"
+    },
+    "D:\\Desktop\\New\\PDFs\\PDF Tools- PS_Python_Exec\\python_functions\\config": {
+      "name": "config",
+      "lastModified": "2025-03-31T17:20:47.4661705-07:00"
+    },
+    "D:\\Desktop\\New\\Assistance -Scripts": {
+      "name": "Assistance -Scripts",
+      "lastModified": "2025-03-30T23:22:17.8247136-07:00"
+    },
+    "D:\\Desktop\\New\\Tasks": {
+      "name": "Tasks",
+      "lastModified": "2025-03-31T18:00:43.2320165-07:00"
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "Edge.ps1": [
+    {
+      "#": 1,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Edge"
+    },
+    {
+      "#": 2,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Edge"
+    },
+    {
+      "#": 3,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 4,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Edge Beta"
+    },
+    {
+      "#": 5,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Edge Beta"
+    },
+    {
+      "#": 6,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 7,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Edge Dev"
+    },
+    {
+      "#": 8,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Edge Dev"
+    },
+    {
+      "#": 9,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 10,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Edge Update"
+    },
+    {
+      "#": 11,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Edge Update"
+    },
+    {
+      "#": 12,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 13,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Internet Explorer"
+    },
+    {
+      "#": 14,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Internet Explorer"
+    },
+    {
+      "#": 15,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 16,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\MediaPlayer"
+    },
+    {
+      "#": 17,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MediaPlayer"
+    },
+    {
+      "#": 18,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 19,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows Mail"
+    },
+    {
+      "#": 20,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows Mail"
+    },
+    {
+      "#": 21,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 22,
+      "Hive": "HKLM",
+      "Path": "Software\\WOW6432Node\\Microsoft\\MSN Apps"
+    },
+    {
+      "#": 23,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\MicrosoftEdge"
+    },
+    {
+      "#": 24,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\UnInstall\\Microsoft Edge"
+    },
+    {
+      "#": 25,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR"
+    },
+    {
+      "#": 26,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameInput"
+    },
+    {
+      "#": 27,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameInstaller"
+    },
+    {
+      "#": 28,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\XboxGaming"
+    },
+    {
+      "#": 29,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameUX"
+    },
+    {
+      "#": 30,
+      "Hive": "HKCU",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\WINEVT\\Publishers\\{3a5f2396-5c8f-4f1f-9b67-6cca6c990e61}"
+    },
+    {
+      "#": 31,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\MicrosoftEdge"
+    },
+    {
+      "#": 32,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\UnInstall\\Microsoft Edge"
+    },
+    {
+      "#": 33,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR"
+    },
+    {
+      "#": 34,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameInput"
+    },
+    {
+      "#": 35,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameInstaller"
+    },
+    {
+      "#": 36,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\XboxGaming"
+    },
+    {
+      "#": 37,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameUX"
+    },
+    {
+      "#": 38,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\Windows\\CurrentVersion\\WINEVT\\Publishers\\{3a5f2396-5c8f-4f1f-9b67-6cca6c990e61}"
+    },
+    {
+      "#": 39,
+      "Hive": "HKLM",
+      "Path": "Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\UnInstall\\Microsoft\\Edge"
+    },
+    {
+      "#": 40,
+      "Hive": "HKLM",
+      "Path": "Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\UnInstall\\Microsoft\\Edge Update"
+    },
+    {
+      "#": 41,
+      "Hive": "HKLM",
+      "Path": "Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\UnInstall\\Microsoft\\EdgeWebView"
+    },
+    {
+      "#": 42,
+      "Hive": "HKLM",
+      "Path": "Software\\Policies\\Microsoft\\Edge"
+    },
+    {
+      "#": 43,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\PolicyManager\\Default\\Browser\\AllowSmartScreen"
+    },
+    {
+      "#": 44,
+      "Hive": "HKLM",
+      "Path": "Software\\Microsoft\\PolicyManager\\Default\\SmartScreen\\EnableSmartScreenInShell"
+    }
+  ]
+}
