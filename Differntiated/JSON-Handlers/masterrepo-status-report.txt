@@ -1,0 +1,43 @@
+# MasterRepo Status Report
+
+## Submodules
+
+-f503f067bbda46ca5086c92e98b7a2b113d758c6 Comparisons
+-8da7dc9a54b7d723616815d65e1fec6afa67e8ee GitManager
+-44c32055660aa0b0b89d1ef7584250e682efaa8d JSON
+ 02ffabe9c20117e711a2938e894a52ee91288a6c New (heads/master)
+-6b53f8fc8fc7160352824b4210475dcb025d5d0e PDFs
+-2a5d04aafcdfdcd9fe0a62bac2fc7872dc0e4f1c Regfiles
+-680f5762f551d3fd1c08cc972e7e9e97338a3c82 Scripts-Comparisons
+-c1ae2b4040e523f839bff0a81468c59b586cba78 Settings
+-6d054ca39ab49341fd1e115328d4490d80fa069f Stone
+
+
+
+
+
+
+
+
+
+
+## Branches
+
+* Master
+  new
++ projects
+
+
+
+
+
+
+
+
+
+
+## Worktrees
+
+//ichs/software/Dev/MasterRepo      3c42aa2 [Master]
+//ichs/software/Dev/MasterRepo/new  6f4b184 [projects]
+

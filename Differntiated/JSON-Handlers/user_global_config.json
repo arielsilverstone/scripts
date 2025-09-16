@@ -1,0 +1,99 @@
+{
+  "User": {
+    "Email": "CISSP43@gmail.com",
+    "Name": "Ariel"
+  },
+  "System": {
+    "OS": "Windows Server 2025",
+    "Directories": {
+      "ProgramFiles": "D:\\Program Files",
+      "SystemDesktop": "D:\\Desktop",
+      "Temp": "D:\\Temp",
+      "UserDirectories": "D:\\Users",
+      "Archives": "H:\\Dev\\Archives",
+      "Projects": "H:\\Dev\\Projects",
+      "Templates": "H:\\Dev\\Templates",
+      "Backups": "H:\\Dev\\Backups",
+      "Logs": "H:\\Dev\\Logs",
+      "Cache": "D:\\Temp"
+    }
+  },
+  "Language": {
+    "Preference": "British English",
+    "Style": "Humorous",
+    "Primary": "PowerShell",
+    "Secondary": "Python",
+    "ContentStyle": "Humorous",
+    "InteractionMethod": "Both"
+  },
+  "Editor": {
+    "AlignColumn": {
+      "ThreeColumnLayout": [10, 35, 60],
+      "TwoColumnLayout": [10, 50]
+    },
+    "AutoSave": "OnFocusChange",
+    "AutoUpdates": "Disabled",
+    "Breadcrumbs": "Enabled",
+    "EachLevelIndent": 5,
+    "Colors": {
+      "Background": "#282c34",
+      "Foreground": "#abb2bf",
+      "Comment": "#5c6370",
+      "Function": "#61afef",
+      "Keyword": "#c678dd",
+      "Number": "#d19a66",
+      "Operator": "#56b6c2",
+      "String": "#98c379",
+      "Variable": "#d19a66",
+      "Font": {
+        "FontSize": "14pt",
+        "FontFace": ["Consolas", "Courier New", "monospace"],
+        "Weight": 600
+      }
+    },
+    "Encoding": "UTF-8",
+    "Font": ["Consolas", "Courier New", "monospace"],
+    "FormatOnSave": "Enabled",
+    "LineHeight": 1.4,
+    "MandatoryEncoding": "Yes",
+    "Notepad": "Use Builtin",
+    "Pair": ["\"\"", "'", "{", "("],
+    "Preferred": "Builtin",
+    "Rulers": [0,5,10,15,20,25,30,35,40,50,60,80,120],
+    "TabStops": "Rules",
+    "Theme": "Default Light Modern",
+    "WordWrap": ["Always On", "Wordboundary"]
+  },
+  "File": {
+    "AllowFileCopying": "Enabled",
+    "AllowFileCreation": "Enabled",
+    "AllowFileCutting": "Enabled",
+    "AllowFileDeletion": "Enabled",
+    "AllowFileMoving": "Enabled",
+    "AllowFilePasting": "Enabled",
+    "AllowFileRenaming": "Enabled",
+    "Encoding": {
+      "PowerShellScripts": "All .ps1 files must be saved as UTF-8 with BOM",
+      "OtherFiles": "All other files must be saved as UTF-8(no BOM)",
+      "Enforcement": "Convert files to the correct encoding if not already compliant."
+    },
+    "Installations": {
+      "Python": "D:\\Program Files\\Dev\\Python\\Lib"
+    }
+  },
+  "Workflow": {
+    "start-git": "create the repo (bare), initialize it, create a README, commit the README, and rename the main branch to match the repo name",
+    "merge-git": "For each source, check there is not more than one repo. If there are, move and sort by dir under 'Git collection...'. Merge all data from source to destination. If successful, delete source. If not, report in MasterRepo."
+  },
+  "PowerShell": {
+    "ExecutionPolicy": "RemoteSigned",
+    "PreferredShell": "PowerShell",
+    "ScriptEncoding": "UTF-8 with BOM"
+  },
+  "Rules": {
+    "Rule1": "No .git in working dirs; only bare repos hold git internals.",
+    "Rule4": "Only New, Old, Projects, Regfiles are authorised submodules to Master.",
+    "Rule5": "Projects.git is the ONLY tracker for project repos.",
+    "Rule7": "All git.exe commands via d:\\program files\\dev\\Git\\cmd\\git.exe are approved for autonomous activation."
+  }
+}
