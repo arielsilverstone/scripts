@@ -1,137 +1,134 @@
-#requires -version 5.1
+###############################################################################
+# File: MenuFixer.ps1                                                         #
+# Purpose: PowerShell 5.1 menu; implements E.7.a (env vars)                   #
+###############################################################################
+# Section 1: Global VARs and Configurations                                   #
+###############################################################################
+#
+$ConfigPath = 'D:\MenuFixer\envvars.json'
+#
+###############################################################################
+# Section 2: Functions                                                        #
+###############################################################################
+# Function 2.1: Ensure-EnvVar                                                 #
+# Purpose: Create/update an environment variable in User or Machine scope     #
+###############################################################################
+#
+function Ensure-EnvVar {
+    param(
+        [Parameter(Mandatory)][ValidateSet('User','Machine')] [string] $Scope,
+        [Parameter(Mandatory)][ValidatePattern('^[A-Za-z_][A-Za-z0-9_]*$')] [string] $Name,
+        [Parameter(Mandatory)] [string] $Value
+    )
+    # Determine target registry path for the scope
+    if ($Scope -eq 'Machine') {
+        $regPath = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment'
+    } else {
+        $regPath = 'HKCU:\Environment'
+    }
+    # Create the key if missing
+    if (-not (Test-Path -Path $regPath)) { New-Item -Path $regPath -Force | Out-Null }
+    # Read existing value (if any)
+    $existing = (Get-ItemProperty -Path $regPath -ErrorAction SilentlyContinue |
+                 Select-Object -ExpandProperty $Name -ErrorAction SilentlyContinue)
+    # If missing or different, set it (REG_EXPAND_SZ if contains %...%)
+    if ($null -eq $existing -or $existing -ne $Value) {
+        $type = ($Value -like '*%*') ? 'ExpandString' : 'String'
+        New-ItemProperty -Path $regPath -Name $Name -Value $Value -PropertyType $type -Force | Out-Null
+        [Environment]::SetEnvironmentVariable($Name, $Value, $Scope)
+        Write-Host ("Set {0} env var: {1}={2}" -f $Scope, $Name, $Value)
+    }
+}
+#
+###############################################################################
+# Function 2.2: Load-EnvConfig                                                #
+# Purpose: Load JSON {Machine:{},User:{}} if present                          #
+###############################################################################
+#
+function Load-EnvConfig {
+    if (Test-Path -Path $ConfigPath) {
+        try {
+            $json = Get-Content -Path $ConfigPath -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop
+            return @{ Machine = @{} + ($json.Machine | ForEach-Object { $_ }); User = @{} + ($json.User | ForEach-Object { $_ }) }
+        } catch {
+            Write-Warning ("Failed to load env config: {0}" -f $_.Exception.Message)
+            return @{ Machine = @{}; User = @{} }
+        }
+    } else { return @{ Machine = @{}; User = @{} } }
+}
+#
+###############################################################################
+# Function 2.3: Invoke-EnvVariables                                           #
+# Purpose: Implement E.7.a using config file or inline sample map             #
+###############################################################################
+#
+function Invoke-EnvVariables {
+    # Load config map (Machine/User)
+    $map = Load-EnvConfig
+    # Example defaults if file missing (edit/remove as needed)
+    if (($map.Machine.Count -eq 0) -and ($map.User.Count -eq 0)) {
+        $map = @{ Machine = @{ 'MY_TOOL_HOME' = 'D:\Tools\MyTool'; 'PATH' = '%PATH%;D:\Tools\MyTool\bin' }; User = @{ 'MY_PROJECT' = 'D:\Projects\Current' } }
+    }
+    # Apply Machine env vars
+    foreach ($kv in $map.Machine.GetEnumerator()) { Ensure-EnvVar -Scope 'Machine' -Name $kv.Key -Value $kv.Value }
+    # Apply User env vars
+    foreach ($kv in $map.User.GetEnumerator()) { Ensure-EnvVar -Scope 'User' -Name $kv.Key -Value $kv.Value }
+    Write-Host "Environment variable updates complete."
+}
+#
+###############################################################################
+# Function 2.4: Invoke-ApplyRegFile                                           #
+# Purpose: Implement E.7.b by importing a user-specified .reg file            #
+###############################################################################
+#
+function Invoke-ApplyRegFile {
+    # Prompt for file path
+    $regFile = Read-Host 'Enter the full path to the .reg file'
 
-<#+============================================================
-    MenuFixer.ps1 - PowerShell 5.1 menu system
-============================================================#>
+    # Validate path and extension
+    if (-not (Test-Path -Path $regFile)) {
+        Write-Warning "File not found: $regFile"
+        return
+    }
+    if ($regFile -notlike '*.reg') {
+        Write-Warning "Invalid file type. Please provide a .reg file."
+        return
+    }
 
+    # Execute reg import
+    try {
+        Write-Host "Importing registry file: $regFile"
+        # Using Start-Process to handle elevation if required
+        Start-Process reg.exe -ArgumentList "import `"$regFile`"" -Wait -Verb RunAs -WindowStyle Hidden
+        Write-Host "Registry file import completed successfully."
+    } catch {
+        Write-Error "Failed to import registry file. Error: $_.Exception.Message"
+    }
+}
+#
+###############################################################################
+# Section 3: Menu                                                             #
+###############################################################################
+#
 function Show-Menu {
     Clear-Host
-    Write-Host '================ MenuFixer ================'
-    Write-Host ' 1. Create or update environment variables'
-    Write-Host ' 2. Apply .reg files'
-    Write-Host ' 3. Create project .vscode folder'
-    Write-Host ' 4. Move or mklink folders'
-    Write-Host ' 5. Generate folder mapping YAML'
-    Write-Host ' 6. Verify drive mappings'
-    Write-Host ' 7. Verify subst settings'
-    Write-Host ' 8. Manage context menu items'
-    Write-Host ' 9. Fix shell window and buffers'
-    Write-Host '10. Fix shell command redirections'
-    Write-Host '11. Remove features and capabilities'
-    Write-Host '12. Fix file associations'
-    Write-Host '13. Create redirection files in D:\links'
-    Write-Host '14. Install Scoop'
-    Write-Host '15. Install Scoop packages'
-    Write-Host '16. Check and repair scheduled tasks'
-    Write-Host '17. Create new scheduled tasks'
-    Write-Host '18. Maintain tools index list'
-    Write-Host '19. Remove junk items'
-    Write-Host '20. Maintain environment variable list'
-    Write-Host '21. Fix Run as Administrator context menu'
-    Write-Host ' A. Fix user interface elements'
-    Write-Host '22. Fix AppData redirection'
-    Write-Host '23. Install .NET'
-    Write-Host '24. Fix services'
-    Write-Host '25. Remove Edge (keep WebView)'
-    Write-Host '26. Fix specific registry values'
-    Write-Host '27. Fix PowerShell PackageManagement'
-    Write-Host '28. Fix NuGet'
-    Write-Host '29. Fix Winget'
-    Write-Host '30. Update PowerShell modules'
-    Write-Host '31. Fix PATHs'
-    Write-Host '32. Fix PowerShell execution policy'
-    Write-Host '33. Enable QuickEdit for cmd'
-    Write-Host '34. Fix folder view options'
-    Write-Host '35. Clean desktop heap'
-    Write-Host '36. Clean Explorer Heap'
-    Write-Host '37. Windows- and other Defenders'
-    Write-Host '38. HV and Virtualization Setting'
-    Write-Host ' Q. Quit'
+    Write-Host '================ MenuFixer (PS 5.1) ================'
+    Write-Host ' a. E.7.a  Create/update/correct environment variables'
+    Write-Host ' b. E.7.b  Apply .reg file'
+    Write-Host ' q. Quit'
 }
-
-#region Task Functions
-function Invoke-EnvVariables        { Write-Host 'TODO: Implement environment variable fixes.' }
-function Invoke-ApplyRegFiles       { Write-Host 'TODO: Implement registry file application.' }
-function Invoke-CreateVSCodeFolder  { Write-Host 'TODO: Implement .vscode folder creation.' }
-function Invoke-MoveOrLinkFolders   { Write-Host 'TODO: Implement folder move or mklink.' }
-function Invoke-GenerateYaml        { Write-Host 'TODO: Implement YAML mapping generation.' }
-function Invoke-VerifyDrives        { Write-Host 'TODO: Implement drive mapping verification.' }
-function Invoke-VerifySubst         { Write-Host 'TODO: Implement subst verification.' }
-function Invoke-ManageContextMenu   { Write-Host 'TODO: Implement context menu management.' }
-function Invoke-FixShellWindows     { Write-Host 'TODO: Implement shell window fixes.' }
-function Invoke-FixRedirections     { Write-Host 'TODO: Implement command redirection fixes.' }
-function Invoke-RemoveFeatures      { Write-Host 'TODO: Implement feature removal.' }
-function Invoke-FixAssociations     { Write-Host 'TODO: Implement file association fixes.' }
-function Invoke-CreateLinkFiles     { Write-Host 'TODO: Implement link file creation.' }
-function Invoke-InstallScoop        { Write-Host 'TODO: Implement Scoop installation.' }
-function Invoke-InstallScoopPkgs    { Write-Host 'TODO: Implement Scoop package installation.' }
-function Invoke-CheckTasks          { Write-Host 'TODO: Implement task verification.' }
-function Invoke-CreateTasks         { Write-Host 'TODO: Implement new task creation.' }
-function Invoke-MaintainToolsIndex  { Write-Host 'TODO: Implement tools index maintenance.' }
-function Invoke-RemoveJunk          { Write-Host 'TODO: Implement junk removal.' }
-function Invoke-MaintainEnvList     { Write-Host 'TODO: Implement environment variable list maintenance.' }
-function Invoke-FixRunAsAdmin       { Write-Host 'TODO: Implement Run as Administrator fix.' }
-function Invoke-FixUI               { Write-Host 'TODO: Implement user interface fixes.' }
-function Invoke-FixAppData          { Write-Host 'TODO: Implement AppData redirection fix.' }
-function Invoke-InstallDotNet       { Write-Host 'TODO: Implement .NET installation.' }
-function Invoke-FixServices         { Write-Host 'TODO: Implement service fixes.' }
-function Invoke-RemoveEdge          { Write-Host 'TODO: Implement Edge removal.' }
-function Invoke-FixRegistryValues   { Write-Host 'TODO: Implement registry value fixes.' }
-function Invoke-FixPkgManagement    { Write-Host 'TODO: Implement PackageManagement fix.' }
-function Invoke-FixNuGet            { Write-Host 'TODO: Implement NuGet fix.' }
-function Invoke-FixWinget           { Write-Host 'TODO: Implement Winget fix.' }
-function Invoke-UpdateModules       { Write-Host 'TODO: Implement module update.' }
-function Invoke-FixPaths            { Write-Host 'TODO: Implement PATH fixes.' }
-function Invoke-FixExecutionPolicy  { Write-Host 'TODO: Implement execution policy fix.' }
-function Invoke-EnableQuickEdit     { Write-Host 'TODO: Implement QuickEdit enablement.' }
-function Invoke-FixFolderViews      { Write-Host 'TODO: Implement folder view fixes.' }
-function Invoke-CleanDesktopHeap    { Write-Host 'TODO: Implement desktop heap cleanup.' }
-#endregion Task Functions
-
 # Main Loop
 Do {
     Show-Menu
-    $selection = Read-Host 'Select option'
-    switch ($selection) {
-        '1'  { Invoke-EnvVariables }
-        '2'  { Invoke-ApplyRegFiles }
-        '3'  { Invoke-CreateVSCodeFolder }
-        '4'  { Invoke-MoveOrLinkFolders }
-        '5'  { Invoke-GenerateYaml }
-        '6'  { Invoke-VerifyDrives }
-        '7'  { Invoke-VerifySubst }
-        '8'  { Invoke-ManageContextMenu }
-        '9'  { Invoke-FixShellWindows }
-        '10' { Invoke-FixRedirections }
-        '11' { Invoke-RemoveFeatures }
-        '12' { Invoke-FixAssociations }
-        '13' { Invoke-CreateLinkFiles }
-        '14' { Invoke-InstallScoop }
-        '15' { Invoke-InstallScoopPkgs }
-        '16' { Invoke-CheckTasks }
-        '17' { Invoke-CreateTasks }
-        '18' { Invoke-MaintainToolsIndex }
-        '19' { Invoke-RemoveJunk }
-        '20' { Invoke-MaintainEnvList }
-        '21' { Invoke-FixRunAsAdmin }
-        'A'  { Invoke-FixUI }
-        '22' { Invoke-FixAppData }
-        '23' { Invoke-InstallDotNet }
-        '24' { Invoke-FixServices }
-        '25' { Invoke-RemoveEdge }
-        '26' { Invoke-FixRegistryValues }
-        '27' { Invoke-FixPkgManagement }
-        '28' { Invoke-FixNuGet }
-        '29' { Invoke-FixWinget }
-        '30' { Invoke-UpdateModules }
-        '31' { Invoke-FixPaths }
-        '32' { Invoke-FixExecutionPolicy }
-        '33' { Invoke-EnableQuickEdit }
-        '34' { Invoke-FixFolderViews }
-        '35' { Invoke-FixCleanDesktopHeap }
-        'Q'  { break }
+    $sel = Read-Host 'Select option'
+    switch ($sel) {
+        'a' { Invoke-EnvVariables }
+        'b' { Invoke-ApplyRegFile }
+        'q' { break }
         Default { Write-Host 'Invalid selection' }
     }
-    if ($selection -ne 'Q') { Read-Host 'Press Enter to continue' | Out-Null }
+    if ($sel -ne 'q') { Read-Host 'Press Enter to continue' | Out-Null }
 } While ($true)
-
+#
+#
+## End of MenuFixer.ps1
