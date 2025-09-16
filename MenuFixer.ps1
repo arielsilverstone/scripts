@@ -43,6 +43,9 @@ function Show-Menu {
     Write-Host '33. Enable QuickEdit for cmd'
     Write-Host '34. Fix folder view options'
     Write-Host '35. Clean desktop heap'
+    Write-Host '36. Clean Explorer Heap'
+    Write-Host '37. Windows- and other Defenders'
+    Write-Host '38. HV and Virtualization Setting'
     Write-Host ' Q. Quit'
 }
 
@@ -131,3 +134,4 @@ Do {
     }
     if ($selection -ne 'Q') { Read-Host 'Press Enter to continue' | Out-Null }
 } While ($true)
+
