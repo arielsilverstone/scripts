@@ -1,0 +1,42 @@
+Windows Registry Editor Version 5.00
+;
+;
+; Remove Deno mitigations
+[HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\deno.exe]
+"MitigationOptions"=-
+;
+;
+[HKLM\SOFTWARE\Policies\Bun\Security]
+; Keep the key but disable these values:
+"DisableJIT"=dword:00000000       ; 0=Enable JIT compilation
+"IsolateModules"=dword:00000000   ; 0=Disable module isolation
+;
+;
+; Disable Win32k system-wide lockdown
+[HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+"DisableWin32kSystemCalls"=dword:00000000
+;
+;
+;
+;
+; ONLY IF WANT ISOLATED PROCESSES Deno
+;
+; Enable isolated process (Windows Defender Application Guard style)
+; [HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\deno.exe]
+; "MitigationOptions"=dword:00000000
+; "FilterFullProcessImageName"="C:\\Program Files\\Dev\\*"
+; "UseFilter"=dword:00000001
+; 
+; ; Job Object isolation (prevents child process creation)
+; [HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\deno.exe\PerProcessOptions]
+; "JobMemoryLimit"=dword:00000000
+; "JobProcessMemoryLimit"=dword:00000000
+; "JobActivityRateLimit"=dword:00000000
+;
+;
+; Process Isolation Alternative, use Windows Job Objects instead:
+; 
+; powershell
+; $job = New-JobObject -Name "Bun_Isolated"
+; Set-JobObjectLimit -JobObject $job -LimitFlags "ActiveProcess,Memory"
+; Start-Process "bun.exe" -JobObject $job

@@ -1,0 +1,47 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Environment]
+; Claude API key for accessing Claude services
+"CLAUDE_API_KEY"=""
+; Path to Claude configuration file
+"CLAUDE_CONFIG_FILE"=""
+; Deno cache and data directory
+"DENO_DIR"="d:\\program files\\tools\\deno"
+; Deno installation root directory
+"DENO_INSTALL_ROOT"=""
+; Deno authentication tokens for private modules
+"DENO_AUTH_TOKENS"=""
+; Deno runtime permissions (e.g., allow-read, allow-env)
+"DENO_PERMISSIONS"=""
+; Disable Deno update check
+"DENO_NO_UPDATE_CHECK"=""
+; Path to custom certificate file for Deno
+"DENO_CERT"=""
+; Jupyter configuration directory
+"JUPYTER_CONFIG_DIR"=""
+; Jupyter data files directory
+"JUPYTER_DATA_DIR"=""
+; Jupyter runtime files directory
+"JUPYTER_RUNTIME_DIR"=""
+; Paths to search for Jupyter components
+"JUPYTER_PATH"=""
+; LM Studio installation directory
+"LMSTUDIO_PATH"=""
+; Path to LM Studio model files
+"LMSTUDIO_MODELS_PATH"=""
+; LM Studio server port
+"LMSTUDIO_PORT"=""
+; LM Studio server host
+"LMSTUDIO_HOST"=""
+; LM Studio API key for authentication
+"LMSTUDIO_API_KEY"=""
+; Default LM Studio project ID
+"LM_STUDIO_PROJECT_ID"=""
+; Path to .NET installation directory
+"DOTNET_ROOT"=""
+; Path to NuGet packages directory
+"NUGET_PACKAGES"=""
+; Path to MSBuild extensions
+"MSBuildExtensionsPath"=""
+; Path to MSBuild SDKs
+"MSBuildSDKsPath"=""

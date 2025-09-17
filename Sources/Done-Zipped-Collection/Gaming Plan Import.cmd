@@ -1,0 +1,1 @@
+powercfg -import "C:\Windows\System32\Gaming Plan.pow" e9b018dc-9927-4575-9b4a-a18124791119
