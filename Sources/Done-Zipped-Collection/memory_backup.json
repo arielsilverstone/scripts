@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-01-24T12:00:00Z",
+  "context": {
+    "workspace": "d:\Program Files\Dev\Projects\Gemini-Agent",
+    "todo_list": [
+      {"id":"6","status":"completed","content":"Fixed ConfigManager.reload_config AttributeError in test_dynamic_configuration_updates","priority":"high","created_at":1756081558},
+      {"id":"2","status":"in_progress","content":"Fix test_integration.py failures - NameError for TemplateManager and AttributeError for ConfigManager.reload_config","priority":"high","created_at":1756081558},
+      {"id":"1","status":"pending","content":"Fix the skipped test in tests/aux-files/test_async_file_manager.py - likely missing async dependencies","priority":"high","created_at":1756081558},
+      {"id":"3","status":"pending","content":"Fix Pydantic deprecation warnings - update deprecated V2 features","priority":"medium","created_at":1756081558},
+      {"id":"4","status":"pending","content":"Fix resource release warnings - ensure proper cleanup in async operations","priority":"medium","created_at":1756081558},
+      {"id":"5","status":"pending","content":"Move all passed tests (205) to done section in test_results_summary.md","priority":"low","created_at":1756062103}
+    ],
+    "recent_files": [
+      "src/rule_engine.py",
+      "tests/test_integration.py",
+      "src/template_manager.py",
+      "src/config_manager.py"
+    ],
+    "memory_state": "compressed",
+    "token_usage": 0.75
+  }
+}

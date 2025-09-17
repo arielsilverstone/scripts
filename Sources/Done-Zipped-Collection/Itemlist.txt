@@ -1,0 +1,93 @@
+
+Basic Testing Workflow.md
+Change-CMD-Size
+Check-DesktopHeap
+checkpoint_E_tasks.md
+clean-agent-prompt.txt
+CmdCustomization
+ConsoleConfigurationManager
+contentDeliveryManager
+Create Context Menu Models
+Deal-With-CDM-Subscriptions
+disable file warning.reg
+Disable-deno-kernel-security.reg
+disable-memory-compression
+Disable-Pushes.reg
+disable-windows-defender
+disableVBS
+DISM++-cleanup-rules.txt
+dotnet-install
+enable-cmd-quickedit-n-insertmode
+Enable-Nested-Virt-Per-VM
+Enable-OfflineFiles-Server
+Enforce-EnvVars-Task-Ariel.xml
+EnvironmentVariables
+Execution-Policy-Unrestricted
+Extensions-and-Paths.reg
+fileexsync.reg
+FileSyncHelper.reg
+Fix Folder not able to retain settings.bat
+Fix-PackageManagement
+Fix-PowerShell7
+fix-privacy-settings
+fsutil
+Gaming Plan Import.cmd
+GenerateToolLaunchers
+Import all VMs in Subdirs
+install-sshd
+Install-WindowsTerminal
+Itemlist.txt
+links.txt
+lowriskfiletypes.reg
+memory_backup.json
+MenuFixer_checkpointG_full_schema_detailed.json
+Misc HyperV Commands
+misc ps commands
+more-vars.reg
+new-win-install
+NSudo_Launcher_Installer_AIO.bat
+NVIDIA app SelfUpdate_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}.xml
+OOSU10.cfg
+optimize-user-interface (2)
+optimize-user-interface
+Path Definitions 18AUG25.reg
+Power
+Powershell NetCommands
+project_rules.md
+PSASettingsSync.xml
+PSEnvMaintenance.xml
+PSScriptAnalyzerSettings.psd1
+redir-users-desktop
+redirect-appdata.reg
+registryTweaks
+release-mem-compress-context.md
+Remove Weather on taskbar or Teams or Edge.txt
+remove-annoying-from-New.reg
+remove-default-apps
+removeOneDrive
+Roaming Profiles setup.reg
+scheduledTasks
+search-fix-functions.json
+Services Tweaks.cmd
+Session agent for Process Lasso.xml
+Set--by-XML-All
+set--by-XML-Part2
+Set-NetAdapterAdvancedProperty
+Set-Subst-Drives
+settings.json
+Setup New VM
+SetupComplete.cmd
+Setupcomplete
+setup_testing_environment.json
+Start Camomile ?n logon.xml
+T-Clock.xml
+tasks.json
+tools-vars.txt
+tool_environment_variables.reg
+ultimatePerformancePlan
+UninstallAllEdgeChromium.cmd
+Windows_Enable.Remote.Desktop.cmd
+Windows_Update-Disable.cmd
+wpd.reg
+zdisable miniports.bat
+zEnable-VM-Slat

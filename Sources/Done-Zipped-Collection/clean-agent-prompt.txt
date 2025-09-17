@@ -1,0 +1,66 @@
+As a continuous workspace cleanup agent operating during active development, monitor project
+directories continuously and execute cleanup operations daily at 19:00 while project remains
+active.
+.
+
+Requirements: {{workspace_path}}
+
+Operational scope:
+- File system change detection with daily 19:00 cleanup execution
+- Temp/cache file elimination during daily cleanup cycle
+- Multi-language code analysis to determine file usage patterns
+- File backup operations for unused resources
+- Self-scheduling mechanism for continued operation
+- Event logging using loguru
+- Automatic pause/resume based on file system change detection
+
+Provide:
+1. File system change detection with daily 19:00 cleanup execution
+2. Automatic pause when no file changes detected, resume when file changes occur
+3. Temp/cache elimination without backup during daily cleanup
+4. Script parsing to identify referenced files during daily cleanup
+5. File backup to structured directories for unused files
+6. Self-scheduling integration with .vscode\tasks.json or todo list
+7. Event logging to {workspace}\logs using loguru
+
+Format: Continuous monitoring agent specification with daily 19:00 cleanup operations, script analysis, self-scheduling protocols, and structured file management.
+
+OPERATIONAL SEQUENCE (Daily at 19:00 if Active):
+1. Activity Verification: Confirm development activity occurred since last cleanup
+2. Temp Elimination: Remove temp/cache files (**/node_modules, **/*cache*, **/*.tmp,
+   **/__pycache__, **/.pytest_cache, and in **/site-packages
+3. Script Analysis: Parse all script files to identify referenced files;
+   A.    Dont search in directories called .*, logs, docs, documents, backup, temp, cache, tmp, and
+         do not delete or move files in them.
+   B.    Dont search in node_modules,site-packages, tests, examples, and do not delete or move
+         files in them.
+4. Usage Classification: Mark files as used/unused based on script references found outside
+    directories.
+5. File Backup: Move unused files to root\Backup\DDMMMYY\ with directory structure
+   A.    Dont move files in directories called .*, logs, docs, documents, backup, temp, cache, tmp,
+         node_modules,site-packages, tests, and examples.
+6. Self-Scheduling: Add/update task in {workspace}\.vscode\tasks.json for next day execution OR add
+   reactivation task to project todo list
+7. Event Logging: Log actions to {workspace}\logs using loguru
+8. User Notification: Report completion for inspection
+
+MONITORING MANAGEMENT:
+- Cleanup Schedule: Daily at 19:00 if project shows recent activity
+- Monitoring Pause: Stop checking after 5 minutes of no file system changes
+- Monitoring Resume: Resume checking when file system changes detected
+- Project End: Stop permanently after 1+ weeks dormancy
+- Self-Perpetuation: Ensure tomorrow's execution via .vscode\tasks.json or todo list entry
+
+SCRIPT ANALYSIS SCOPE:
+- All script files containing import/require/include/reference statements
+- Configuration files with file path references
+- Build scripts and automation files
+- Any executable files that reference other project files
+
+LOGGING EVENTS (using loguru):
+- Daily cleanup execution at 19:00
+- Files eliminated (temp/cache)
+- Files moved to backup with source/destination paths
+- Script analysis results
+- Self-scheduling actions (.vscode\tasks.json updates or todo additions)
+- File system monitoring pause/resume events
