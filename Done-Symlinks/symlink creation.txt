@@ -1,7 +1,0 @@
-Here's a concise summary to copy/paste for your new chat:
-Context Summary for System Recreation Library Project:
-I'm building a system recreation library for disaster recovery/migration. Just completed two main scripts:
-1. Complete symlink/junction recreation script - Recreates ~100+ custom symlinks/junctions for D: drive organization (temp→D:\Temp, desktop→D:\Desktop, dev tools, Links directory shortcuts, etc.)
-2. Group Policy folder redirection script - Handles AppData roaming via proper GP instead of problematic symlinks, creates ADMX templates
-Current need: Create "regfiles" library artifact to include the project files from previous attempts (mixed .reg/.bat/.ps1 from transition period). Want to extract useful patterns and build better abstractions for final library.
-System context: Server 2025, custom D: drive organization, development environment with Windsurf/Python tools, extensive use of junctions for quick CLI access.
