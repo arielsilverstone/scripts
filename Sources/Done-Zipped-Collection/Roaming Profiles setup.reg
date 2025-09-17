@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+
+
+;
+[HKLM\Software\Policies\Microsoft\Windows\System]
+; Add the Administrators security group to roaming user profiles
+"AddAdminGroupToRUP"=dword:00000001
+; Do not check for user ownership of Roaming Profile Folders
+"CompatibleRUPSecurity"=dword:00000001
+; Prompt user when a slow network connection is detected
+"SlowLinkUIEnabled"=dword:00000001
+;
+; Most important policy is Set roaming profile path for all users logging onto this computer
+"MachineProfilePath"="\\Ben\Homes\Users\%USERNAME%"
+;
+;
+; set users' home directory 
+; can be set on network (1) or on user's machine (0)
+; if on network, can add mapped driver
+;
+"HomeDirLocation"=dword:00000001
+"HomeDir"="\\Ben\Homes\Users\%USERNAME%"
+"HomeDirDrive"="K:"
+
+
+; Turn off the advertising ID group folder policy 
+;
+[HKLM\Software\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+
+
+
+

@@ -1,0 +1,89 @@
+## ENV
+    1.  Create or update environment variables
+    9.  Fix shell window and buffers
+    10. Fix shell command redirections
+    13. Create redirection files in D:\links
+    18. Maintain tools index list
+    20. Maintain environment variable list
+    28. Fix PowerShell PackageManagement
+    32. Fix PATHs
+    33. Fix PowerShell execution policy
+    34. Enable QuickEdit for cmd
+    35. Fix folder view options
+
+## ENV/SYMLINKS
+    4.  Move or mklink folders
+    5.  Generate folder mapping YAML
+    13. Create redirection files in D:\links
+    23. Fix AppData redirections
+
+## ENV/VOLUME AND DRIVE
+    6.  Verify drive mappings
+    7.  Verify subst Settings
+
+## UI
+    22. Fix user interface elements
+    35. Fix folder view options
+
+## Repair and FIX
+    25. Fix services
+    27. Fix specific registry values
+    28. Fix PowerShell PackageManagement
+    29. Fix NuGet
+    30. Fix Winget
+    31. Update PowerShell modules
+    32. Fix PATHs
+    33. Fix PowerShell execution policy
+    36. Clean Explorer heap
+
+##  CONTEXT MENUS
+    8.  Manage context menu items
+    21. Fix Run as Administrator context menu
+
+## Install and manage APPS
+    14. Install Scoop
+    15. Install Scoop packages
+    23. Install .NET
+    26. Remove Edge (keep WebView)
+    29. Fix NuGet
+    30. Fix Winget
+    31. Update PowerShell modules
+
+## Registry direct
+    2.  Apply .reg files
+    27. Fix specific registry values
+    36. Clean Explorer heap
+
+## CLEAN
+    19. Remove junk items
+    26. Remove Edge (keep WebView)
+    36. Clean Explorer heap
+
+## vscode
+    3.  Create project .vscode folder
+
+## DISM
+    11. Remove features and capabilities
+    12. Fix file associations
+
+
+## TASKs
+    16. Check and repair scheduled tasks
+    17. Create new scheduled tasks
+
+## NEW - OTHERS
+    37. *defend* should go to a new #37
+    38. HV-Settings
+
+
+
+GenerateToolLaunchers: [13,18,20,32]; Install-WindowsTerminal: 9 and something else not yet defined; links.txt: [13,32,4,5,]; misc ps commands to [2,25,27,8,22,19,12, ]; more-vars.reg: [1,18,20,29,32 ]; NSudo_Launcher_Installer_AIO to [2,33,13,8,21]; optimize-user-interface: [2,9,35,4,22]; redir* to [1,20,24,23]; registryTweaks to [2,25,27]; Set--by-XML-All: [2,1,10,32,33,6,7,27,32,33]; set--by-XML-Part2: [2,1,10,11,32,33,6,7,27,32,33,38]; Setupcomplete.ps1: [25,27,2,6,11,19];
+
+tools-vars,tool_environment* to [1,20]; wpd.reg, *NetAdapter*: [2,25]; Roaming Profiles setup to [4,27]; Set-Subst-Drives to [6,7]; Windows_Update-Disable.cmd to [26,27]; removeOneDrive: 19;  UninstallAllEdgeChromium.cmd: 26; *Remote.Desktop.cmd: 27; Import all VMs in Subdirs: 37
+
+
+[Power, Powershell NetCommands, fix-privacy-settings, fsutil, Gaming Plan Import, lowriskfiletypes.reg, remove-annoying*]: 2 ;; [Remove Weather *, remove-default-apps]: 11 ;;
+[Services Tweaks, install-sshd]: 25;; [zEnable-VM-Slat, Misc HyperV Commands, Setup New VM]: 38;;
+[optimize-user-interface (2) which is almost a duplicate of `optimize-user-interface`, `optimize-user-interface`, `Path Definitions 18AUG25.reg`]: [1,18,20,29,32 ]
+
+[SetupComplete.cmd,ultimatePerformancePlan, zdisable miniports.bat] all ok to delete;
