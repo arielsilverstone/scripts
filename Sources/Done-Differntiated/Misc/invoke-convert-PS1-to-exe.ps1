@@ -1,0 +1,1 @@
+Invoke-ps2exe .\RegCompressionMenu.ps1 -noConsole -icon .\youricon.ico -output .\RegCompressor.exe
