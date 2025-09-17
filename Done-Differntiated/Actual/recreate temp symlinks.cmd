@@ -1,2 +1,0 @@
-
-$paths=@("C:\Temp","C:\ProgramData\Temp","C:\Users\Ariel\AppData\Local\Temp","C:\Users\Default\AppData\Local\Temp","C:\Windows\System32\config\systemprofile\AppData\Local\Temp"); foreach($p in $paths){if(Test-Path $p){$b="$p"+"_bak";Move-Item $p $b -Force -EA SilentlyContinue}; cmd /c mklink /D "$p" "D:\Temp"}
